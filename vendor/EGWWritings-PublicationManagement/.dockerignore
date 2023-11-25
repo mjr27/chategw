@@ -1,0 +1,13 @@
+**/bin/
+**/obj/
+*.sqlite
+./reports
+./idea
+./.git
+**/.idea
+**/appsettings.Development.json
+src/api/suggestions/**/*.csv
+src/api/search-lucene/**/*.csv
+**/*.sqlite
+**/*.csv
+**/*.tsv

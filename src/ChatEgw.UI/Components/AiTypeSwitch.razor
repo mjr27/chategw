@@ -1,0 +1,25 @@
+@using EnumsNET
+@using ChatEgw.UI.Application.Models
+<div>
+    <MudButtonGroup Class="mt-5 d-inline-block" Size="Size.Medium" Variant="@Variant.Filled" OverrideStyles="false">
+        @foreach (SearchTypeEnum item in Enums.GetValuesUnsafe<SearchTypeEnum>())
+        {
+            SearchTypeEnum itemClosure = item;
+            string title = item.AsString(EnumFormat.Description)!;
+            <MudButton Variant="@Variant.Filled"
+                       Color="@(itemClosure == SelectedIndex ? Color.Primary : Color.Default)"
+                       OnClick="@(() => SelectedIndexChanged.InvokeAsync(itemClosure))">
+                @title
+            </MudButton>
+        }
+    </MudButtonGroup>
+</div>
+
+@code {
+    [Parameter]
+    public SearchTypeEnum SelectedIndex { get; set; }
+
+    [Parameter]
+    public EventCallback<SearchTypeEnum> SelectedIndexChanged { get; set; }
+
+}

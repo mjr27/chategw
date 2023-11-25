@@ -1,0 +1,159 @@
+p {
+	text-indent: 0em;
+	text-align: left;
+	margin: .25em;
+}
+p.standard-indented {
+	text-indent: 1.5em;
+}
+p.standard-noindent {
+	text-indent: 0em;
+}
+p.blockquote-indented {
+	margin: 0em 3.25em;
+	text-indent: 1.5em;
+}
+p.blockquote-noindent {
+	margin: 0em 3.25em;
+}
+p.poem-indented {
+	font-style: italic;
+	margin: 0em 3.25em;
+	text-indent: 1.5em;
+}
+p.poem-noindent {
+	font-style: italic;
+	margin: 0em 3.25em;
+}
+p.poem-source {
+	font-style: italic;
+	margin: 0em 5.25em;
+	text-align: right;
+}
+p.page {
+	text-align: center;
+}
+p.center {
+	text-align: center;
+}
+p.bibletext {
+	text-align: center;
+}
+p.picture {
+	text-align: center;
+}
+p.thoughtbreak {
+	text-align: center;
+}
+p.devotionaltext {
+	font-weight: bold;
+	text-align: center;
+}
+p.left {
+	text-align: left;
+}
+p.right {
+	text-align: right;
+}
+p.signatureline {
+	text-align: right;
+}
+h1, h2, h3, h4, h5, h6 {
+	text-align: left;
+	line-height: 1em;
+	-webkit-hyphens: none !important;
+	adobe-hyphenate: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+h1 {
+	text-align:left;
+	line-height: 1em;
+	-webkit-hyphens: none !important;
+	adobe-hyphenate: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	font-size: 3.5em;
+}
+h2 {
+	text-align:left;
+	line-height: 1em;
+	-webkit-hyphens: none !important;
+	adobe-hyphenate: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	font-size: 2.4em;
+}
+h3 {
+	text-align:left;
+	line-height: 1em;
+	-webkit-hyphens: none !important;
+	adobe-hyphenate: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	font-size: 1.9em;
+}
+h4 {
+	text-align:left;
+	line-height: 1em;
+	-webkit-hyphens: none !important;
+	adobe-hyphenate: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	font-size: 1.5em;
+}
+h5 {
+	text-align:left;
+	line-height: 1em;
+	-webkit-hyphens: none !important;
+	adobe-hyphenate: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	font-size: 1.2em;
+}
+h6 {
+	text-align:left;
+	line-height: 1em;
+	-webkit-hyphens: none !important;
+	adobe-hyphenate: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	font-size: 1em;
+}
+hr.footnote {
+	width: 35%;
+	height: .06em;
+	text-align: left;
+	color: #000000;
+}
+span.pagebreak {
+	color: #9D0A0A;
+	font-style: normal;
+}
+em {
+	font-weight: inherit;
+	font-style: italic;
+}
+.chapter {
+	page-break-before: always;
+}
+.chapterhead {
+	text-align: center;
+	padding-top: 1.6em;
+	margin-bottom: 1.2em;
+}
+.sectionhead {
+	text-align: center;
+	padding-top: 1.6em;
+	margin-bottom: 1.2em;
+}
+ol.no-num {
+	list-style: none
+}

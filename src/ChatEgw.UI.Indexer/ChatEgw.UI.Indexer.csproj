@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\vendor\EGWWritings-PublicationManagement\src\Egw.PubManagement.Persistence\Egw.PubManagement.Persistence.csproj"/>
+        <ProjectReference Include="..\ChatEgw.UI.Persistence\ChatEgw.UI.Persistence.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AngleSharp" Version="1.0.7" />
+        <PackageReference Include="CliFx" Version="2.3.5" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="7.0.0"/>
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.11"/>
+        <PackageReference Include="Pgvector.EntityFrameworkCore" Version="0.1.2"/>
+        <PackageReference Include="ShellProgressBar" Version="5.2.0"/>
+        <PackageReference Include="Z.EntityFramework.Plus.EFCore" Version="7.100.0.5" />
+    </ItemGroup>
+
+</Project>

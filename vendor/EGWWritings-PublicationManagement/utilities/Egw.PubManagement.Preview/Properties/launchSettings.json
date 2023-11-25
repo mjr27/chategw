@@ -1,0 +1,16 @@
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "Egw.PubManagement.Preview": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": false,
+      "hotReloadEnabled": false,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:12333",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

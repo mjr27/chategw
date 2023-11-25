@@ -1,0 +1,53 @@
+﻿@using MudBlazor.Utilities
+@inherits LayoutComponentBase
+
+<PageTitle>ChatEgw</PageTitle>
+<MudThemeProvider Theme="CustomTheme"/>
+<MudDialogProvider/>
+<MudSnackbarProvider/>
+
+<MudLayout Class="d-flex">
+    <MudAppBar Elevation="1">
+        <span class="egw-logo">
+            <h1>Chat</h1>
+            <img src="/logo.svg" alt="ChatEGW"/>
+        </span>
+        <MudSpacer/>
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((_) => DrawerToggle())"/>
+    </MudAppBar>
+    <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2" Variant="DrawerVariant.Responsive" Class="drawer-container">
+        <MudDrawerContainer Class="pt-4">
+            <TreeFilter/>
+        </MudDrawerContainer>
+    </MudDrawer>
+    <MudMainContent>
+        <MudContainer MaxWidth="MaxWidth.Large">
+            @Body
+        </MudContainer>
+    </MudMainContent>
+</MudLayout>
+
+@code {
+    bool _drawerOpen = true;
+
+    private static readonly MudColor PrimaryColor = new("#115B77");
+
+    public readonly MudTheme CustomTheme = new()
+    {
+        Palette = new PaletteLight()
+        {
+            Primary = PrimaryColor,
+            AppbarBackground = PrimaryColor
+        },
+        PaletteDark = new PaletteDark
+        {
+            Primary = PrimaryColor
+        }
+    };
+
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+
+}

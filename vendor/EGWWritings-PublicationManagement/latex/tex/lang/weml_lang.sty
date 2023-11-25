@@ -1,0 +1,12 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{weml_lang}[2023/07/06 Language utilities]
+%\RequirePackage{fontspec}
+\RequirePackage{luaotfload}
+\RequirePackage[english,bidi=basic]{babel}
+\RequirePackage[tracking,final,babel]{microtype}
+\RequirePackage{luacode}
+\newcommand\setupfont[2][\font@serif]{
+    \babelfont[english]{rm}{#1}
+    \babelfont{rm}[RawFeature={fallback=egwfontfallback}]{#2}
+    \directlua{luaotfload.add_fallback("egwfontfallback", {"#1:mode=harf;"})}
+}

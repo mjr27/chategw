@@ -1,0 +1,54 @@
+%! suppress = DiscouragedUseOfDef
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{weml_tables}[2023/07/06 EGW Publication Formatting]
+\RequirePackage{cals}
+\makeatletter
+\define@key{wTable}{columns}{\def\wTable@columns{#1}}
+\newcommand{\wTable}[2][]{%
+    \setkeys{wTable}{#1} % set new keys
+    \begin{calstable}%
+        \cals@setpadding{Al}
+        \colwidths{{\dimexpr \linewidth/\wTable@columns\relax}}
+        #2
+    \end{calstable}%
+}%
+\newcommand{\wTableHeader}[1]{\thead{\bfseries\selectfont #1 \mdseries\selectfont}}
+\newcommand{\wTableBody}[1]{#1}
+\newcommand{\wTableRow}[1]{\brow #1 \erow}
+%! suppress = EscapeAmpersand
+\define@choicekey{wTableCell}{align}{left,right,center}{\def\wTableCell@align{#1}}
+\define@choicekey{wTableCell}{valign}{top,middle,bottom}{\def\wTableCell@valign{#1}}
+\define@key{wTableCell}{colspan}[1]{\def\wTableCell@colspan{#1}}
+\define@key{wTableCell}{rowspan}[1]{\def\wTableCell@rowspan{#1}}
+\define@key{wTableCell}{span}{\edef\wTableCell@span{#1}}
+\define@key{wTableCell}{endofspan}[yes]{\def\wTableCell@endofspan{#1}}
+\presetkeys{wTableCell}{align=left,valign=top,span=,endofspan=no}{}
+
+\newcommand{\wTableCell@render}[2] {
+    \IfEqCase*{\wTableCell@align}{%
+            {left} {\alignL}
+            {center} {\alignC}%
+            {right} {\alignR}%
+    }%
+    #1{%
+        \IfEqCase*{\wTableCell@valign}{%
+                {middle} {\vfil}%
+                {bottom} {\vfill}%
+        }%
+        #2%
+    }%
+}%
+
+\newcommand\wTableCell@null[1]{%
+    \begingroup%
+    \edef\x{\endgroup\noexpand\nullcell{\expandafter\expandafter\expandafter\expandafter\expandafter#1}}%
+    \x%
+}%
+\newcommand{\wTableCell}[2][]{%
+    \setkeys{wTableCell}{#1}%
+    \IfEqCase*{\wTableCell@span}{%
+            {} {\wTableCell@render{\cell}{#2}}%
+    }[\wTableCell@null{\wTableCell@span}\IfEqCase*{\wTableCell@endofspan}{{yes}{\wTableCell@render{\spancontent}{#2}}}]%
+}%
+
+\endinput

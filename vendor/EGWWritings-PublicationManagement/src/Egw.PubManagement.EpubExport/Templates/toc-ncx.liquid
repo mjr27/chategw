@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="{{ language }}" dir="{{ langDir }}">
+    <head>
+        <meta name="dtb:uid" content="urn:uuid:{{ epubGuid }}"/>
+        <meta name="dtb:depth" content="1"/>
+        <meta name="dtb:totalPageCount" content="{{ publication.PageCount }}"/>
+        <meta name="dtb:maxPageNumber" content="0"/>
+    </head>
+    <docTitle>
+        <text>{{ publication.Title | decode }}</text>
+    </docTitle>
+    <navMap>
+        {% for chapter in tree %}{% render "toc-ncx-block", item: chapter %}{% endfor %}
+    </navMap>
+    {% if isPagesFound == true %}
+    <pageList>
+        {% for chapter in chapters %}
+        {% for page in chapter.Pages %}
+        <pageTarget id="p{{ page.PageNumber }}" type="normal" value="{{ page.PageNumber }}"
+                    playOrder="{{ page.PlayOrder }}">
+            <navLabel>
+                <text>{{ page.PageNumber }}</text>
+            </navLabel>
+            <content src="xhtml/{{ page.ContentSrc }}"/>
+        </pageTarget>
+        {% endfor %}
+        {% endfor %}
+    </pageList>
+    {% endif %}
+</ncx>

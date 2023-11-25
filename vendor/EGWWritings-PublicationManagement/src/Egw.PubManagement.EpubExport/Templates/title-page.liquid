@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="{{ language }}" dir="{{ langDir }}">
+<head>
+    <title>{{ publicationTitle | decode }}</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../css/bookstyles.css" />
+</head>
+<body>
+<div class="chapter" id="titlepage">
+    <p>&#160;</p>
+    <p>&#160;</p>
+    <p>&#160;</p>
+    <h1 class="sectionhead">{{ publicationTitle | decode }}</h1>
+    <p>&#160;</p><p>&#160;</p>
+
+    <h5 class="sectionhead">{{ author.FirstName | decode }} {{ author.MiddleName | decode }} {{ author.LastName | decode}}</h5>
+    <p>&#160;</p>
+    <p>&#160;</p>
+    <p>&#160;</p>
+    
+    <p class="center" dir="ltr">
+        {% if year > 0%}
+        {{ year }}
+        {% endif %}
+    </p>
+    
+    <p>&#160;</p>
+    <p>&#160;</p>
+    <p>&#160;</p>
+
+    <p class="center" dir="ltr">Copyright &#169; {{ "now" | date: "%Y" }}, Ellen G. White Estate, Inc.</p>
+    {% if isbn <> "" %}
+    <p class="center">ISBN: {{isbn}}</p>
+    <p>&#160;</p>
+    {% endif %}
+</div>
+</body>
+</html>

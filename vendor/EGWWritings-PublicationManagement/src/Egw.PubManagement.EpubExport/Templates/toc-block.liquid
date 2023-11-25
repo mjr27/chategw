@@ -1,0 +1,10 @@
+{% assign chapter = item.Chapter %}
+{% assign children = item.Children %}
+<li><a href="{% if  chapter.File != "toc.xhtml" %}xhtml/{% endif %}{{ chapter.File }}">{{ chapter.Title }}</a>
+{% if children.size > 0 %}
+    <ol class="no-num">
+        {% for child in children %}
+            {% render "toc-block", item: child %}
+        {% endfor %}
+    </ol>
+{% endif %}</li>

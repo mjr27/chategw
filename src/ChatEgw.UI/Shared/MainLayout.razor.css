@@ -1,0 +1,15 @@
+.egw-logo h1 {
+    font-size: var(--mud-typography-h4-size);
+    font-family: "Bebas Neue";
+    font-weight: var(--mud-typography-h4-weight);
+    line-height: var(--mud-typography-h4-lineheight);
+    letter-spacing: var(--mud-typography-h4-letterspacing);
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.egw-logo img {
+    height: 35px;
+    vertical-align: middle;
+    display: inline-block;
+}  

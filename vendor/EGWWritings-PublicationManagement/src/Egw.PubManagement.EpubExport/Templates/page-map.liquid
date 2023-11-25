@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" ?>
+<page-map xmlns="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.idpf.org/2007/opf ">
+    {% for page in pages %}
+    <page name="{{ page.PageNumber }}" href="{{ page.ContentSrc }}"/>
+    {% endfor %}
+</page-map>

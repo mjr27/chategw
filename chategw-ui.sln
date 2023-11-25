@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatEgw.UI", "src\ChatEgw.UI\ChatEgw.UI.csproj", "{251F729A-0DBE-49F3-B1AE-772EAC55EA0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatEgw.UI.Persistence", "src\ChatEgw.UI.Persistence\ChatEgw.UI.Persistence.csproj", "{59E33CE0-7667-4366-8880-C222F30A3FC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatEgw.UI.Indexer", "src\ChatEgw.UI.Indexer\ChatEgw.UI.Indexer.csproj", "{A1275C51-14CA-4704-9C1D-1C729E7E589B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Egw.PubManagement.Persistence", "vendor\EGWWritings-PublicationManagement\src\Egw.PubManagement.Persistence\Egw.PubManagement.Persistence.csproj", "{B8608D91-6438-4813-9BA9-009C932C0E8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatEgw.UI.Application", "src\ChatEgw.UI.Application\ChatEgw.UI.Application.csproj", "{3304E6FD-F4B5-4FE3-98A2-6CFEB2AD2F9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{251F729A-0DBE-49F3-B1AE-772EAC55EA0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{251F729A-0DBE-49F3-B1AE-772EAC55EA0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{251F729A-0DBE-49F3-B1AE-772EAC55EA0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{251F729A-0DBE-49F3-B1AE-772EAC55EA0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59E33CE0-7667-4366-8880-C222F30A3FC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59E33CE0-7667-4366-8880-C222F30A3FC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59E33CE0-7667-4366-8880-C222F30A3FC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59E33CE0-7667-4366-8880-C222F30A3FC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1275C51-14CA-4704-9C1D-1C729E7E589B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1275C51-14CA-4704-9C1D-1C729E7E589B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1275C51-14CA-4704-9C1D-1C729E7E589B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1275C51-14CA-4704-9C1D-1C729E7E589B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8608D91-6438-4813-9BA9-009C932C0E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8608D91-6438-4813-9BA9-009C932C0E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8608D91-6438-4813-9BA9-009C932C0E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8608D91-6438-4813-9BA9-009C932C0E8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3304E6FD-F4B5-4FE3-98A2-6CFEB2AD2F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3304E6FD-F4B5-4FE3-98A2-6CFEB2AD2F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3304E6FD-F4B5-4FE3-98A2-6CFEB2AD2F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3304E6FD-F4B5-4FE3-98A2-6CFEB2AD2F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

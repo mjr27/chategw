@@ -1,0 +1,150 @@
+%! suppress = DiscouragedUseOfDef
+%! suppress = PackageSubdirectoryInspection
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{weml_formatting}[2023/07/06 EGW Publication Formatting]
+\RequirePackage{accsupp}
+\RequirePackage[all]{nowidow}
+\RequirePackage{xcolor}
+\RequirePackage{xkeyval}
+\RequirePackage{ifluatex}
+\RequirePackage{pgfornament}
+\RequirePackage{xstring}
+\RequirePackage{titlesec}
+\RequirePackage{hyperref}
+\RequirePackage{weml_tables}
+
+\definecolor{linkColor}{RGB}{0,32,96}
+\newcommand{\wLink@color}{linkColor}
+\newcommand{\wLink@render}[2][]{\href{#1}{#2}}
+
+\newcommand{\wNote@footnote}[1]{}
+\newcommand{\wNote@endnote}[1]{}
+
+\newcommand{\wPage@color}{lightgray}
+
+
+% Line break
+\newcommand{\wBr}{\leavevmode\\}
+
+
+% Link
+\define@key{wLink}{href}{\def\wLink@href{#1}}
+\define@key{wLink}{title}{\def\wLink@title{#1}}
+\setkeys{wLink}{href=,title=}
+\newcommand{\wLink}[2][]{%
+    \begingroup%
+    \setkeys{wLink}{#1}% set new keys
+    \wLink@render[\wLink@href]{#2}%
+    \endgroup%
+}
+
+% Entity
+\newcommand{\wEntity@render}[2][]{\emph{#2}}
+\newcommand{\wEntity}[2][]{\wEntity@render[#1]{#2}}
+
+% Format
+\newcommand{\wFormat@render}[2][]{%
+    \IfEqCase*{#1} {%
+            {bold} {\textbf{#2}}%
+            {italic} {\emph{#2}}%
+            {underline} {\underline{#2}}%
+            {superscript} {\textsuperscript{#2}}%
+            {subscript} {\textsubscript{#2}}%
+            {small-caps} {\textsc{#2}}%
+            {all-caps} {\uppercase{#2}}%
+    }%
+    [\ClassError{egw_book}{Invalid~w-format~type:~#1}{Type `#1` is not valid'}]%
+}%
+\define@key{wFormat}{type}{\def\wFormat@type{#1}}%
+\newcommand{\wFormat}[2][]{
+    \begingroup%
+    \setkeys{wFormat}{#1}% set new keys
+    \wFormat@render[\wFormat@type]{#2}%
+    \endgroup%
+}%
+
+% W-LANG
+% TODO: Implement language
+
+% W-NON-EGW
+
+\newcommand{\wNonEgw@render}[2][comment]{\emph{#2}}
+\newcommand{\wNonEgw}[2][comment]{\wNonEgw@render[#1]{#2}}
+
+% W-NOTE
+\newcommand{\wNote@render@footnote}[1]{\wNote@footnote{#1}}
+\newcommand{\wNote@render@endnote}[1]{\endnote{#1}}
+\newcommand{\wNote@render@chapterendnote}[1]{\endnote{#1}}
+\define@choicekey{wNote}{type}{footnote,endnote,chapter-endnote}{\def\wNote@type{#1}}
+\newcommand{\wNote@render}[1]{%
+    \IfEqCase*{\wNote@type} {%
+            {footnote}{\wNote@render@footnote{#1}}%
+            {endnote}{\wNote@render@endnote{#1}}%
+            {chapter-endnote}{\wNote@render@chapterendnote{#1}}}%
+}%
+\newcommand{\wNote}[2][]{%
+    \begingroup%
+    \setkeys{wNote}{#1}% set new keys
+    \wNote@render{#2}%
+    \endgroup%
+}%
+
+% W-PAGE
+\newcommand{\wPage@render}[1]{%
+    \begingroup%
+    \begin{otherlanguage}{english}%
+        \BeginAccSupp{ActualText=}%
+        \small{\textcolor{\wPage@color}{#1}}%
+        \EndAccSupp{}%
+    \end{otherlanguage}%
+    \endgroup%
+}%
+
+\newcommand{\wPage}[1]{\marginpar[\raggedleft{\wPage@render{#1}}]{\wPage@render{#1}}}
+
+% W-SENT (Sentence)
+\newcommand{\wSent}[1]{#1}
+
+%%%
+% BLOCKS
+%%%
+
+% Horizontal ruler
+\newcommand{\wHr}{%
+%    \nointerlineskip%
+    \vspace{2\baselineskip}\noindent\hspace{\fill}{\resizebox{\linewidth}{1.2ex}{\pgfornament{89}}}%
+    \hspace{\fill}%
+    \par \vspace{2\baselineskip}%
+}%
+
+%%%
+% Lists
+%%%
+
+\newcommand\wLi[1]{\item #1}
+\newcommand\wList@render@ordered[1]{%
+    \begin{enumerate}
+        #1
+    \end{enumerate}
+}
+\newcommand\wList@render@unordered[1]{%
+    \begin{itemize}
+        #1
+    \end{itemize}
+}
+\define@choicekey{wList}{type}{ordered,unordered}{\def\wList@type{#1}}
+\setkeys{wList}{type=unordered}
+\newcommand{\wList}[2][]{
+    \setkeys{wList}{#1}
+    \IfEqCase*{\wList@type} {%
+            {ordered}{\wList@render@ordered{#2}}%
+            {unordered}{\wList@render@unordered{#2}}}[ERROR]%
+}
+%%%
+% Tables
+%%%
+
+
+% Anchor 
+\newcommand{\wAnchor}[1]{\hypertarget{#1}{}}
+\endinput

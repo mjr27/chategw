@@ -1,0 +1,2739 @@
+﻿[
+  {
+    "id": 1,
+    "name": "Chinese, Mandarin",
+    "created_at": "2021-10-30 06:32:00",
+    "updated_at": "2021-10-30 06:32:00",
+    "code": "cmn"
+  },
+  {
+    "id": 2,
+    "name": "Chinese, Wu",
+    "created_at": "2021-10-30 06:32:00",
+    "updated_at": "2021-10-30 06:32:00",
+    "code": "wuu"
+  },
+  {
+    "id": 3,
+    "name": "Chinese, Yue",
+    "created_at": "2021-10-30 06:32:00",
+    "updated_at": "2021-10-30 06:32:00",
+    "code": "yue"
+  },
+  {
+    "id": 4,
+    "name": "Chinese, Jinyu",
+    "created_at": "2021-10-30 06:32:00",
+    "updated_at": "2021-10-30 06:32:00",
+    "code": "cjy"
+  },
+  {
+    "id": 5,
+    "name": "Chinese, Min Nan",
+    "created_at": "2021-10-30 06:32:00",
+    "updated_at": "2021-10-30 06:32:00",
+    "code": "nan"
+  },
+  {
+    "id": 6,
+    "name": "Chinese, Gan",
+    "created_at": "2021-10-30 06:32:00",
+    "updated_at": "2021-10-30 06:32:00",
+    "code": "gan"
+  },
+  {
+    "id": 7,
+    "name": "Chinese, Xiang",
+    "created_at": "2021-10-30 06:32:00",
+    "updated_at": "2021-10-30 06:32:00",
+    "code": "hsn"
+  },
+  {
+    "id": 8,
+    "name": "Chinese, Hakka",
+    "created_at": "2021-10-30 06:32:00",
+    "updated_at": "2021-10-30 06:32:00",
+    "code": "hak"
+  },
+  {
+    "id": 9,
+    "name": "Uyghur",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "uig"
+  },
+  {
+    "id": 10,
+    "name": "Chinese, Min Dong",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "cdo"
+  },
+  {
+    "id": 11,
+    "name": "Chinese, Huizhou",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "czh"
+  },
+  {
+    "id": 12,
+    "name": "Chinese, Min Zhong",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "czo"
+  },
+  {
+    "id": 13,
+    "name": "Nuosu",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "iii"
+  },
+  {
+    "id": 14,
+    "name": "Bouyei",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "pcc"
+  },
+  {
+    "id": 15,
+    "name": "Chinese, Pu-Xian",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "cpx"
+  },
+  {
+    "id": 16,
+    "name": "Chinese, Min Bei",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "mnp"
+  },
+  {
+    "id": 17,
+    "name": "Tibetan, Khams",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "khg"
+  },
+  {
+    "id": 18,
+    "name": "Zhuang, Yongbei",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "zyb"
+  },
+  {
+    "id": 19,
+    "name": "Miao, Northern Qiandong",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "hea"
+  },
+  {
+    "id": 20,
+    "name": "Zhuang, Yongnan",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "zyn"
+  },
+  {
+    "id": 21,
+    "name": "Tibetan, Central",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "bod"
+  },
+  {
+    "id": 22,
+    "name": "Zhuang, Zuojiang",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "zzj"
+  },
+  {
+    "id": 23,
+    "name": "Zhuang, Liujiang",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "zlj"
+  },
+  {
+    "id": 24,
+    "name": "Zhuang, Guibei",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "zgb"
+  },
+  {
+    "id": 25,
+    "name": "Iu Mien",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "ium"
+  },
+  {
+    "id": 26,
+    "name": "Tibetan, Amdo",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "adx"
+  },
+  {
+    "id": 27,
+    "name": "Miao, Western Xiangxi",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "mmr"
+  },
+  {
+    "id": 28,
+    "name": "Zhuang, Eastern Hongshuihe",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "zeh"
+  },
+  {
+    "id": 29,
+    "name": "Dong, Southern",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "kmc"
+  },
+  {
+    "id": 30,
+    "name": "Zhuang, Central Hongshuihe",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "zch"
+  },
+  {
+    "id": 31,
+    "name": "Hlai",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "lic"
+  },
+  {
+    "id": 32,
+    "name": "Zhuang, Guibian",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "zgn"
+  },
+  {
+    "id": 33,
+    "name": "Rundi",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "lsb"
+  },
+  {
+    "id": 34,
+    "name": "Gikuyu",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "kik"
+  },
+  {
+    "id": 35,
+    "name": "Kamba",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "kam"
+  },
+  {
+    "id": 36,
+    "name": "Kipsigis",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "sgc"
+  },
+  {
+    "id": 37,
+    "name": "Kimiiru",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "mer"
+  },
+  {
+    "id": 38,
+    "name": "Turkana",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "tuv"
+  },
+  {
+    "id": 39,
+    "name": "Kigiryama",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "nyf"
+  },
+  {
+    "id": 40,
+    "name": "Maasai",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "mas"
+  },
+  {
+    "id": 41,
+    "name": "Somali",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "som"
+  },
+  {
+    "id": 42,
+    "name": "Maay",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "ymm"
+  },
+  {
+    "id": 43,
+    "name": "Luba-Kasai",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "lua"
+  },
+  {
+    "id": 44,
+    "name": "Luba-Katanga",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "lub"
+  },
+  {
+    "id": 45,
+    "name": "Songe",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "sop"
+  },
+  {
+    "id": 46,
+    "name": "Tetela",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "tll"
+  },
+  {
+    "id": 47,
+    "name": "Amharic",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "amh"
+  },
+  {
+    "id": 48,
+    "name": "Oromo, Borana-Arsi-Guji",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "gax"
+  },
+  {
+    "id": 49,
+    "name": "Tigrigna",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "tir"
+  },
+  {
+    "id": 50,
+    "name": "Oromo, Eastern",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "hae"
+  },
+  {
+    "id": 51,
+    "name": "Sidamo",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "sid"
+  },
+  {
+    "id": 52,
+    "name": "Wolaytta",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "wal"
+  },
+  {
+    "id": 53,
+    "name": "Afar",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "aar"
+  },
+  {
+    "id": 54,
+    "name": "Hadiyya",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "hdy"
+  },
+  {
+    "id": 55,
+    "name": "Gamo",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "gmv"
+  },
+  {
+    "id": 56,
+    "name": "Gedeo",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "drs"
+  },
+  {
+    "id": 57,
+    "name": "Silt'e",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "stv"
+  },
+  {
+    "id": 58,
+    "name": "Kambaata",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "ktb"
+  },
+  {
+    "id": 59,
+    "name": "Tigre",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "tig"
+  },
+  {
+    "id": 60,
+    "name": "Mongo-Nkundu",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "ymg"
+  },
+  {
+    "id": 61,
+    "name": "Nande",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "nnb"
+  },
+  {
+    "id": 62,
+    "name": "Zande",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "zne"
+  },
+  {
+    "id": 63,
+    "name": "Mangbetu",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "mdj"
+  },
+  {
+    "id": 64,
+    "name": "Shi",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "shr"
+  },
+  {
+    "id": 65,
+    "name": "Lendu",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "led"
+  },
+  {
+    "id": 66,
+    "name": "Sukuma",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "suk"
+  },
+  {
+    "id": 67,
+    "name": "Haya",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "hay"
+  },
+  {
+    "id": 68,
+    "name": "Ha",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "haq"
+  },
+  {
+    "id": 69,
+    "name": "Nyamwezi",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "nym"
+  },
+  {
+    "id": 70,
+    "name": "Rwanda",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "kin"
+  },
+  {
+    "id": 71,
+    "name": "Dinka, Southwestern",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "dik"
+  },
+  {
+    "id": 72,
+    "name": "Nuer",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "nus"
+  },
+  {
+    "id": 73,
+    "name": "Swahili",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "swa"
+  },
+  {
+    "id": 74,
+    "name": "Gogo",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "gog"
+  },
+  {
+    "id": 75,
+    "name": "Makonde",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "kde"
+  },
+  {
+    "id": 76,
+    "name": "Hehe",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "heh"
+  },
+  {
+    "id": 77,
+    "name": "Nyakyusa-Ngonde",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "nyy"
+  },
+  {
+    "id": 78,
+    "name": "Luguru",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "ruf"
+  },
+  {
+    "id": 79,
+    "name": "Ganda",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "lug"
+  },
+  {
+    "id": 80,
+    "name": "Nyankore",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "nyn"
+  },
+  {
+    "id": 81,
+    "name": "Soga",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "xog"
+  },
+  {
+    "id": 82,
+    "name": "Chiga",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "cgg"
+  },
+  {
+    "id": 83,
+    "name": "Teso",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "teo"
+  },
+  {
+    "id": 84,
+    "name": "Lango",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "laj"
+  },
+  {
+    "id": 85,
+    "name": "Acholi",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "ach"
+  },
+  {
+    "id": 86,
+    "name": "Masaaba",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "myx"
+  },
+  {
+    "id": 87,
+    "name": "Lugbara",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "lgg"
+  },
+  {
+    "id": 88,
+    "name": "Tooro",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "ttj"
+  },
+  {
+    "id": 89,
+    "name": "Nyoro",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "nyo"
+  },
+  {
+    "id": 90,
+    "name": "Alur",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "alz"
+  },
+  {
+    "id": 91,
+    "name": "Konzo",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "koo"
+  },
+  {
+    "id": 92,
+    "name": "Kituba",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "mkw"
+  },
+  {
+    "id": 93,
+    "name": "Lingala",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "lin"
+  },
+  {
+    "id": 94,
+    "name": "Koongo",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "kng"
+  },
+  {
+    "id": 95,
+    "name": "Ngbaka",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "nga"
+  },
+  {
+    "id": 96,
+    "name": "Yaka",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "iyx"
+  },
+  {
+    "id": 97,
+    "name": "Dholuo",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "luo"
+  },
+  {
+    "id": 98,
+    "name": "Ekegusii",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "guz"
+  },
+  {
+    "id": 99,
+    "name": "Lubukusu",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "bxk"
+  },
+  {
+    "id": 100,
+    "name": "Nandi",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "niq"
+  },
+  {
+    "id": 101,
+    "name": "Oromo, West Central",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "gaz"
+  },
+  {
+    "id": 102,
+    "name": "Kafa",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "kbr"
+  },
+  {
+    "id": 103,
+    "name": "Armenian",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "hye"
+  },
+  {
+    "id": 104,
+    "name": "Belarusan",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "bel"
+  },
+  {
+    "id": 105,
+    "name": "Azerbaijani, North",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "azj"
+  },
+  {
+    "id": 106,
+    "name": "Russian",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "rus"
+  },
+  {
+    "id": 107,
+    "name": "Chechen",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "che"
+  },
+  {
+    "id": 108,
+    "name": "Dari",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "prs"
+  },
+  {
+    "id": 109,
+    "name": "Pashto, Southern",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "pbt"
+  },
+  {
+    "id": 110,
+    "name": "Uzbek, Southern",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "uzs"
+  },
+  {
+    "id": 111,
+    "name": "Hazaragi",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "haz"
+  },
+  {
+    "id": 112,
+    "name": "Aimaq",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "aiq"
+  },
+  {
+    "id": 113,
+    "name": "Kazakh",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "kaz"
+  },
+  {
+    "id": 114,
+    "name": "Kyrgyz",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "kir"
+  },
+  {
+    "id": 115,
+    "name": "Tajiki",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "tgk"
+  },
+  {
+    "id": 116,
+    "name": "Turkmen",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "tuk"
+  },
+  {
+    "id": 117,
+    "name": "Uzbek, Northern",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "uzn"
+  },
+  {
+    "id": 118,
+    "name": "Georgian",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "kat"
+  },
+  {
+    "id": 119,
+    "name": "Romanian",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "ron"
+  },
+  {
+    "id": 120,
+    "name": "Ukrainian",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "ukr"
+  },
+  {
+    "id": 121,
+    "name": "Tatar",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "tat"
+  },
+  {
+    "id": 122,
+    "name": "Bashkort",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "bak"
+  },
+  {
+    "id": 123,
+    "name": "Chuvash",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "chv"
+  },
+  {
+    "id": 124,
+    "name": "Bavarian",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "bar"
+  },
+  {
+    "id": 125,
+    "name": "Bulgarian",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "bul"
+  },
+  {
+    "id": 126,
+    "name": "Czech",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "ces"
+  },
+  {
+    "id": 127,
+    "name": "Slovak",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "slk"
+  },
+  {
+    "id": 128,
+    "name": "Vlaams",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "vls"
+  },
+  {
+    "id": 129,
+    "name": "Walloon",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "wln"
+  },
+  {
+    "id": 130,
+    "name": "French",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "fra"
+  },
+  {
+    "id": 131,
+    "name": "German, Swiss",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "gsw"
+  },
+  {
+    "id": 132,
+    "name": "Italian",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "ita"
+  },
+  {
+    "id": 133,
+    "name": "Sicilian",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "scn"
+  },
+  {
+    "id": 134,
+    "name": "Venetian",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "vec"
+  },
+  {
+    "id": 135,
+    "name": "Lombard",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "lmo"
+  },
+  {
+    "id": 136,
+    "name": "Piemontese",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "pms"
+  },
+  {
+    "id": 137,
+    "name": "German, Standard",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "deu"
+  },
+  {
+    "id": 138,
+    "name": "Portuguese",
+    "created_at": "2021-10-30 06:32:01",
+    "updated_at": "2021-10-30 06:32:01",
+    "code": "por"
+  },
+  {
+    "id": 139,
+    "name": "Spanish",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "spa"
+  },
+  {
+    "id": 140,
+    "name": "Catalan",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "cat"
+  },
+  {
+    "id": 141,
+    "name": "Basque",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "eus"
+  },
+  {
+    "id": 142,
+    "name": "Galician",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "glg"
+  },
+  {
+    "id": 143,
+    "name": "Aragonese",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "arg"
+  },
+  {
+    "id": 144,
+    "name": "Extremaduran",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "ext"
+  },
+  {
+    "id": 145,
+    "name": "Arabic, Egyptian Spoken",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "arz"
+  },
+  {
+    "id": 146,
+    "name": "Arabic, Saidi Spoken",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "aec"
+  },
+  {
+    "id": 147,
+    "name": "Arabic, Sudanese Spoken",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "apd"
+  },
+  {
+    "id": 148,
+    "name": "Bedawiyet",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "bej"
+  },
+  {
+    "id": 149,
+    "name": "Fur",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "fvr"
+  },
+  {
+    "id": 150,
+    "name": "Arabic, Mesopotamian Spoken",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "acm"
+  },
+  {
+    "id": 151,
+    "name": "Arabic, North Mesopotamian Spoken",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "ayp"
+  },
+  {
+    "id": 152,
+    "name": "Kurdish, Central",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "ckb"
+  },
+  {
+    "id": 153,
+    "name": "Kurdish, Northern",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "kmr"
+  },
+  {
+    "id": 154,
+    "name": "Arabic, Najdi Spoken",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "ars"
+  },
+  {
+    "id": 155,
+    "name": "Arabic, South Levantine Spoken",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "ajp"
+  },
+  {
+    "id": 156,
+    "name": "Arabic, North Levantine Spoken",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "apc"
+  },
+  {
+    "id": 157,
+    "name": "Arabic, Gulf Spoken",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "afb"
+  },
+  {
+    "id": 158,
+    "name": "Arabic, Omani Spoken",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "acx"
+  },
+  {
+    "id": 159,
+    "name": "Arabic, Hijazi Spoken",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "acw"
+  },
+  {
+    "id": 160,
+    "name": "Arabic, Taizzi-Adeni Spoken",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "acq"
+  },
+  {
+    "id": 161,
+    "name": "Arabic, Sanaani Spoken",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "ayn"
+  },
+  {
+    "id": 162,
+    "name": "Arabic, Algerian Spoken",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "arq"
+  },
+  {
+    "id": 163,
+    "name": "Kabyle",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "kab"
+  },
+  {
+    "id": 164,
+    "name": "Tachawit",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "shy"
+  },
+  {
+    "id": 165,
+    "name": "Arabic, Libyan Spoken",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "ayl"
+  },
+  {
+    "id": 166,
+    "name": "Arabic, Moroccan Spoken",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "ary"
+  },
+  {
+    "id": 167,
+    "name": "Tachelhit",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "shi"
+  },
+  {
+    "id": 168,
+    "name": "Tamazight, Central Atlas",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "tzm"
+  },
+  {
+    "id": 169,
+    "name": "Tarifit",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "rif"
+  },
+  {
+    "id": 170,
+    "name": "Arabic, Tunisian Spoken",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "aeb"
+  },
+  {
+    "id": 171,
+    "name": "Persian, Iranian",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "pes"
+  },
+  {
+    "id": 172,
+    "name": "Azerbaijani, South",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "azb"
+  },
+  {
+    "id": 173,
+    "name": "Kurdish, Southern",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "sdh"
+  },
+  {
+    "id": 174,
+    "name": "Gilaki",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "glk"
+  },
+  {
+    "id": 175,
+    "name": "Mazanderani",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "mzn"
+  },
+  {
+    "id": 176,
+    "name": "Luri, Northern",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "lrc"
+  },
+  {
+    "id": 177,
+    "name": "Bakhtiari",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "bqi"
+  },
+  {
+    "id": 178,
+    "name": "Laki",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "lki"
+  },
+  {
+    "id": 179,
+    "name": "Luri, Southern",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "luz"
+  },
+  {
+    "id": 180,
+    "name": "Turkish",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "tur"
+  },
+  {
+    "id": 181,
+    "name": "Zazaki, Southern",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "zza"
+  },
+  {
+    "id": 182,
+    "name": "Kabardian",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "kbd"
+  },
+  {
+    "id": 183,
+    "name": "Haitian Creole",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "hat"
+  },
+  {
+    "id": 184,
+    "name": "K'iche'",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "quc"
+  },
+  {
+    "id": 185,
+    "name": "Jamaican Creole English",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "jam"
+  },
+  {
+    "id": 186,
+    "name": "Hebrew",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "heb"
+  },
+  {
+    "id": 187,
+    "name": "English",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "eng"
+  },
+  {
+    "id": 188,
+    "name": "Louisiana Creole",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "lou"
+  },
+  {
+    "id": 189,
+    "name": "Japanese",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "jpn"
+  },
+  {
+    "id": 190,
+    "name": "Korean",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "kor"
+  },
+  {
+    "id": 191,
+    "name": "Mongolian, Halh",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "khk"
+  },
+  {
+    "id": 192,
+    "name": "Quechua, South Bolivian",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "quh"
+  },
+  {
+    "id": 193,
+    "name": "Aymara, Central",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "ayr"
+  },
+  {
+    "id": 194,
+    "name": "Mapudungun",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "arn"
+  },
+  {
+    "id": 195,
+    "name": "Guarani, Paraguayan",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "gug"
+  },
+  {
+    "id": 196,
+    "name": "Hunsrik",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "hrx"
+  },
+  {
+    "id": 197,
+    "name": "Quechua, Cusco",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "quz"
+  },
+  {
+    "id": 198,
+    "name": "Quechua, Ayacucho",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "quy"
+  },
+  {
+    "id": 199,
+    "name": "Umbundu",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "umb"
+  },
+  {
+    "id": 200,
+    "name": "Cokwe",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "cjk"
+  },
+  {
+    "id": 201,
+    "name": "Tswana",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "tsn"
+  },
+  {
+    "id": 202,
+    "name": "Malagasy, Plateau",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "plt"
+  },
+  {
+    "id": 203,
+    "name": "Malagasy, Southern Betsimisaraka",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "bzc"
+  },
+  {
+    "id": 204,
+    "name": "Malagasy, Sakalava",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "skg"
+  },
+  {
+    "id": 205,
+    "name": "Malagasy, Tsimihety",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "xmw"
+  },
+  {
+    "id": 206,
+    "name": "Malagasy, Tesaka",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "tkg"
+  },
+  {
+    "id": 207,
+    "name": "Malagasy, Tandroy-Mahafaly",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "tdx"
+  },
+  {
+    "id": 208,
+    "name": "Malagasy, Northern Betsimisaraka",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "bmm"
+  },
+  {
+    "id": 209,
+    "name": "Chichewa",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "nya"
+  },
+  {
+    "id": 210,
+    "name": "Tumbuka",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "tum"
+  },
+  {
+    "id": 211,
+    "name": "Yao",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "yao"
+  },
+  {
+    "id": 212,
+    "name": "Makhuwa",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "vmw"
+  },
+  {
+    "id": 213,
+    "name": "Tsonga",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "tso"
+  },
+  {
+    "id": 214,
+    "name": "Ndau",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "ndc"
+  },
+  {
+    "id": 215,
+    "name": "Lomwe",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "ngl"
+  },
+  {
+    "id": 216,
+    "name": "Sena",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "seh"
+  },
+  {
+    "id": 217,
+    "name": "Tswa",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "tsc"
+  },
+  {
+    "id": 218,
+    "name": "Makhuwa-Meetto",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "mgh"
+  },
+  {
+    "id": 219,
+    "name": "Chuwabu",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "chw"
+  },
+  {
+    "id": 220,
+    "name": "Chopi",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "cce"
+  },
+  {
+    "id": 221,
+    "name": "Ronga",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "rng"
+  },
+  {
+    "id": 222,
+    "name": "Bemba",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "bem"
+  },
+  {
+    "id": 223,
+    "name": "Sotho, Southern",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "sot"
+  },
+  {
+    "id": 224,
+    "name": "Zulu",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "zul"
+  },
+  {
+    "id": 225,
+    "name": "Afrikaans",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "afr"
+  },
+  {
+    "id": 226,
+    "name": "Xhosa",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "xho"
+  },
+  {
+    "id": 227,
+    "name": "Sotho, Northern",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "nso"
+  },
+  {
+    "id": 228,
+    "name": "Swati",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "ssw"
+  },
+  {
+    "id": 229,
+    "name": "Venda",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "ven"
+  },
+  {
+    "id": 230,
+    "name": "Ndebele",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "nbl"
+  },
+  {
+    "id": 231,
+    "name": "Tonga",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "ton"
+  },
+  {
+    "id": 232,
+    "name": "Shona",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "sna"
+  },
+  {
+    "id": 233,
+    "name": "Bengali",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "ben"
+  },
+  {
+    "id": 234,
+    "name": "Cebuano",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "ceb"
+  },
+  {
+    "id": 235,
+    "name": "Hiligaynon",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "hil"
+  },
+  {
+    "id": 236,
+    "name": "Bikol, Central",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "bcl"
+  },
+  {
+    "id": 237,
+    "name": "Waray-Waray",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "war"
+  },
+  {
+    "id": 238,
+    "name": "Bugis",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "bug"
+  },
+  {
+    "id": 239,
+    "name": "Makasar",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "mak"
+  },
+  {
+    "id": 240,
+    "name": "Gorontalo",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "gor"
+  },
+  {
+    "id": 241,
+    "name": "Malay, Manado",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "xmm"
+  },
+  {
+    "id": 242,
+    "name": "Burmese",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "mya"
+  },
+  {
+    "id": 243,
+    "name": "Shan",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "shn"
+  },
+  {
+    "id": 244,
+    "name": "Rakhine",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "rki"
+  },
+  {
+    "id": 245,
+    "name": "Karen, S'gaw",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "ksw"
+  },
+  {
+    "id": 246,
+    "name": "Karen, Pwo Eastern",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "kjp"
+  },
+  {
+    "id": 247,
+    "name": "Jingpho",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "kac"
+  },
+  {
+    "id": 248,
+    "name": "Wa, Parauk",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "prk"
+  },
+  {
+    "id": 249,
+    "name": "Tagalog",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "tgl"
+  },
+  {
+    "id": 250,
+    "name": "Ilocano",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "ilo"
+  },
+  {
+    "id": 251,
+    "name": "Pampangan",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "pam"
+  },
+  {
+    "id": 252,
+    "name": "Pangasinan",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "pag"
+  },
+  {
+    "id": 253,
+    "name": "Punjabi, Western",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "pnb"
+  },
+  {
+    "id": 254,
+    "name": "Pashto, Northern",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "pbu"
+  },
+  {
+    "id": 255,
+    "name": "Sindhi",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "snd"
+  },
+  {
+    "id": 256,
+    "name": "Balochi, Southern",
+    "created_at": "2021-10-30 06:32:02",
+    "updated_at": "2021-10-30 06:32:02",
+    "code": "bcc"
+  },
+  {
+    "id": 257,
+    "name": "Urdu",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "urd"
+  },
+  {
+    "id": 258,
+    "name": "Hindko, Northern",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "hno"
+  },
+  {
+    "id": 259,
+    "name": "Brahui",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "brh"
+  },
+  {
+    "id": 260,
+    "name": "Saraiki",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "skr"
+  },
+  {
+    "id": 261,
+    "name": "Khmer, Central",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "khm"
+  },
+  {
+    "id": 262,
+    "name": "Lao",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "lao"
+  },
+  {
+    "id": 263,
+    "name": "Malay",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "mly"
+  },
+  {
+    "id": 264,
+    "name": "Malay, Kedah",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "meo"
+  },
+  {
+    "id": 265,
+    "name": "Thai",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "tha"
+  },
+  {
+    "id": 266,
+    "name": "Thai, Northeastern",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "tts"
+  },
+  {
+    "id": 267,
+    "name": "Thai, Northern",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "nod"
+  },
+  {
+    "id": 268,
+    "name": "Thai, Southern",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "sou"
+  },
+  {
+    "id": 269,
+    "name": "Khmer, Northern",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "kxm"
+  },
+  {
+    "id": 270,
+    "name": "Malay, Pattani",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "mfa"
+  },
+  {
+    "id": 271,
+    "name": "Vietnamese",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "vie"
+  },
+  {
+    "id": 272,
+    "name": "Tay",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "tay"
+  },
+  {
+    "id": 273,
+    "name": "Muong",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "mtq"
+  },
+  {
+    "id": 274,
+    "name": "Nung",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "nut"
+  },
+  {
+    "id": 275,
+    "name": "Maranao",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "mrw"
+  },
+  {
+    "id": 276,
+    "name": "Maguindanaon",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "mdh"
+  },
+  {
+    "id": 277,
+    "name": "Tausug",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "tsg"
+  },
+  {
+    "id": 278,
+    "name": "Sinhala",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "sin"
+  },
+  {
+    "id": 279,
+    "name": "Tamil",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "tam"
+  },
+  {
+    "id": 280,
+    "name": "Javanese",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "jav"
+  },
+  {
+    "id": 281,
+    "name": "Sunda",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "sun"
+  },
+  {
+    "id": 282,
+    "name": "Madura",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "mad"
+  },
+  {
+    "id": 283,
+    "name": "Betawi",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "bew"
+  },
+  {
+    "id": 284,
+    "name": "Minangkabau",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "min"
+  },
+  {
+    "id": 285,
+    "name": "Musi",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "mui"
+  },
+  {
+    "id": 286,
+    "name": "Banjar",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "bjn"
+  },
+  {
+    "id": 287,
+    "name": "Bali",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "bcn"
+  },
+  {
+    "id": 288,
+    "name": "Aceh",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "ace"
+  },
+  {
+    "id": 289,
+    "name": "Sasak",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "sas"
+  },
+  {
+    "id": 290,
+    "name": "Batak Toba",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "bbc"
+  },
+  {
+    "id": 291,
+    "name": "Malay, Central",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "pse"
+  },
+  {
+    "id": 292,
+    "name": "Batak Dairi",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "btd"
+  },
+  {
+    "id": 293,
+    "name": "Batak Simalungun",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "bts"
+  },
+  {
+    "id": 294,
+    "name": "Batak Mandailing",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "btm"
+  },
+  {
+    "id": 295,
+    "name": "Batak Angkola",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "akb"
+  },
+  {
+    "id": 296,
+    "name": "Malay, Jambi",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "jax"
+  },
+  {
+    "id": 297,
+    "name": "Ngaju",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "nij"
+  },
+  {
+    "id": 298,
+    "name": "Hindi",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "hin"
+  },
+  {
+    "id": 299,
+    "name": "Telugu",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "tel"
+  },
+  {
+    "id": 300,
+    "name": "Oriya",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "ori"
+  },
+  {
+    "id": 301,
+    "name": "Lambadi",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "lmn"
+  },
+  {
+    "id": 302,
+    "name": "Mundari",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "unr"
+  },
+  {
+    "id": 303,
+    "name": "Nepali",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "nep"
+  },
+  {
+    "id": 304,
+    "name": "Tharu, Dangaura",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "thl"
+  },
+  {
+    "id": 305,
+    "name": "Tamang, Eastern",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "taj"
+  },
+  {
+    "id": 306,
+    "name": "Newar",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "new"
+  },
+  {
+    "id": 307,
+    "name": "Malayalam",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "mal"
+  },
+  {
+    "id": 308,
+    "name": "Kannada",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "kan"
+  },
+  {
+    "id": 309,
+    "name": "Assamese",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "asm"
+  },
+  {
+    "id": 310,
+    "name": "Bodo",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "brx"
+  },
+  {
+    "id": 311,
+    "name": "Khasi",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "kha"
+  },
+  {
+    "id": 312,
+    "name": "Meitei",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "mni"
+  },
+  {
+    "id": 313,
+    "name": "Kok Borok",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "trp"
+  },
+  {
+    "id": 314,
+    "name": "Garo",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "grt"
+  },
+  {
+    "id": 315,
+    "name": "Punjabi, Eastern",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "pan"
+  },
+  {
+    "id": 316,
+    "name": "Santhali",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "sat"
+  },
+  {
+    "id": 317,
+    "name": "Kashmiri",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "kas"
+  },
+  {
+    "id": 318,
+    "name": "Kurux",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "kru"
+  },
+  {
+    "id": 319,
+    "name": "Bhojpuri",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "bho"
+  },
+  {
+    "id": 320,
+    "name": "Ho",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "hoc"
+  },
+  {
+    "id": 321,
+    "name": "Kumaoni",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "kfy"
+  },
+  {
+    "id": 322,
+    "name": "Chhattisgarhi",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "hne"
+  },
+  {
+    "id": 323,
+    "name": "Kangri",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "xnr"
+  },
+  {
+    "id": 324,
+    "name": "Gujari",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "gju"
+  },
+  {
+    "id": 325,
+    "name": "Marathi",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "mar"
+  },
+  {
+    "id": 326,
+    "name": "Gujarati",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "guj"
+  },
+  {
+    "id": 327,
+    "name": "Varli",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "vav"
+  },
+  {
+    "id": 328,
+    "name": "Kukna",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "kex"
+  },
+  {
+    "id": 329,
+    "name": "Albanian, Tosk",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "als"
+  },
+  {
+    "id": 330,
+    "name": "Croatian",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "hrv"
+  },
+  {
+    "id": 331,
+    "name": "Slovene",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "slv"
+  },
+  {
+    "id": 332,
+    "name": "Latvian, Standard",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "lvs"
+  },
+  {
+    "id": 333,
+    "name": "Lithuanian",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "lit"
+  },
+  {
+    "id": 334,
+    "name": "Welsh",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "cym"
+  },
+  {
+    "id": 335,
+    "name": "Danish",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "dan"
+  },
+  {
+    "id": 336,
+    "name": "Finnish",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "fin"
+  },
+  {
+    "id": 337,
+    "name": "Greek",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "ell"
+  },
+  {
+    "id": 338,
+    "name": "Hungarian",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "hun"
+  },
+  {
+    "id": 339,
+    "name": "Dutch",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "nld"
+  },
+  {
+    "id": 340,
+    "name": "Norwegian",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "nor"
+  },
+  {
+    "id": 341,
+    "name": "Polish",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "pol"
+  },
+  {
+    "id": 342,
+    "name": "Bosnian",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "bos"
+  },
+  {
+    "id": 343,
+    "name": "Macedonian",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "mkd"
+  },
+  {
+    "id": 344,
+    "name": "Serbian",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "srp"
+  },
+  {
+    "id": 345,
+    "name": "Swedish",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "swe"
+  },
+  {
+    "id": 346,
+    "name": "Fulfulde, Adamawa",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "fub"
+  },
+  {
+    "id": 347,
+    "name": "Ewondo",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "ewo"
+  },
+  {
+    "id": 348,
+    "name": "Bulu",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "bum"
+  },
+  {
+    "id": 349,
+    "name": "Ghomala",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "bbj"
+  },
+  {
+    "id": 350,
+    "name": "Arabic, Chadian Spoken",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "shu"
+  },
+  {
+    "id": 351,
+    "name": "Ngambay",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "sba"
+  },
+  {
+    "id": 352,
+    "name": "Igbo",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "ibo"
+  },
+  {
+    "id": 353,
+    "name": "Ibibio",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "ibb"
+  },
+  {
+    "id": 354,
+    "name": "Anaang",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "anw"
+  },
+  {
+    "id": 355,
+    "name": "Izon",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "ijc"
+  },
+  {
+    "id": 356,
+    "name": "Akan",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "aka"
+  },
+  {
+    "id": 357,
+    "name": "Ewe",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "ewe"
+  },
+  {
+    "id": 358,
+    "name": "Dangme",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "ada"
+  },
+  {
+    "id": 359,
+    "name": "Yoruba",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "yor"
+  },
+  {
+    "id": 360,
+    "name": "Ebira",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "igb"
+  },
+  {
+    "id": 361,
+    "name": "Edo",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "bin"
+  },
+  {
+    "id": 362,
+    "name": "Nupe-Nupe-Tako",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "nup"
+  },
+  {
+    "id": 363,
+    "name": "Igala",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "igl"
+  },
+  {
+    "id": 364,
+    "name": "Abron",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "abr"
+  },
+  {
+    "id": 365,
+    "name": "Dagbani",
+    "created_at": "2021-10-30 06:32:03",
+    "updated_at": "2021-10-30 06:32:03",
+    "code": "dag"
+  },
+  {
+    "id": 366,
+    "name": "Hausa",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "hau"
+  },
+  {
+    "id": 367,
+    "name": "Kanuri, Central",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "knc"
+  },
+  {
+    "id": 368,
+    "name": "Tiv",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "tiv"
+  },
+  {
+    "id": 369,
+    "name": "Berom",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "bom"
+  },
+  {
+    "id": 370,
+    "name": "Gbagyi",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "gbr"
+  },
+  {
+    "id": 371,
+    "name": "Fon",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "fon"
+  },
+  {
+    "id": 372,
+    "name": "Moore",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "mos"
+  },
+  {
+    "id": 373,
+    "name": "Baoule",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "bci"
+  },
+  {
+    "id": 374,
+    "name": "Jula",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "dyu"
+  },
+  {
+    "id": 375,
+    "name": "Dan",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "dnj"
+  },
+  {
+    "id": 376,
+    "name": "Senoufo, Cebaara",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "sef"
+  },
+  {
+    "id": 377,
+    "name": "Zarma",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "dje"
+  },
+  {
+    "id": 378,
+    "name": "Kabiye",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "kbp"
+  },
+  {
+    "id": 379,
+    "name": "Pular",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "fuf"
+  },
+  {
+    "id": 380,
+    "name": "Maninkakan, Eastern",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "emk"
+  },
+  {
+    "id": 381,
+    "name": "Susu",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "sus"
+  },
+  {
+    "id": 382,
+    "name": "Mende",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "men"
+  },
+  {
+    "id": 383,
+    "name": "Themne",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "tem"
+  },
+  {
+    "id": 384,
+    "name": "Bamanankan",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "bam"
+  },
+  {
+    "id": 385,
+    "name": "Soninke",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "snk"
+  },
+  {
+    "id": 386,
+    "name": "Senoufo, Mamara",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "myk"
+  },
+  {
+    "id": 387,
+    "name": "Fulfulde, Maasina",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "ffm"
+  },
+  {
+    "id": 388,
+    "name": "Hassaniyya",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "mey"
+  },
+  {
+    "id": 389,
+    "name": "Wolof",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "wol"
+  },
+  {
+    "id": 390,
+    "name": "Pulaar",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "fuc"
+  },
+  {
+    "id": 391,
+    "name": "Serer-Sine",
+    "created_at": "2021-10-30 06:32:04",
+    "updated_at": "2021-10-30 06:32:04",
+    "code": "srr"
+  }
+]

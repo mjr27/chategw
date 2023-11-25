@@ -1,0 +1,12 @@
+{% assign chapter = item.Chapter %}
+{% assign children = item.Children %}
+<navPoint id="content{{ chapter.FileNumberFormatted }}" class="chapter" playOrder="{{ chapter.PlayOrder }}">
+    <navLabel>
+        <text>{{ chapter.Title }}</text>
+    </navLabel>
+    <content src="{% if  chapter.File != "toc.xhtml" %}xhtml/{% endif %}{{ chapter.File }}"></content>
+    {% for child in children %}
+        {% render "toc-ncx-block", item: child %}
+    {% endfor %}
+    
+</navPoint>

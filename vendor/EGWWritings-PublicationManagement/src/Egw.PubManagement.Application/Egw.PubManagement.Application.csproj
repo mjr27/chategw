@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.8.0" />
+        <PackageReference Include="HotChocolate.Types.Scalars.Upload" Version="13.5.1"/>
+        <PackageReference Include="ISBN" Version="1.4.0"/>
+        <PackageReference Include="Mapster.EFCore" Version="5.1.1" />
+        <PackageReference Include="WhiteEstate.DocFormat.Serialization" Version="1.1.1"/>
+        <PackageReference Include="z440.atl.core" Version="5.12.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\utilities\Egw.PubManagement.LegacyImport\Egw.PubManagement.LegacyImport.csproj"/>
+        <ProjectReference Include="..\Egw.PubManagement.Core\Egw.PubManagement.Core.csproj"/>
+        <ProjectReference Include="..\Egw.PubManagement.EpubExport\Egw.PubManagement.EpubExport.csproj" />
+        <ProjectReference Include="..\Egw.PubManagement.Persistence\Egw.PubManagement.Persistence.csproj"/>
+        <ProjectReference Include="..\Egw.PubManagement.Storage\Egw.PubManagement.Storage.csproj"/>
+    </ItemGroup>
+    <ItemGroup>
+        <None Remove="Resources\**\*"/>
+        <EmbeddedResource Include="Resources\**\*"/>
+    </ItemGroup>
+</Project>

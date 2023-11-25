@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="AngleSharp" Version="1.0.5" />
+        <PackageReference Include="CliFx" Version="2.3.4"/>
+        <PackageReference Include="CsvHelper" Version="30.0.1" />
+        <PackageReference Include="Dapper" Version="2.1.15" />
+        <PackageReference Include="MediatR" Version="12.1.1"/>
+        <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="7.0.0"/>
+        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0"/>
+        <PackageReference Include="ShellProgressBar" Version="5.2.0"/>
+        <PackageReference Include="Z.EntityFramework.Plus.EFCore" Version="7.100.0.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\src\Egw.PubManagement.Application\Egw.PubManagement.Application.csproj"/>
+        <ProjectReference Include="..\..\src\Egw.PubManagement.Persistence\Egw.PubManagement.Persistence.csproj"/>
+        <ProjectReference Include="..\..\src\WhiteEstate.DocFormat.Json\WhiteEstate.DocFormat.Json.csproj"/>
+        <ProjectReference Include="..\Egw.PubManagement.LegacyImport\Egw.PubManagement.LegacyImport.csproj"/>
+    </ItemGroup>
+
+</Project>

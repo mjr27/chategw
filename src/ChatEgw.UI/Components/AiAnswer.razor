@@ -1,0 +1,92 @@
+@using ChatEgw.UI.Services
+@using System.Net
+@using ChatEgw.UI.Application
+@using ChatEgw.UI.Application.Models
+
+<MudElement Class="mb-2" HtmlTag="div">
+    <MudText>
+        @Answer.Id.
+        @if (Answer.Answer is null)
+        {
+            @if (Answer.Uri is not null)
+            {
+                <MudLink Href="@FixUri(Answer.Uri)" Target="_blank">
+                    @Answer.ReferenceCode
+                </MudLink>
+            }
+            else
+            {
+                @Answer.ReferenceCode
+            }
+        }
+        else
+        {
+            @if (Answer.Uri is not null)
+            {
+                <MudLink Href="@FixUri(Answer.Uri)" Target="_blank">@Answer.Answer</MudLink>
+            }
+            else
+            {
+                @Answer.Answer
+            }
+            <MudChip Size="Size.Small">@Answer.ReferenceCode</MudChip>
+        }
+
+    </MudText>
+    <MudText Typo="Typo.body2">
+        @if (Answer.Snippet == Answer.Content)
+        {
+            @FixContent(Answer.Snippet)
+        }
+        else
+        {
+            if (_expanded)
+            {
+                @FixContent(Answer.Content)
+                <MudIconButton Icon="@Icons.Material.Filled.ExpandLess" Size="Size.Small" OnClick="ToggleExpand"/>
+            }
+            else
+            {
+                @FixContent(Answer.Snippet)
+                <span>&nbsp;</span>
+                <MudIconButton Icon="@Icons.Material.Filled.ExpandMore" Size="Size.Small" OnClick="ToggleExpand"/>
+            }
+        }
+    </MudText>
+    <MudProgressLinear Color="Color.Primary" Value="@(Answer.Score * 100)" Class="mt-1" Style="opacity: 0.5" Size="Size.Small"/>
+</MudElement>
+
+@code {
+
+    [Parameter]
+    [EditorRequired]
+    public required AnswerResponse Answer { get; set; }
+
+    [Inject]
+    public required ISearchService SearchService { get; set; }
+    
+
+    private string? FixUri(Uri? uri)
+    {
+        return uri switch {
+        {Host:"egw.bz"} => $"https://egwwritings.org/read?panels=p{uri.PathAndQuery.Split('/').Last()}",
+            not null => uri.AbsoluteUri,
+            null => null,
+            };
+    }
+
+    private MarkupString FixContent(string content)
+    {
+        content = WebUtility.HtmlEncode(content);
+        content = content.Replace("###BEGIN###", "<mark>");
+        content = content.Replace("###END###", "</mark>");
+        return (MarkupString)content;
+    }
+
+    bool _expanded = false;
+    private void ToggleExpand()
+    {
+        _expanded = !_expanded;
+    }
+
+}

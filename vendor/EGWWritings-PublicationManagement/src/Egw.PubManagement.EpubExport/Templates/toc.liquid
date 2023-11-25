@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="{{ language }}"
+      dir="{{ langDir }}">
+<head>
+    <title>{{ publicationTitle | decode }}</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="css/bookstyles.css"/>
+</head>
+<body>
+<nav epub:type="toc" id="toc">
+    <ol class="no-num">
+        {% for chapter in tree %}{% render "toc-block", item: chapter %}{% endfor %}
+    </ol>
+</nav>
+{% if isPagesFound == true %}
+    <nav role="doc-pagelist" aria-label="Page list" epub:type="page-list" hidden="">
+        <ol>
+            {% for chapter in chapters %}
+                {% for page in chapter.Pages %}
+                    <li><a href="xhtml/{{ page.ContentSrc }}">{{ page.PageNumber }}</a></li>
+                {% endfor %}
+            {% endfor %}
+        </ol>
+    </nav>
+{% endif %}
+</body>
+</html>

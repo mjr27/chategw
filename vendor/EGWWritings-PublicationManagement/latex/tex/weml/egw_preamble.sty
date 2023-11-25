@@ -1,0 +1,95 @@
+%! suppress = DiscouragedUseOfDef
+%! suppress = PackageSubdirectoryInspection
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{egw_preamble}[2023/07/06 EGW Publication Addons]
+\RequirePackage{xkeyval}
+\def\@documentlanguage{}
+\DeclareOptionX{lang}[eng]{\def\@documentlanguage{#1}}
+\ProcessOptionsX
+\RequirePackage{import}
+\RequirePackage{ifluatex}
+\RequirePackage{graphicx}
+\RequirePackage{luacode}
+\RequirePackage{xstring}
+\RequirePackage{tikz}
+% Table of contents
+\newcommand\wToc{
+    \begingroup
+    \tableofcontents
+    \thispagestyle{empty}
+    \endgroup
+    \mainmatter
+}
+\newcommand\font@sans{Noto Sans}
+\newcommand\font@serif{Noto Serif}
+\newcommand\font@mono{Noto Mono}
+\newcommand\egwRenderPreface\@empty
+\newcommand\egwRenderCopyright{Copyright~\copyright~\the\year{}\\Ellen G. White Estate, Inc.}
+%! suppress = FileNotFound
+%! suppress = PackageNotInstalled
+\RequirePackage{egw_lang_\@documentlanguage}
+
+% Title page
+\newcommand\wTitlePage{
+    \begin{titlepage}
+        \begin{center}
+            \begin{spacing}{1.25}
+                \vspace*{1em}
+                \vfill
+
+                \par\noindent\rule{\textwidth}{1.5pt}
+                {\par\huge\bfseries\@title\par}
+                \par\noindent\rule{\textwidth}{1.5pt}
+
+                \vfill
+                \vfill
+                {\par \begin{spacing}{1.25}
+                          \Large \bfseries\@author
+                \end{spacing}}
+                \vfill
+                {\par\Large\bfseries\@date\par}
+
+                \vfill
+                \vfill
+                {\par\large \bfseries \egwRenderCopyright}
+            \end{spacing}
+        \end{center}
+    \end{titlepage}
+}
+
+% Page cover
+%\newcommand\@cover\undefined
+\newcommand{\cover}[1]{\def\@cover{#1}}
+\newcommand{\wCoverPage}[1]{%
+    \IfFileExists{#1}{%
+        \begin{otherlanguage}{english}
+            \pagenumbering{gobble}
+            \thispagestyle{empty}
+            \begingroup
+            \begin{tikzpicture}[remember picture, overlay]
+                \node at (current page.center) {%
+                    \includegraphics[width=\paperwidth,height=\paperheight]{#1}%
+                };
+            \end{tikzpicture}
+            \endgroup
+        \end{otherlanguage}}{}%
+}
+
+% Preamble
+\newcommand\egwPreamble {
+    \frontmatter
+    \ifx\@cover\undefined{}\else{\wCoverPage{\@cover}}\fi
+    \wTitlePage
+    \cleardoublepage
+    \pagenumbering{roman}
+    \egwRenderPreface
+    \raggedbottom
+    \pagebreak
+}
+
+\newcommand\wInformation{%
+}
+
+\renewcommand{\pagenumbering}[1]{\gdef\thepage{\csname @#1\endcsname\c@page}}
+\endinput
+

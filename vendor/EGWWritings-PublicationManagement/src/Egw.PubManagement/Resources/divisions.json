@@ -1,0 +1,146 @@
+﻿[
+  {
+    "id": 1,
+    "name": "General Conference",
+    "domain": "GC",
+    "parent_id": null,
+    "created_at": "2021-10-30 06:28:37",
+    "updated_at": "2021-10-30 06:28:37"
+  },
+  {
+    "id": 2,
+    "name": "Rwenzori Field",
+    "domain": "SWUF",
+    "parent_id": null,
+    "created_at": "2021-10-30 06:28:37",
+    "updated_at": "2021-10-30 06:28:37"
+  },
+  {
+    "id": 3,
+    "name": "Chinese Union Mission",
+    "domain": "CHUM",
+    "parent_id": 1,
+    "created_at": "2021-10-30 06:28:37",
+    "updated_at": "2021-10-30 06:28:37"
+  },
+  {
+    "id": 4,
+    "name": "East-Central Africa Division",
+    "domain": "ECD",
+    "parent_id": 1,
+    "created_at": "2021-10-30 06:28:37",
+    "updated_at": "2021-10-30 06:28:37"
+  },
+  {
+    "id": 5,
+    "name": "Euro-Asia Division",
+    "domain": "ESD",
+    "parent_id": 1,
+    "created_at": "2021-10-30 06:28:37",
+    "updated_at": "2021-10-30 06:28:37"
+  },
+  {
+    "id": 6,
+    "name": "Inter-European Division",
+    "domain": "EUD",
+    "parent_id": 1,
+    "created_at": "2021-10-30 06:28:37",
+    "updated_at": "2021-10-30 06:28:37"
+  },
+  {
+    "id": 7,
+    "name": "Middle East and North Africa Union Mission",
+    "domain": "GMEU",
+    "parent_id": 1,
+    "created_at": "2021-10-30 06:28:37",
+    "updated_at": "2021-10-30 06:28:37"
+  },
+  {
+    "id": 8,
+    "name": "Inter-American Division",
+    "domain": "IAD",
+    "parent_id": 1,
+    "created_at": "2021-10-30 06:28:37",
+    "updated_at": "2021-10-30 06:28:37"
+  },
+  {
+    "id": 9,
+    "name": "Israel Field",
+    "domain": "ISRF",
+    "parent_id": 1,
+    "created_at": "2021-10-30 06:28:37",
+    "updated_at": "2021-10-30 06:28:37"
+  },
+  {
+    "id": 10,
+    "name": "North American Division",
+    "domain": "NAD",
+    "parent_id": 1,
+    "created_at": "2021-10-30 06:28:37",
+    "updated_at": "2021-10-30 06:28:37"
+  },
+  {
+    "id": 11,
+    "name": "Northern Asia-Pacific Division",
+    "domain": "NSD",
+    "parent_id": 1,
+    "created_at": "2021-10-30 06:28:37",
+    "updated_at": "2021-10-30 06:28:37"
+  },
+  {
+    "id": 12,
+    "name": "South American Division",
+    "domain": "SAD",
+    "parent_id": 1,
+    "created_at": "2021-10-30 06:28:37",
+    "updated_at": "2021-10-30 06:28:37"
+  },
+  {
+    "id": 13,
+    "name": "Southern Africa-Indian Ocean Division",
+    "domain": "SID",
+    "parent_id": 1,
+    "created_at": "2021-10-30 06:28:37",
+    "updated_at": "2021-10-30 06:28:37"
+  },
+  {
+    "id": 14,
+    "name": "South Pacific Division",
+    "domain": "SPD",
+    "parent_id": 1,
+    "created_at": "2021-10-30 06:28:37",
+    "updated_at": "2021-10-30 06:28:37"
+  },
+  {
+    "id": 15,
+    "name": "Southern Asia-Pacific Division",
+    "domain": "SSD",
+    "parent_id": 1,
+    "created_at": "2021-10-30 06:28:37",
+    "updated_at": "2021-10-30 06:28:37"
+  },
+  {
+    "id": 16,
+    "name": "Southern Asia Division",
+    "domain": "SUD",
+    "parent_id": 1,
+    "created_at": "2021-10-30 06:28:37",
+    "updated_at": "2021-10-30 06:28:37"
+  },
+  {
+    "id": 17,
+    "name": "Trans-European Division",
+    "domain": "TED",
+    "parent_id": 1,
+    "created_at": "2021-10-30 06:28:37",
+    "updated_at": "2021-10-30 06:28:37"
+  },
+  {
+    "id": 18,
+    "name": "West-Central Africa Division",
+    "domain": "WAD",
+    "parent_id": 1,
+    "created_at": "2021-10-30 06:28:37",
+    "updated_at": "2021-10-30 06:28:37"
+  }
+]

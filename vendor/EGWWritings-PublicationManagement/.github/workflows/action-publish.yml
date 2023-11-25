@@ -1,0 +1,136 @@
+name: "Build & publish"
+
+on:
+  push:
+    branches: [ master ]
+    tags: [ 'v*.*.*' ]
+  pull_request:
+    branches: [ master ]
+env:
+  CONTEXT_PATH: .
+  DOCKER_PATH: ./Dockerfile
+  DOCKER_IMAGE: egwestate/egw-pubmanagement-api
+  DOTNET_VERSION: 7.0.x
+jobs:
+  test:
+    services:
+      postgres:
+        # Docker Hub image
+        image: postgres
+        # Provide the password for postgres
+        env:
+          POSTGRES_PASSWORD: postgres
+        # Set health checks to wait until postgres has started
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          # Maps tcp port 5432 on service container to the host
+          - 5432:5432
+    env:
+      ConnectionStrings__Publications: Host=localhost;Username=postgres;Password=postgres;Database=test_db;Include Error Detail=true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+      - name: Add source
+        run: dotnet nuget add source --store-password-in-clear-text -n "GPR" -u ${{ secrets.GPR_USERNAME }} -p ${{ secrets.GPR_TOKEN }} https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
+      - name: Install dependencies
+        run: dotnet restore
+        working-directory: .
+      - name: Build
+        run: dotnet build --no-restore
+        working-directory: .
+      - name: Test
+        run: dotnet test --no-restore --verbosity normal
+        working-directory: .
+  publish:
+    runs-on: ubuntu-latest
+    needs: 
+      - test
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+      - name: Add source
+        run: |
+          dotnet new nugetconfig
+          dotnet nuget add source --configfile nuget.config --store-password-in-clear-text -n "GPR" -u ${{ secrets.GPR_USERNAME }} -p ${{ secrets.GPR_TOKEN }} https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
+      - name: Docker meta
+        id: meta
+        uses: docker/metadata-action@v4
+        with:
+          # list of Docker images to use as base name for tags
+          images: |
+            ${{ env.DOCKER_IMAGE }}
+          # generate Docker tags based on the following events/attributes
+          tags: |
+            type=schedule
+            type=ref,event=branch
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=sha
+      - name: Login to DockerHub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Build and push
+        uses: docker/build-push-action@v4
+        with:
+          context: ${{ env.CONTEXT_PATH }}
+          file: ${{ env.DOCKER_PATH }}
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+  publish-preview:
+    runs-on: ubuntu-latest
+    needs:
+      - test
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+      - name: Add source
+        run: |
+          dotnet new nugetconfig
+          dotnet nuget add source --configfile nuget.config --store-password-in-clear-text -n "GPR" -u ${{ secrets.GPR_USERNAME }} -p ${{ secrets.GPR_TOKEN }} https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
+      - name: Docker meta
+        id: meta
+        uses: docker/metadata-action@v4
+        with:
+          # list of Docker images to use as base name for tags
+          images: |
+            ${{ env.DOCKER_IMAGE }}-preview
+          # generate Docker tags based on the following events/attributes
+          tags: |
+            type=schedule
+            type=ref,event=branch
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=sha
+      - name: Login to DockerHub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Build and push
+        uses: docker/build-push-action@v4
+        with:
+          context: ${{ env.CONTEXT_PATH }}
+          file: utilities/Egw.PubManagement.Preview/Dockerfile
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}

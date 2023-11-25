@@ -1,0 +1,1417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bible>
+    <book name="Genesis" code="Gen" index="1" chapters="50">
+        <syn lang="en">gen</syn>
+        <syn lang="en">ge</syn>
+        <syn lang="en">gn</syn>
+        <syn lang="en">Genesis</syn>
+        <syn lang="ces">1Mojžíšova</syn>
+        <syn lang="slk">1Mojžišova</syn>
+        <syn lang="slk">1.Mojžišova</syn>
+        <syn lang="zh">創世記</syn>
+        <syn lang="zh">创世纪</syn>
+        <syn lang="fr">Genèse</syn>
+        <syn lang="de">1Mose</syn>
+        <syn lang="de">1 Mose</syn>
+        <syn lang="it">Genesi</syn>
+        <syn lang="pl">1Mojżeszowa</syn>
+        <syn lang="pt">Gênesis</syn>
+        <syn lang="ro">Geneza</syn>
+        <syn lang="ru">Бытие</syn>
+        <syn lang="es">Génesis</syn>
+        <syn lang="ua">Буття</syn>
+    </book>
+    <book name="Exodus" code="Exod" index="2" chapters="40">
+        <syn lang="en">exod</syn>
+        <syn lang="en">exo</syn>
+        <syn lang="en">ex</syn>
+        <syn lang="en">Exodus</syn>
+        <syn lang="ces">2Mojžíšova</syn>
+        <syn lang="slk">2Mojžišova</syn>
+        <syn lang="slk">2 Mojžišova</syn>
+        <syn lang="zh">出埃及記</syn>
+        <syn lang="zh">出埃及记</syn>
+        <syn lang="fr">Exode</syn>
+        <syn lang="de">2Mose</syn>
+        <syn lang="it">Esodo</syn>
+        <syn lang="pl">2Mojżeszowa</syn>
+        <syn lang="pt">Êxodo</syn>
+        <syn lang="ro">Exodul</syn>
+        <syn lang="ru">Исход</syn>
+        <syn lang="es">Éxodo</syn>
+        <syn lang="ua">Вихід</syn>
+    </book>
+    <book name="Leviticus" code="Lev" index="3" chapters="27">
+        <syn lang="en">Leviticus</syn>
+        <syn lang="en">lev</syn>
+        <syn lang="en">le</syn>
+        <syn lang="en">lv</syn>
+        <syn lang="ces">3Mojžíšova</syn>
+        <syn lang="slk">3Mojžišova</syn>
+        <syn lang="zh">利未記</syn>
+        <syn lang="zh">利未记</syn>
+        <syn lang="fr">Lévitique</syn>
+        <syn lang="de">3Mose</syn>
+        <syn lang="it">Levitico</syn>
+        <syn lang="pl">3Mojżeszowa</syn>
+        <syn lang="pt">Levítico</syn>
+        <syn lang="ro">Leviticul</syn>
+        <syn lang="ro">Levitic</syn>
+        <syn lang="ru">Левит</syn>
+        <syn lang="es">Levítico</syn>
+        <syn lang="ua">Левит</syn>
+    </book>
+    <book name="Numbers" code="Num" index="4" chapters="36">
+        <syn lang="en">num</syn>
+        <syn lang="en">nm</syn>
+        <syn lang="en">nmb</syn>
+        <syn lang="en">nu</syn>
+        <syn lang="en">nb</syn>
+        <syn lang="ces">4Mojžíšova</syn>
+        <syn lang="slk">4Mojžišova</syn>
+        <syn lang="zh">民數記</syn>
+        <syn lang="zh">民数记</syn>
+        <syn lang="fr">Nombres</syn>
+        <syn lang="de">4Mose</syn>
+        <syn lang="it">Numeri</syn>
+        <syn lang="pl">4Mojżeszowa</syn>
+        <syn lang="pt">Números</syn>
+        <syn lang="ro">Numeri</syn>
+        <syn lang="ru">Числа</syn>
+        <syn lang="es">Números</syn>
+        <syn lang="ua">Числа</syn>
+    </book>
+    <book name="Deuteronomy" code="Deut" index="5" chapters="34">
+        <syn lang="en">deut</syn>
+        <syn lang="en">de</syn>
+        <syn lang="en">dt</syn>
+        <syn lang="ces">5Mojžíšova</syn>
+        <syn lang="ces">5Mojžíšova</syn>
+        <syn lang="slk">5Mojžišova</syn>
+        <syn lang="zh">申命記</syn>
+        <syn lang="zh">申命记</syn>
+        <syn lang="fr">Deutéronome</syn>
+        <syn lang="de">5Mose</syn>
+        <syn lang="it">Deuteronomio</syn>
+        <syn lang="pl">5Mojżeszowa</syn>
+        <syn lang="pt">Deuteronômio</syn>
+        <syn lang="ro">Deuteronomul</syn>
+        <syn lang="ro">Deuteronom</syn>
+        <syn lang="ru">Второзаконие</syn>
+        <syn lang="es">Deuteronomio</syn>
+        <syn lang="ua">ПовторенняЗакону</syn>
+        <syn lang="ua">Повторення Закону</syn>
+    </book>
+    <book name="Joshua" code="Josh" index="6" chapters="24">
+        <syn lang="en">josh</syn>
+        <syn lang="en">jos</syn>
+        <syn lang="en">jsh</syn>
+        <syn lang="ces">Jozue</syn>
+        <syn lang="slk">Józua</syn>
+        <syn lang="zh">約書亞記</syn>
+        <syn lang="fr">Josué</syn>
+        <syn lang="de">Josua</syn>
+        <syn lang="it">Giosué</syn>
+        <syn lang="it">Giosuè</syn>
+        <syn lang="pl">Jozuego</syn>
+        <syn lang="pt">Josué</syn>
+        <syn lang="ro">Iosua</syn>
+        <syn lang="ru">ИисусаНавина</syn>
+        <syn lang="ru">Иисуса Навина</syn>
+        <syn lang="bg">Исус Навиев</syn>
+        <syn lang="es">Josué</syn>
+        <syn lang="ua">ІсусаНавина</syn>
+        <syn lang="ua">Ісуса Навина</syn>
+    </book>
+    <book name="Judges" code="Judg" index="7" chapters="21">
+        <syn lang="en">judges</syn>
+        <syn lang="en">judg</syn>
+        <syn lang="en">jdg</syn>
+        <syn lang="en">jg</syn>
+        <syn lang="en">judgs</syn>
+        <syn lang="ces">Soudců</syn>
+        <syn lang="slk">Sudcov</syn>
+        <syn lang="zh">士師記</syn>
+        <syn lang="fr">Juges</syn>
+        <syn lang="de">Richter</syn>
+        <syn lang="it">Giudici</syn>
+        <syn lang="pl">Sędziów</syn>
+        <syn lang="pt">Juízes</syn>
+        <syn lang="ro">Judecători</syn>
+        <syn lang="ro">Judecătorii</syn>
+        <syn lang="ru">Судей</syn>
+        <syn lang="es">Jueces</syn>
+        <syn lang="ua">Суддів</syn>
+    </book>
+    <book name="Ruth" code="Ruth" index="8" chapters="4">
+        <syn lang="en">rth</syn>
+        <syn lang="en">ru</syn>
+        <syn lang="en">jsh</syn>
+        <syn lang="ces">Rút</syn>
+        <syn lang="zh">路得記</syn>
+        <syn lang="fr">Ruth</syn>
+        <syn lang="de">Rut</syn>
+        <syn lang="it">Rut</syn>
+        <syn lang="pl">Rut</syn>
+        <syn lang="pt">Rute</syn>
+        <syn lang="ro">Rut</syn>
+        <syn lang="ru">Руфь</syn>
+        <syn lang="es">Rut</syn>
+        <syn lang="ua">Рут</syn>
+    </book>
+    <book name="1 Samuel" code="1Sam" index="9" chapters="31">
+        <syn lang="en">1Samuel</syn>
+        <syn lang="en">1 Sam</syn>
+        <syn lang="en">1 Sm</syn>
+        <syn lang="en">1 Sa</syn>
+        <syn lang="en">1 S</syn>
+        <syn lang="en">I Sam</syn>
+        <syn lang="en">1Sam</syn>
+        <syn lang="en">1Sa</syn>
+        <syn lang="en">1S</syn>
+        <syn lang="en">1st Samuel</syn>
+        <syn lang="en">1st Sam</syn>
+        <syn lang="en">First Samuel</syn>
+        <syn lang="en">First Sam</syn>
+        <syn lang="ces">1Samuelova</syn>
+        <syn lang="zh">撒母耳記上</syn>
+        <syn lang="fr">1Samuel</syn>
+        <syn lang="de">1Samuel</syn>
+        <syn lang="it">1Samuele</syn>
+        <syn lang="pl">1Samuela</syn>
+        <syn lang="pt">1Samuel</syn>
+        <syn lang="ro">1Samuel</syn>
+        <syn lang="ru">1Царств</syn>
+        <syn lang="bg">1Царе</syn>
+        <syn lang="es">1Samuel</syn>
+        <syn lang="ua">1Самуїлова</syn>
+    </book>
+    <book name="2 Samuel" code="2Sam" index="10" chapters="24">
+        <syn lang="en">2Samuel</syn>
+        <syn lang="en">2 Sam</syn>
+        <syn lang="en">2 Sm</syn>
+        <syn lang="en">2 Sa</syn>
+        <syn lang="en">2 S</syn>
+        <syn lang="en">II Sam</syn>
+        <syn lang="en">II Sa</syn>
+        <syn lang="en">2Sam</syn>
+        <syn lang="en">2Sa</syn>
+        <syn lang="en">2S</syn>
+        <syn lang="en">2nd Samuel</syn>
+        <syn lang="en">2nd Sam</syn>
+        <syn lang="en">Second Samuel</syn>
+        <syn lang="en">Second Sam</syn>
+        <syn lang="ces">2Samuelova</syn>
+        <syn lang="zh">撒母耳記下</syn>
+        <syn lang="zh">撒母耳记下</syn>
+        <syn lang="fr">2Samuel</syn>
+        <syn lang="de">2Samuel</syn>
+        <syn lang="it">2Samuele</syn>
+        <syn lang="pl">2Samuela</syn>
+        <syn lang="pt">2Samuel</syn>
+        <syn lang="ro">2Samuel</syn>
+        <syn lang="ru">2Царств</syn>
+        <syn lang="bg">2Царе</syn>
+        <syn lang="es">2Samuel</syn>
+        <syn lang="ua">2Самуїлова</syn>
+    </book>
+    <book name="1 Kings" code="1Kgs" index="11" chapters="22">
+        <syn lang="en">1 Kings</syn>
+        <syn lang="en">1Kings</syn>
+        <syn lang="en">1 Kgs</syn>
+        <syn lang="en">1 Ki</syn>
+        <syn lang="en">1Kgs</syn>
+        <syn lang="en">1Kin</syn>
+        <syn lang="en">1Ki</syn>
+        <syn lang="en">1K</syn>
+        <syn lang="en">I Kgs</syn>
+        <syn lang="en">I Ki</syn>
+        <syn lang="en">1st Kings</syn>
+        <syn lang="en">1st Kgs</syn>
+        <syn lang="en">First Kings</syn>
+        <syn lang="en">First Kgs</syn>
+        <syn lang="ces">1Královská</syn>
+        <syn lang="slk">1Kráľov</syn>
+        <syn lang="zh">列王紀上</syn>
+        <syn lang="zh">列王记上</syn>
+        <syn lang="fr">1Rois</syn>
+        <syn lang="de">1Könige</syn>
+        <syn lang="de">1Koenige</syn>
+        <syn lang="it">1Re</syn>
+        <syn lang="pl">1Królewska</syn>
+        <syn lang="pt">1Reis</syn>
+        <syn lang="ro">1Împăraţi</syn>
+        <syn lang="ro">1 Împăraţi</syn>
+        <syn lang="ro">1 Împărați</syn>
+        <syn lang="ru">3Царств</syn>
+        <syn lang="bg">3Царе</syn>
+        <syn lang="es">1Reyes</syn>
+        <syn lang="ua">1Царів</syn>
+    </book>
+    <book name="2 Kings" code="2Kgs" index="12" chapters="25">
+        <syn lang="en">2 Kings</syn>
+        <syn lang="en">2Kings</syn>
+        <syn lang="en">2 Kgs</syn>
+        <syn lang="en">2 Ki</syn>
+        <syn lang="en">2Kgs</syn>
+        <syn lang="en">2Kin</syn>
+        <syn lang="en">2Ki</syn>
+        <syn lang="en">2K</syn>
+        <syn lang="en">II Kgs</syn>
+        <syn lang="en">II Ki</syn>
+        <syn lang="en">2nd Kings</syn>
+        <syn lang="en">2nd Kgs</syn>
+        <syn lang="en">Second Kings</syn>
+        <syn lang="en">Second Kgs</syn>
+        <syn lang="ces">2Královská</syn>
+        <syn lang="slk">2Kráľov</syn>
+        <syn lang="zh">列王紀下</syn>
+        <syn lang="zh">列王记下</syn>
+        <syn lang="fr">2Rois</syn>
+        <syn lang="de">2Könige</syn>
+        <syn lang="de">2Koenige</syn>
+        <syn lang="it">2Re</syn>
+        <syn lang="pl">2Królewska</syn>
+        <syn lang="pt">2Reis</syn>
+        <syn lang="ro">2Împăraţi</syn>
+        <syn lang="ro">2 Împăraţi</syn>
+        <syn lang="ro">2 Împărați</syn>
+        <syn lang="ru">4Царств</syn>
+        <syn lang="bg">4Царе</syn>
+        <syn lang="es">2Reyes</syn>
+        <syn lang="ua">2Царів</syn>
+    </book>
+    <book name="1 Chronicles" code="1Chr" index="13" chapters="29">
+        <syn lang="en">1Chronicles</syn>
+        <syn lang="en">1 Chron</syn>
+        <syn lang="en">1 Chr</syn>
+        <syn lang="en">1 Ch</syn>
+        <syn lang="en">1Chron</syn>
+        <syn lang="en">1Chr</syn>
+        <syn lang="en">1Ch</syn>
+        <syn lang="en">I Chron</syn>
+        <syn lang="en">I Chr</syn>
+        <syn lang="en">I Ch</syn>
+        <syn lang="en">1st Chronicles</syn>
+        <syn lang="en">1st Chron</syn>
+        <syn lang="en">First Chronicles</syn>
+        <syn lang="en">First Chron</syn>
+        <syn lang="ces">1Paralipomenon</syn>
+        <syn lang="slk">1Paralipomenon</syn>
+        <syn lang="zh">歷代志上</syn>
+        <syn lang="zh">历代志上</syn>
+        <syn lang="fr">1Chroniques</syn>
+        <syn lang="de">1Chronik</syn>
+        <syn lang="it">1Cronache</syn>
+        <syn lang="pl">1Kronik</syn>
+        <syn lang="pt">1Crônicas</syn>
+        <syn lang="pt">1 Crônicas</syn>
+        <syn lang="ro">1Cronici</syn>
+        <syn lang="ru">1Паралипоменон</syn>
+        <syn lang="bg">1Летописи</syn>
+        <syn lang="bg">1 Летописи</syn>
+        <syn lang="es">1Crónicas</syn>
+        <syn lang="ua">1Хронік</syn>
+    </book>
+    <book name="2 Chronicles" code="2Chr" index="14" chapters="36">
+        <syn lang="en">2Chronicles</syn>
+        <syn lang="en">2 Chron</syn>
+        <syn lang="en">2 Chr</syn>
+        <syn lang="en">2 Ch</syn>
+        <syn lang="en">2Chron</syn>
+        <syn lang="en">2Chr</syn>
+        <syn lang="en">2Ch</syn>
+        <syn lang="en">II Chron</syn>
+        <syn lang="en">II Chr</syn>
+        <syn lang="en">II Ch</syn>
+        <syn lang="en">2nd Chronicles</syn>
+        <syn lang="en">2nd Chron</syn>
+        <syn lang="en">Second Chronicles</syn>
+        <syn lang="en">Second Chron</syn>
+        <syn lang="ces">2Paralipomenon</syn>
+        <syn lang="slk">2Paralipomenon</syn>
+        <syn lang="zh">歷代志下</syn>
+        <syn lang="zh">历代志下</syn>
+        <syn lang="fr">2Chroniques</syn>
+        <syn lang="de">2Chronik</syn>
+        <syn lang="it">2Cronache</syn>
+        <syn lang="pl">2Kronik</syn>
+        <syn lang="pt">2Crônicas</syn>
+        <syn lang="ro">2Cronici</syn>
+        <syn lang="ru">2Паралипоменон</syn>
+        <syn lang="bg">2Летописи</syn>
+        <syn lang="bg">2 Летописи</syn>
+        <syn lang="es">2Crónicas</syn>
+        <syn lang="ua">2Хронік</syn>
+    </book>
+    <book name="Ezra" code="Ezra" index="15" chapters="10">
+        <syn lang="en">Ezra</syn>
+        <syn lang="en">Ezr</syn>
+        <syn lang="en">Ez</syn>
+        <syn lang="ces">Ezdráš</syn>
+        <syn lang="zh">以斯拉記</syn>
+        <syn lang="zh">以斯拉记</syn>
+        <syn lang="fr">Esdras</syn>
+        <syn lang="de">Esra</syn>
+        <syn lang="it">Esdra</syn>
+        <syn lang="pl">Ezdrasza</syn>
+        <syn lang="pt">Esdras</syn>
+        <syn lang="ro">Ezra</syn>
+        <syn lang="ru">Ездры</syn>
+        <syn lang="es">Esdras</syn>
+        <syn lang="ua">Ездри</syn>
+    </book>
+    <book name="Nehemiah" code="Neh" index="16" chapters="13">
+        <syn lang="en">Neh</syn>
+        <syn lang="en">Ne</syn>
+        <syn lang="it">Neemia</syn>
+        <syn lang="ces">Nehemjáš</syn>
+        <syn lang="slk">Nehemiáš</syn>
+        <syn lang="zh">尼希米記</syn>
+        <syn lang="zh">尼希米记</syn>
+        <syn lang="fr">Néhémie</syn>
+        <syn lang="de">Nehemia</syn>
+        <syn lang="it">Neemia</syn>
+        <syn lang="pl">Nehemiasza</syn>
+        <syn lang="pt">Neemias</syn>
+        <syn lang="ro">Neemia</syn>
+        <syn lang="ru">Неемии</syn>
+        <syn lang="es">Nehemías</syn>
+        <syn lang="ua">Неемії</syn>
+    </book>
+    <book name="Esther" code="Esth" index="17" chapters="10">
+        <syn lang="en">Est</syn>
+        <syn lang="en">Esth</syn>
+        <syn lang="en">Es</syn>
+        <syn lang="ces">Ester</syn>
+        <syn lang="zh">以斯帖記</syn>
+        <syn lang="fr">Esther</syn>
+        <syn lang="de">Ester</syn>
+        <syn lang="it">Ester</syn>
+        <syn lang="pl">Estery</syn>
+        <syn lang="pt">Ester</syn>
+        <syn lang="ro">Estera</syn>
+        <syn lang="ru">Есфирь</syn>
+        <syn lang="es">Ester</syn>
+        <syn lang="ua">Естер</syn>
+    </book>
+    <book name="Job" code="Job" index="18" chapters="42">
+        <syn lang="en">Jb</syn>
+        <syn lang="ces">Jób</syn>
+        <syn lang="zh">約伯記</syn>
+        <syn lang="zh">约伯记</syn>
+        <syn lang="fr">Job</syn>
+        <syn lang="de">Hiob</syn>
+        <syn lang="it">Giobbe</syn>
+        <syn lang="pl">Joba</syn>
+        <syn lang="pt">Jó</syn>
+        <syn lang="ro">Iov</syn>
+        <syn lang="ru">Иова</syn>
+        <syn lang="bg">Иов</syn>
+        <syn lang="es">Job</syn>
+        <syn lang="ua">Йова</syn>
+    </book>
+    <book name="Psalms" code="Ps" index="19" chapters="150">
+        <syn lang="en">Ps</syn>
+        <syn lang="en">Psalm</syn>
+        <syn lang="en">Pslm</syn>
+        <syn lang="en">Psa</syn>
+        <syn lang="en">Psm</syn>
+        <syn lang="en">Pss</syn>
+        <syn lang="ces">Žalm</syn>
+        <syn lang="zh">詩篇</syn>
+        <syn lang="zh">诗篇</syn>
+        <syn lang="fr">Psaumes</syn>
+        <syn lang="de">Psalm</syn>
+        <syn lang="de">Salomo</syn>
+        <syn lang="it">Salmo</syn>
+        <syn lang="it">Salmi</syn>
+        <syn lang="pl">Psalmów</syn>
+        <syn lang="pt">Salmo</syn>
+        <syn lang="ro">Psalm</syn>
+        <syn lang="ro">Psalmi</syn>
+        <syn lang="ro">Psalmul</syn>
+        <syn lang="ro">Psalmii</syn>
+        <syn lang="ru">Псалтирь</syn>
+        <syn lang="es">Salmos</syn>
+        <syn lang="ua">Псалми</syn>
+    </book>
+    <book name="Proverbs" code="Prov" index="20" chapters="31">
+        <syn lang="en">Prov</syn>
+        <syn lang="en">Pro</syn>
+        <syn lang="en">Prv</syn>
+        <!--        <syn lang="en">Pr</syn>-->
+        <syn lang="ces">Přísloví</syn>
+        <syn lang="slk">Príslovia</syn>
+        <syn lang="zh">箴言</syn>
+        <syn lang="fr">Proverbes</syn>
+        <syn lang="de">Sprüche</syn>
+        <syn lang="de">Spruche</syn>
+        <syn lang="de">Sprueche</syn>
+        <syn lang="it">Proverbi</syn>
+        <syn lang="pl">Przypowieści</syn>
+        <syn lang="pt">Provérbios</syn>
+        <syn lang="ro">Proverbe</syn>
+        <syn lang="ru">Притчи</syn>
+        <syn lang="es">Proverbios</syn>
+        <syn lang="ua">Приповісті</syn>
+    </book>
+    <book name="Ecclesiastes" code="Eccl" index="21" chapters="12">
+        <syn lang="en">Eccles</syn>
+        <syn lang="en">Eccle</syn>
+        <syn lang="en">Eccl</syn>
+        <syn lang="en">Ecc</syn>
+        <syn lang="en">Ec</syn>
+        <syn lang="en">Qoh</syn>
+        <syn lang="ces">Kazatel</syn>
+        <syn lang="slk">Kazateľ</syn>
+        <syn lang="zh">傳道書</syn>
+        <syn lang="zh">传道书</syn>
+        <syn lang="fr">Ecclésiaste</syn>
+        <syn lang="de">Prediger</syn>
+        <syn lang="it">Ecclesiaste</syn>
+        <syn lang="pl">Kaznodziei</syn>
+        <syn lang="pt">Eclesiastes</syn>
+        <syn lang="ro">Eclesiastul</syn>
+        <syn lang="ro">Eclesiast</syn>
+        <syn lang="ru">Екклесиаста</syn>
+        <syn lang="es">Eclesiastés</syn>
+        <syn lang="ua">Екклезіяста</syn>
+    </book>
+    <book name="Song of Solomon" code="Song" index="22" chapters="8">
+        <syn lang="en">Song</syn>
+        <syn lang="en">Song of Songs</syn>
+        <syn lang="en">SongofSolomon</syn>
+        <syn lang="en">SOS</syn>
+        <!--        <syn lang="en">So</syn>-->
+        <syn lang="en">Canticle of Canticles</syn>
+        <syn lang="en">Canticles</syn>
+        <syn lang="en">Cant</syn>
+        <syn lang="ces">Píseňpísní</syn>
+        <syn lang="ces">Píseň písní</syn>
+        <syn lang="zh">雅歌</syn>
+        <syn lang="fr">CantiquedesCantiques</syn>
+        <syn lang="fr">Cantique des Cantiques</syn>
+        <syn lang="de">Hohelied</syn>
+        <syn lang="it">CanticodeiCantici</syn>
+        <syn lang="it">Cantico dei Cantici</syn>
+        <syn lang="pl">PieśńnadPieśniami</syn>
+        <syn lang="pl">Pieśń nad Pieśniami</syn>
+        <syn lang="pt">Cânticos</syn>
+        <syn lang="ro">Cântareacântărilor</syn>
+        <syn lang="ro">Cântarea cântărilor</syn>
+        <syn lang="ru">ПесньПесней</syn>
+        <syn lang="ru">Песнь Песней</syn>
+        <syn lang="es">Cantares</syn>
+        <syn lang="ua">Піснянадпіснями</syn>
+        <syn lang="ua">Пісня над піснями</syn>
+        <syn lang="slk">Pieseň Šalamúnova</syn>
+    </book>
+    <book name="Isaiah" code="Isa" index="23" chapters="66">
+        <syn lang="en">Isa</syn>
+        <syn lang="en">Is</syn>
+        <syn lang="ces">Izajáš</syn>
+        <syn lang="slk">Izaiáš</syn>
+        <syn lang="zh">以賽亞書</syn>
+        <syn lang="zh">以赛亚书</syn>
+        <syn lang="zh">以赛亚书</syn>
+        <syn lang="fr">Ésaïe</syn>
+        <syn lang="de">Jesaja</syn>
+        <syn lang="it">Isaia</syn>
+        <syn lang="pl">Izajasza</syn>
+        <syn lang="pt">Isaías</syn>
+        <syn lang="ro">Isaia</syn>
+        <syn lang="ru">Исаии</syn>
+        <syn lang="es">Isaías</syn>
+        <syn lang="ua">Ісаї</syn>
+    </book>
+    <book name="Jeremiah" code="Jer" index="24" chapters="52">
+        <syn lang="en">Jer</syn>
+        <!--        <syn lang="en">Je</syn>-->
+        <syn lang="en">Jr</syn>
+        <syn lang="ces">Jeremjáš</syn>
+        <syn lang="slk">Jeremiáš</syn>
+        <syn lang="zh">耶利米書</syn>
+        <syn lang="zh">耶利米书</syn>
+        <syn lang="fr">Jérémie</syn>
+        <syn lang="de">Jeremia</syn>
+        <syn lang="it">Geremia</syn>
+        <syn lang="pl">Jeremiasza</syn>
+        <syn lang="pt">Jeremias</syn>
+        <syn lang="ro">Ieremia</syn>
+        <syn lang="ru">Иеремии</syn>
+        <syn lang="es">Jeremías</syn>
+        <syn lang="ua">Єремії</syn>
+    </book>
+    <book name="Lamentations" code="Lam" index="25" chapters="5">
+        <syn lang="en">Lam</syn>
+        <!--        <syn lang="en">La</syn>-->
+        <syn lang="it">Lamentazioni</syn>
+        <syn lang="ces">Pláč</syn>
+        <syn lang="slk">Plač Jeremiášov</syn>
+        <syn lang="zh">耶利米哀歌</syn>
+        <syn lang="fr">Lamentations</syn>
+        <syn lang="de">Klagelieder</syn>
+        <syn lang="it">Lamentazioni</syn>
+        <syn lang="pl">Treny</syn>
+        <syn lang="pt">Lamentações</syn>
+        <syn lang="ro">Plângerile lui Ieremia</syn>
+        <syn lang="ro">PlângerileluiIeremia</syn>
+        <syn lang="ro">Plâng. lui Ieremia</syn>
+        <syn lang="ru">ПлачИеремии</syn>
+        <syn lang="ru">Плач Иеремии</syn>
+        <syn lang="es">Lamentaciones</syn>
+        <syn lang="ua">ПлачЄремії</syn>
+        <syn lang="ua">Плач Єремії</syn>
+    </book>
+    <book name="Ezekiel" code="Ezek" index="26" chapters="48">
+        <syn lang="en">Ezek</syn>
+        <syn lang="en">Eze</syn>
+        <syn lang="en">Ezk</syn>
+        <syn lang="ces">Ezechiel</syn>
+        <syn lang="zh">以西結書</syn>
+        <syn lang="zh">以西结书</syn>
+        <syn lang="fr">Ezéchiel</syn>
+        <syn lang="fr">Ézéchiel</syn>
+        <syn lang="de">Hesekiel</syn>
+        <syn lang="it">Ezechiele</syn>
+        <syn lang="pl">Ezechiela</syn>
+        <syn lang="pt">Ezequiel</syn>
+        <syn lang="ro">Ezechiel</syn>
+        <syn lang="ro">Ezechel</syn>
+        <syn lang="ru">Иезекииля</syn>
+        <syn lang="es">Ezequiel</syn>
+        <syn lang="ua">Єзекіїля</syn>
+    </book>
+    <book name="Daniel" code="Dan" index="27" chapters="12">
+        <syn lang="en">Dan</syn>
+        <!--        <syn lang="en">Da</syn>-->
+        <syn lang="en">Dn</syn>
+        <syn lang="ces">Daniel</syn>
+        <syn lang="zh">但以理書</syn>
+        <syn lang="zh">但以理书</syn>
+        <syn lang="fr">Daniel</syn>
+        <syn lang="de">Daniel</syn>
+        <syn lang="it">Daniele</syn>
+        <syn lang="pl">Daniela</syn>
+        <syn lang="pt">Daniel</syn>
+        <syn lang="ro">Daniel</syn>
+        <syn lang="ru">Даниила</syn>
+        <syn lang="es">Daniel</syn>
+        <syn lang="ua">Даниїла</syn>
+    </book>
+    <book name="Hosea" code="Hos" index="28" chapters="14">
+        <syn lang="en">Hos</syn>
+        <syn lang="en">Ho</syn>
+        <syn lang="ces">Ozeáš</syn>
+        <syn lang="slk">Hozeáš</syn>
+        <syn lang="zh">何西阿書</syn>
+        <syn lang="zh">何西阿书</syn>
+        <syn lang="fr">Osée</syn>
+        <syn lang="de">Hosea</syn>
+        <syn lang="it">Osea</syn>
+        <syn lang="pl">Ozeasza</syn>
+        <syn lang="pt">Oséias</syn>
+        <syn lang="pt">Oseias</syn>
+        <syn lang="ro">Osea</syn>
+        <syn lang="ru">Осии</syn>
+        <syn lang="es">Oseas</syn>
+        <syn lang="ua">Осії</syn>
+
+    </book>
+    <book name="Joel" code="Joel" index="29" chapters="3">
+        <syn lang="en">Jl</syn>
+        <syn lang="ces">Jóel</syn>
+        <syn lang="zh">約珥書</syn>
+        <syn lang="zh">约珥书</syn>
+        <syn lang="fr">Joël</syn>
+        <syn lang="de">Joel</syn>
+        <syn lang="it">Gioele</syn>
+        <syn lang="pl">Joela</syn>
+        <syn lang="pt">Joel</syn>
+        <syn lang="ro">Ioel</syn>
+        <syn lang="ru">Иоиля</syn>
+        <syn lang="es">Joel</syn>
+        <syn lang="ua">Йоіла</syn>
+        <syn lang="ua">Йоїла</syn>
+    </book>
+    <book name="Amos" code="Amos" index="30" chapters="9">
+        <!--        <syn lang="en">Am</syn>-->
+        <syn lang="ces">Ámos</syn>
+        <syn lang="zh">阿摩司書</syn>
+        <syn lang="zh">阿摩司书</syn>
+        <syn lang="fr">Amos</syn>
+        <syn lang="de">Amos</syn>
+        <syn lang="it">Amos</syn>
+        <syn lang="pl">Amosa</syn>
+        <syn lang="pt">Amós</syn>
+        <syn lang="ro">Amos</syn>
+        <syn lang="ru">Амоса</syn>
+        <syn lang="es">Amós</syn>
+        <syn lang="ua">Амоса</syn>
+    </book>
+    <book name="Obadiah" code="Obad" index="31" chapters="1">
+        <syn lang="en">Obad</syn>
+        <syn lang="en">Ob</syn>
+        <syn lang="ces">Abdijáš</syn>
+        <syn lang="slk">Obadiáš</syn>
+        <syn lang="zh">俄巴底亞書</syn>
+        <syn lang="zh">俄巴底亚书</syn>
+        <syn lang="fr">Abdias</syn>
+        <syn lang="de">Obadja</syn>
+        <syn lang="it">Abdia</syn>
+        <syn lang="pl">Abdiasza</syn>
+        <syn lang="pt">Obadias</syn>
+        <syn lang="ro">Obadia</syn>
+        <syn lang="ru">Авдия</syn>
+        <syn lang="es">Abdías</syn>
+        <syn lang="ua">Овдія</syn>
+    </book>
+    <book name="Jonah" code="Jonah" index="32" chapters="4">
+        <syn lang="en">Jnh</syn>
+        <syn lang="en">Jon</syn>
+        <syn lang="ces">Jonáš</syn>
+        <syn lang="zh">約拿書</syn>
+        <syn lang="fr">Jonas</syn>
+        <syn lang="de">Jona</syn>
+        <syn lang="it">Giona</syn>
+        <syn lang="pl">Jonasza</syn>
+        <syn lang="pt">Jonas</syn>
+        <syn lang="ro">Iona</syn>
+        <syn lang="ru">Ионы</syn>
+        <syn lang="es">Jonás</syn>
+        <syn lang="ua">Йони</syn>
+    </book>
+    <book name="Micah" code="Mic" index="33" chapters="7">
+        <syn lang="en">Mic</syn>
+                <syn lang="en">Mc</syn>
+        <syn lang="ces">Micheáš</syn>
+        <syn lang="zh">彌迦書</syn>
+        <syn lang="zh">弥迦书</syn>
+        <syn lang="fr">Michée</syn>
+        <syn lang="de">Micha</syn>
+        <syn lang="it">Michea</syn>
+        <syn lang="pl">Micheasza</syn>
+        <syn lang="pt">Miquéias</syn>
+        <syn lang="pt">Miqueias</syn>
+        <syn lang="ro">Mica</syn>
+        <syn lang="ru">Михея</syn>
+        <syn lang="es">Miqueas</syn>
+        <syn lang="ua">Михея</syn>
+    </book>
+    <book name="Nahum" code="Nah" index="34" chapters="3">
+        <syn lang="en">Nah</syn>
+        <syn lang="en">Na</syn>
+        <syn lang="ces">Nahum</syn>
+        <syn lang="slk">Náhum</syn>
+        <syn lang="zh">那鴻書</syn>
+        <syn lang="zh">那鸿书</syn>
+        <syn lang="fr">Nahum</syn>
+        <syn lang="de">Nahum</syn>
+        <syn lang="it">Nahum</syn>
+        <syn lang="pl">Nahuma</syn>
+        <syn lang="pt">Naum</syn>
+        <syn lang="ro">Naum</syn>
+        <syn lang="ru">Наума</syn>
+        <syn lang="es">Nahúm</syn>
+        <syn lang="es">Nahún</syn>
+        <syn lang="ua">Наума</syn>
+    </book>
+    <book name="Habakkuk" code="Hab" index="35" chapters="3">
+        <syn lang="en">Hab</syn>
+        <!--        <syn lang="en">Hb</syn>-->
+        <syn lang="ces">Abakuk</syn>
+        <syn lang="zh">哈巴谷書</syn>
+        <syn lang="zh">哈巴谷书</syn>
+        <syn lang="fr">Habakuk</syn>
+        <syn lang="de">Habakuk</syn>
+        <syn lang="it">Abacuc</syn>
+        <syn lang="pl">Habakuka</syn>
+        <syn lang="pt">Habacuque</syn>
+        <syn lang="ro">Habacuc</syn>
+        <syn lang="ru">Аввакума</syn>
+        <syn lang="es">Habacuc</syn>
+        <syn lang="ua">Авакума</syn>
+    </book>
+    <book name="Zephaniah" code="Zeph" index="36" chapters="3">
+        <syn lang="en">Zeph</syn>
+        <syn lang="en">Zep</syn>
+        <syn lang="en">Zp</syn>
+        <syn lang="ces">Sofonjáš</syn>
+        <syn lang="slk">Sofoniáš</syn>
+        <syn lang="zh">西番雅書</syn>
+        <syn lang="zh">西番雅书</syn>
+        <syn lang="fr">Sophonie</syn>
+        <syn lang="de">Zephanja</syn>
+        <syn lang="it">Sofonia</syn>
+        <syn lang="pl">Sofoniasza</syn>
+        <syn lang="pt">Sofonias</syn>
+        <syn lang="ro">Ţefania</syn>
+        <syn lang="ro">Țefania</syn>
+        <syn lang="ru">Софонии</syn>
+        <syn lang="es">Sofonías</syn>
+        <syn lang="ua">Софонії</syn>
+    </book>
+    <book name="Haggai" code="Hag" index="37" chapters="2">
+        <syn lang="en">Hag</syn>
+        <syn lang="en">Hg</syn>
+        <syn lang="ces">Ageus</syn>
+        <syn lang="slk">Haggeus</syn>
+        <syn lang="zh">哈該書</syn>
+        <syn lang="zh">哈该书</syn>
+        <syn lang="fr">Aggée</syn>
+        <syn lang="de">Haggai</syn>
+        <syn lang="it">Aggeo</syn>
+        <syn lang="pl">Aggeusza</syn>
+        <syn lang="pt">Ageu</syn>
+        <syn lang="ro">Hagai</syn>
+        <syn lang="ru">Аггея</syn>
+        <syn lang="es">Hageo</syn>
+        <syn lang="ua">Огія</syn>
+    </book>
+    <book name="Zechariah" code="Zech" index="38" chapters="14">
+        <syn lang="en">Zech</syn>
+        <syn lang="en">Zec</syn>
+        <syn lang="en">Zc</syn>
+        <syn lang="ces">Zacharjáš</syn>
+        <syn lang="slk">Zachariáš</syn>
+        <syn lang="zh">撒迦利亞</syn>
+        <syn lang="zh">撒迦利亚</syn>
+        <syn lang="fr">Zacharie</syn>
+        <syn lang="de">Sacharja</syn>
+        <syn lang="it">Zaccaria</syn>
+        <syn lang="pl">Zachariasza</syn>
+        <syn lang="pt">Zacarias</syn>
+        <syn lang="ro">Zaharia</syn>
+        <syn lang="ru">Захарии</syn>
+        <syn lang="es">Zacarías</syn>
+        <syn lang="ua">Захарії</syn>
+    </book>
+    <book name="Malachi" code="Mal" index="39" chapters="4">
+        <syn lang="en">Mal</syn>
+        <!--        <syn lang="en">Ml</syn>-->
+        <syn lang="ces">Malachiáš</syn>
+        <syn lang="zh">瑪拉基書</syn>
+        <syn lang="zh">玛拉基书</syn>
+        <syn lang="fr">Malachie</syn>
+        <syn lang="de">Maleachi</syn>
+        <syn lang="it">Malachia</syn>
+        <syn lang="pl">Malachiasza</syn>
+        <syn lang="pt">Malaquias</syn>
+        <syn lang="ro">Maleahi</syn>
+        <syn lang="ru">Малахии</syn>
+        <syn lang="es">Malaquías</syn>
+        <syn lang="ua">Малахії</syn>
+    </book>
+    <book name="Matthew" code="Matt" index="40" chapters="28">
+        <syn lang="en">Matt</syn>
+        <syn lang="en">Mat</syn>
+        <!--        <syn lang="en">Mt</syn>-->
+        <syn lang="ces">Matouš</syn>
+        <syn lang="zh">馬太福音</syn>
+        <syn lang="zh">马太福音</syn>
+        <syn lang="fr">Matthieu</syn>
+        <syn lang="de">Matthäus</syn>
+        <syn lang="de">Matthaus</syn>
+        <syn lang="de">Matthaeus</syn>
+        <syn lang="it">Matteo</syn>
+        <syn lang="pl">Mateusza</syn>
+        <syn lang="pt">Mateus</syn>
+        <syn lang="ro">Matei</syn>
+        <syn lang="ru">Матфея</syn>
+        <syn lang="es">Mateo</syn>
+        <syn lang="ua">Матвія</syn>
+
+        <syn lang="slk">Matúš</syn>
+    </book>
+    <book name="Mark" code="Mark" index="41" chapters="16">
+        <syn lang="en">Mrk</syn>
+        <!--        <syn lang="en">Mar</syn>-->
+        <!--        <syn lang="en">Mk</syn>-->
+        <syn lang="en">Mr</syn>
+        <syn lang="ces">Marek</syn>
+        <syn lang="zh">馬可福音</syn>
+        <syn lang="zh">马可福音</syn>
+        <syn lang="fr">Marc</syn>
+        <syn lang="de">Markus</syn>
+        <syn lang="it">Marco</syn>
+        <syn lang="pl">Marka</syn>
+        <syn lang="pt">Marcos</syn>
+        <syn lang="ro">Marcu</syn>
+        <syn lang="ru">Марка</syn>
+        <syn lang="es">Marcos</syn>
+        <syn lang="ua">Марка</syn>
+    </book>
+    <book name="Luke" code="Luke" index="42" chapters="24">
+        <syn lang="en">Luk</syn>
+        <syn lang="en">Lk</syn>
+        <syn lang="ces">Lukáš</syn>
+        <syn lang="zh">路加福音</syn>
+        <syn lang="fr">Luc</syn>
+        <syn lang="de">Lukas</syn>
+        <syn lang="it">Luca</syn>
+        <syn lang="pl">Łukasza</syn>
+        <syn lang="pt">Lucas</syn>
+        <syn lang="ro">Luca</syn>
+        <syn lang="ru">Луки</syn>
+        <syn lang="es">Lucas</syn>
+        <syn lang="ua">Луки</syn>
+    </book>
+    <book name="John" code="John" index="43" chapters="21">
+        <syn lang="en">John</syn>
+        <syn lang="en">Joh</syn>
+        <syn lang="en">Jhn</syn>
+        <syn lang="en">Jn</syn>
+        <syn lang="ces">Jan</syn>
+        <syn lang="slk">Ján</syn>
+        <syn lang="zh">約翰福音</syn>
+        <syn lang="zh">约翰福音</syn>
+        <syn lang="fr">Jean</syn>
+        <syn lang="de">Johannes</syn>
+        <syn lang="it">Giovanni</syn>
+        <syn lang="pl">Jana</syn>
+        <syn lang="pt">João</syn>
+        <syn lang="ro">Ioan</syn>
+        <syn lang="ru">Иоанна</syn>
+        <syn lang="bg">Иоан</syn>
+        <syn lang="es">Juan</syn>
+        <syn lang="ua">Івана</syn>
+    </book>
+    <book name="Acts" code="Acts" index="44" chapters="28">
+        <syn lang="en">Act</syn>
+        <!--        <syn lang="en">Ac</syn>-->
+        <syn lang="ces">Skutky</syn>
+        <syn lang="slk">SkutkyApoštolov</syn>
+        <syn lang="slk">Skutky Apoštolov</syn>
+        <syn lang="zh">使徒行傳</syn>
+        <syn lang="zh">使徒行传</syn>
+        <syn lang="fr">Actes</syn>
+        <syn lang="de">Apostelgeschichte</syn>
+        <syn lang="it">Atti</syn>
+        <syn lang="pl">DziejeApostolskie</syn>
+        <syn lang="pl">Dzieje Apostolskie</syn>
+        <syn lang="pt">Atos</syn>
+        <syn lang="ro">FapteleApostolilor</syn>
+        <syn lang="ro">Faptele Apostolilor</syn>
+        <syn lang="ro">Faptele</syn>
+        <syn lang="ro">Fapte</syn>
+        <syn lang="ru">Деяния</syn>
+        <syn lang="es">Hechos</syn>
+        <syn lang="ua">Дії</syn>
+    </book>
+    <book name="Romans" code="Rom" index="45" chapters="16">
+        <syn lang="en">Rom</syn>
+        <syn lang="en">Ro</syn>
+        <syn lang="en">Rm</syn>
+        <syn lang="ces">Římanům</syn>
+        <syn lang="slk">Rimanom</syn>
+        <syn lang="zh">羅馬書</syn>
+        <syn lang="zh">罗马书</syn>
+        <syn lang="fr">Romains</syn>
+        <syn lang="de">Römer</syn>
+        <syn lang="de">Romer</syn>
+        <syn lang="de">Roemer</syn>
+        <syn lang="it">Romani</syn>
+        <syn lang="pl">Rzymian</syn>
+        <syn lang="pt">Romanos</syn>
+        <syn lang="ro">Romani</syn>
+        <syn lang="ru">Римлянам</syn>
+        <syn lang="es">Romanos</syn>
+        <syn lang="ua">Римлянам</syn>
+    </book>
+    <book name="1 Corinthians" code="1Cor" index="46" chapters="16">
+        <syn lang="en">1 Cor</syn>
+        <syn lang="en">1 Co</syn>
+        <syn lang="en">I Cor</syn>
+        <syn lang="en">I Co</syn>
+        <syn lang="en">1Cor</syn>
+        <syn lang="en">1Co</syn>
+        <syn lang="en">I Corinthians</syn>
+        <syn lang="en">1Corinthians</syn>
+        <syn lang="en">First Corinthians</syn>
+        <syn lang="ces">1Korintským</syn>
+        <syn lang="slk">1Korinťanom</syn>
+        <syn lang="zh">歌林多前書</syn>
+        <syn lang="zh">哥林多前书</syn>
+        <syn lang="fr">1Corinthiens</syn>
+        <syn lang="fr">1Corinthiens</syn>
+        <syn lang="de">1Korinther</syn>
+        <syn lang="it">1Corinzi</syn>
+        <syn lang="pl">1Koryntian</syn>
+        <syn lang="pt">1Coríntios</syn>
+        <syn lang="ro">1Corinteni</syn>
+        <syn lang="ru">1Коринфянам</syn>
+        <syn lang="bg">1Коринтяни</syn>
+        <syn lang="es">1Corintios</syn>
+        <syn lang="ua">1Коринтянам</syn>
+    </book>
+    <book name="2 Corinthians" code="2Cor" index="47" chapters="13">
+        <syn lang="en">2 Cor</syn>
+        <syn lang="en">2 Co</syn>
+        <syn lang="en">II Cor</syn>
+        <syn lang="en">II Co</syn>
+        <syn lang="en">2Cor</syn>
+        <syn lang="en">2Co</syn>
+        <syn lang="en">II Corinthians</syn>
+        <syn lang="en">2Corinthians</syn>
+        <syn lang="en">2nd Corinthians</syn>
+        <syn lang="en">Second Corinthians</syn>
+        <syn lang="ces">2Korintským</syn>
+        <syn lang="ces">2Korintským</syn>
+        <syn lang="slk">2Korinťanom</syn>
+        <syn lang="zh">歌林多後書</syn>
+        <syn lang="zh">哥林多后书</syn>
+        <syn lang="fr">2Corinthiens</syn>
+        <syn lang="de">2Korinther</syn>
+        <syn lang="it">2Corinzi</syn>
+        <syn lang="pl">2Koryntian</syn>
+        <syn lang="pt">2Coríntios</syn>
+        <syn lang="ro">2Corinteni</syn>
+        <syn lang="ru">2Коринфянам</syn>
+        <syn lang="bg">2Коринтяни</syn>
+        <syn lang="es">2Corintios</syn>
+        <syn lang="ua">2Коринтянам</syn>
+    </book>
+    <book name="Galatians" code="Gal" index="48" chapters="6">
+        <syn lang="en">Gal</syn>
+        <!--        <syn lang="en">Ga</syn>-->
+        <syn lang="ces">Galatským</syn>
+        <syn lang="slk">Galaťanom</syn>
+        <syn lang="zh">加拉太書</syn>
+        <syn lang="zh">加拉太书</syn>
+        <syn lang="fr">Galates</syn>
+        <syn lang="de">Galater</syn>
+        <syn lang="it">Galati</syn>
+        <syn lang="pl">Galacjan</syn>
+        <syn lang="pt">Gálatas</syn>
+        <syn lang="ro">Galateni</syn>
+        <syn lang="ru">Галатам</syn>
+        <syn lang="es">Gálatas</syn>
+        <syn lang="es">Galatas</syn>
+        <syn lang="ua">Галатам</syn>
+    </book>
+    <book name="Ephesians" code="Eph" index="49" chapters="6">
+        <syn lang="en">Eph</syn>
+        <syn lang="en">Ephes</syn>
+        <syn lang="ces">Efezským</syn>
+        <syn lang="zh">以弗所書</syn>
+        <syn lang="zh">以弗所书</syn>
+        <syn lang="fr">Ephésiens</syn>
+        <syn lang="fr">Éphésiens</syn>
+        <syn lang="de">Epheser</syn>
+        <syn lang="it">Efesini</syn>
+        <syn lang="pl">Efezjan</syn>
+        <syn lang="pt">Efésios</syn>
+        <syn lang="ro">Efeseni</syn>
+        <syn lang="ru">Ефесянам</syn>
+        <syn lang="es">Efesios</syn>
+        <syn lang="ua">Ефесянам</syn>
+    </book>
+    <book name="Philippians" code="Phil" index="50" chapters="4">
+        <syn lang="en">Phil</syn>
+        <syn lang="en">Php</syn>
+        <!--        <syn lang="en">Pp</syn>-->
+        <syn lang="ces">Filipským</syn>
+        <syn lang="zh">腓立比書</syn>
+        <syn lang="zh">腓立比书</syn>
+        <syn lang="fr">Philippiens</syn>
+        <syn lang="de">Philipper</syn>
+        <syn lang="it">Filippesi</syn>
+        <syn lang="pl">Filipian</syn>
+        <syn lang="pt">Filipenses</syn>
+        <syn lang="ro">Filipeni</syn>
+        <syn lang="ro">Filip</syn>
+        <syn lang="ru">Филиппийцам</syn>
+        <syn lang="es">Filipenses</syn>
+        <syn lang="ua">Филип'янам</syn>
+    </book>
+    <book name="Colossians" code="Co" index="51" chapters="4">
+        <syn lang="en">Colos</syn>
+        <syn lang="en">Co</syn>
+        <syn lang="ces">Koloským</syn>
+        <syn lang="slk">Kološanom</syn>
+        <syn lang="zh">歌羅西書</syn>
+        <syn lang="zh">歌罗西书</syn>
+        <syn lang="fr">Colossiens</syn>
+        <syn lang="de">Kolosser</syn>
+        <syn lang="it">Colossesi</syn>
+        <syn lang="pl">Kolosan</syn>
+        <syn lang="pt">Colossences</syn>
+        <syn lang="pt">Colossenses</syn>
+        <syn lang="ro">Coloseni</syn>
+        <syn lang="ru">Колоссянам</syn>
+        <syn lang="es">Colosenses</syn>
+        <syn lang="ua">Колосянам</syn>
+    </book>
+    <book name="1 Thessalonians" code="1Thess" index="52" chapters="5">
+        <syn lang="en">1 Thess</syn>
+        <syn lang="en">1 Thes</syn>
+        <syn lang="en">1 Th</syn>
+        <syn lang="en">I Thessalonians</syn>
+        <syn lang="en">I Thess</syn>
+        <syn lang="en">I Thes</syn>
+        <syn lang="en">I Th</syn>
+        <syn lang="en">1Thessalonians</syn>
+        <syn lang="en">1Thess</syn>
+        <syn lang="en">1Thes</syn>
+        <syn lang="en">1Th</syn>
+        <syn lang="en">1st Thessalonians</syn>
+        <syn lang="en">1st Thess</syn>
+        <syn lang="en">First Thessalonians</syn>
+        <syn lang="en">First Thess</syn>
+        <syn lang="ces">1Tesalonickým</syn>
+        <syn lang="slk">1Tesaloničanom</syn>
+        <syn lang="zh">帖撒羅尼迦前書</syn>
+        <syn lang="zh">帖撒罗尼迦前书</syn>
+        <syn lang="fr">1Thessaloniciens</syn>
+        <syn lang="de">1Thessalonicher</syn>
+        <syn lang="it">1Tessalonicesi</syn>
+        <syn lang="pl">1Tesaloniczan</syn>
+        <syn lang="pt">1Tessalonicenses</syn>
+        <syn lang="ro">1Tesaloniceni</syn>
+        <syn lang="ru">1Фессалоникийцам</syn>
+        <syn lang="es">1Tesalonicenses</syn>
+        <syn lang="ua">1Солунянам</syn>
+    </book>
+    <book name="2 Thessalonians" code="2Thess" index="53" chapters="3">
+        <syn lang="en">2 Thess</syn>
+        <syn lang="en">2 Thes</syn>
+        <syn lang="en">2 Th</syn>
+        <syn lang="en">II Thessalonians</syn>
+        <syn lang="en">II Thess</syn>
+        <syn lang="en">II Thes</syn>
+        <syn lang="en">II Th</syn>
+        <syn lang="en">2Thessalonians</syn>
+        <syn lang="en">2Thess</syn>
+        <syn lang="en">2Thes</syn>
+        <syn lang="en">2Th</syn>
+        <syn lang="en">2nd Thessalonians</syn>
+        <syn lang="en">2nd Thess</syn>
+        <syn lang="en">Second Thessalonians</syn>
+        <syn lang="en">Second Thess</syn>
+        <syn lang="ces">2Tesalonickým</syn>
+        <syn lang="slk">2Tesaloničanom</syn>
+        <syn lang="zh">帖撒羅尼迦後書</syn>
+        <syn lang="zh">帖撒罗尼迦后书</syn>
+        <syn lang="fr">2Thessaloniciens</syn>
+        <syn lang="de">2Thessalonicher</syn>
+        <syn lang="it">2Tessalonicesi</syn>
+        <syn lang="pl">2Tesaloniczan</syn>
+        <syn lang="pt">2Tessalonicenses</syn>
+        <syn lang="ro">2Tesaloniceni</syn>
+        <syn lang="ru">2Фессалоникийцам</syn>
+        <syn lang="es">2Tesalonicenses</syn>
+        <syn lang="ua">2Солунянам</syn>
+    </book>
+
+    <book name="1 Timothy" code="1Tim" index="54" chapters="6">
+        <syn lang="en">1 Tim</syn>
+        <syn lang="en">1 Ti</syn>
+        <syn lang="en">I Timothy</syn>
+        <syn lang="en">I Tim</syn>
+        <syn lang="en">I Ti</syn>
+        <syn lang="en">1Timothy</syn>
+        <syn lang="en">1Tim</syn>
+        <syn lang="en">1Ti</syn>
+        <syn lang="en">1st Timothy</syn>
+        <syn lang="en">1st Tim</syn>
+        <syn lang="en">First Timothy</syn>
+        <syn lang="en">First Tim</syn>
+        <syn lang="ces">1Timoteovi</syn>
+        <syn lang="zh">提摩太前書</syn>
+        <syn lang="zh">提摩太前书</syn>
+        <syn lang="fr">1Timothée</syn>
+        <syn lang="de">1Timotheus</syn>
+        <syn lang="it">1Timoteo</syn>
+        <syn lang="pl">1Tymoteusza</syn>
+        <syn lang="pt">1Timóteo</syn>
+        <syn lang="ro">1Timotei</syn>
+        <syn lang="ru">1Тимофею</syn>
+        <syn lang="es">1Timoteo</syn>
+        <syn lang="ua">1Тимофію</syn>
+    </book>
+
+    <book name="2 Timothy" code="2Tim" index="55" chapters="4">
+        <syn lang="en">2 Tim</syn>
+        <syn lang="en">2 Ti</syn>
+        <syn lang="en">II Timothy</syn>
+        <syn lang="en">II Tim</syn>
+        <syn lang="en">II Ti</syn>
+        <syn lang="en">2Timothy</syn>
+        <syn lang="en">2Tim</syn>
+        <syn lang="en">2Ti</syn>
+        <syn lang="en">2nd Timothy</syn>
+        <syn lang="en">2nd Tim</syn>
+        <syn lang="en">Second Timothy</syn>
+        <syn lang="en">Second Tim</syn>
+        <syn lang="ces">2Timoteovi</syn>
+        <syn lang="zh">提摩太後書</syn>
+        <syn lang="zh">提摩太后书</syn>
+        <syn lang="fr">2Timothée</syn>
+        <syn lang="de">2Timotheus</syn>
+        <syn lang="it">2Timoteo</syn>
+        <syn lang="pl">2Tymoteusza</syn>
+        <syn lang="pt">2Timóteo</syn>
+        <syn lang="ro">2Timotei</syn>
+        <syn lang="ru">2Тимофею</syn>
+        <syn lang="es">2Timoteo</syn>
+        <syn lang="ua">2Тимофію</syn>
+    </book>
+
+    <book name="Titus" code="Titus" index="56" chapters="3">
+        <syn lang="en">Tit</syn>
+        <syn lang="en">ti</syn>
+        <syn lang="ces">Titovi</syn>
+        <syn lang="slk">Títovi</syn>
+        <syn lang="zh">提多書</syn>
+        <syn lang="zh">提多书</syn>
+        <syn lang="fr">Tite</syn>
+        <syn lang="de">Titus</syn>
+        <syn lang="it">Tito</syn>
+        <syn lang="pl">Tytusa</syn>
+        <syn lang="pt">Tito</syn>
+        <syn lang="ro">Tit</syn>
+        <syn lang="ru">Титу</syn>
+        <syn lang="es">Tito</syn>
+        <syn lang="ua">Титові</syn>
+    </book>
+
+    <book name="Philemon" code="Phlm" index="57" chapters="1">
+        <syn lang="en">Philem</syn>
+        <syn lang="en">Phm</syn>
+        <!--        <syn lang="en">Pm</syn>-->
+        <syn lang="ces">Filemonovi</syn>
+        <syn lang="slk">Filémonovi</syn>
+        <syn lang="zh">腓利門書</syn>
+        <syn lang="fr">Philémon</syn>
+        <syn lang="de">Philemon</syn>
+        <syn lang="it">Filemone</syn>
+        <syn lang="pl">Filemona</syn>
+        <syn lang="pt">Filemom</syn>
+        <syn lang="ro">Filimon</syn>
+        <syn lang="ru">Филимону</syn>
+        <syn lang="es">Filemón</syn>
+        <syn lang="ua">Филимонові</syn>
+    </book>
+
+    <book name="Hebrews" code="Heb" index="58" chapters="13">
+        <syn lang="en">Heb</syn>
+        <syn lang="ces">Židům</syn>
+        <syn lang="slk">Židom</syn>
+        <syn lang="zh">希伯來書</syn>
+        <syn lang="zh">希伯来书</syn>
+        <syn lang="fr">Hébreux</syn>
+        <syn lang="de">Hebräer</syn>
+        <syn lang="de">Hebraer</syn>
+        <syn lang="de">Hebraeer</syn>
+        <syn lang="it">Ebrei</syn>
+        <syn lang="pl">Hebrajczyków</syn>
+        <syn lang="pt">Hebreus</syn>
+        <syn lang="ro">Evrei</syn>
+        <syn lang="ru">Евреям</syn>
+        <syn lang="es">Hebreos</syn>
+        <syn lang="ua">Євреям</syn>
+    </book>
+    <book name="James" code="Jas" index="59" chapters="5">
+        <syn lang="en">Jas</syn>
+        <syn lang="en">Jm</syn>
+        <syn lang="ces">Jakubův</syn>
+        <syn lang="slk">Jakoba</syn>
+        <syn lang="zh">雅各書</syn>
+        <syn lang="zh">雅各书</syn>
+        <syn lang="fr">Jacques</syn>
+        <syn lang="de">Jakobus</syn>
+        <syn lang="it">Giacomo</syn>
+        <syn lang="pl">Jakuba</syn>
+        <syn lang="pt">Tiago</syn>
+        <syn lang="ro">Iacov</syn>
+        <syn lang="ru">Иакова</syn>
+        <syn lang="es">Santiago</syn>
+        <syn lang="ua">Якова</syn>
+    </book>
+    <book name="1 Peter" code="1Pet" index="60" chapters="5">
+        <syn lang="en">1 Pet</syn>
+        <syn lang="en">1 Pe</syn>
+        <syn lang="en">1 Pt</syn>
+        <syn lang="en">1 P</syn>
+        <syn lang="en">I Pet</syn>
+        <syn lang="en">I Pt</syn>
+        <syn lang="en">I Pe</syn>
+        <syn lang="en">1Peter</syn>
+        <syn lang="en">1Pet</syn>
+        <syn lang="en">1Pe</syn>
+        <syn lang="en">1Pt</syn>
+        <syn lang="en">1P</syn>
+        <syn lang="en">I Peter</syn>
+        <syn lang="en">1st Peter</syn>
+        <syn lang="en">First Peter</syn>
+        <syn lang="ces">1Petrův</syn>
+        <syn lang="slk">1Petra</syn>
+        <syn lang="zh">彼得前書</syn>
+        <syn lang="zh">彼得前书</syn>
+        <syn lang="fr">1Pierre</syn>
+        <syn lang="de">1Petrus</syn>
+        <syn lang="it">1Pietro</syn>
+        <syn lang="pl">1Piotra</syn>
+        <syn lang="pt">1Pedro</syn>
+        <syn lang="ro">1Petru</syn>
+        <syn lang="ru">1Петра</syn>
+        <syn lang="es">1Pedro</syn>
+        <syn lang="ua">1Петра</syn>
+    </book>
+    <book name="2 Peter" code="2Pet" index="61" chapters="3">
+        <syn lang="en">2 Pet</syn>
+        <syn lang="en">2 Pe</syn>
+        <syn lang="en">2 Pt</syn>
+        <syn lang="en">2 P</syn>
+        <syn lang="en">II Peter</syn>
+        <syn lang="en">II Pet</syn>
+        <syn lang="en">II Pt</syn>
+        <syn lang="en">II Pe</syn>
+        <syn lang="en">2Peter</syn>
+        <syn lang="en">2nd Peter</syn>
+        <syn lang="en">Second Peter</syn>
+        <syn lang="ces">2Petrův</syn>
+        <syn lang="slk">2Petra</syn>
+        <syn lang="zh">彼得後書</syn>
+        <syn lang="zh">彼得后书</syn>
+        <syn lang="fr">2Pierre</syn>
+        <syn lang="de">2Petrus</syn>
+        <syn lang="de">2.Petrus</syn>
+        <syn lang="it">2Pietro</syn>
+        <syn lang="pl">2Piotra</syn>
+        <syn lang="pt">2Pedro</syn>
+        <syn lang="ro">2Petru</syn>
+        <syn lang="ru">2Петра</syn>
+        <syn lang="es">2Pedro</syn>
+        <syn lang="ua">2Петра</syn>
+    </book>
+    <book name="1 John" code="1John" index="62" chapters="5">
+        <syn lang="en">1 Jhn</syn>
+        <syn lang="en">1 Jn</syn>
+        <syn lang="en">1 J</syn>
+        <syn lang="en">1John</syn>
+        <syn lang="en">1Jhn</syn>
+        <syn lang="en">1Joh</syn>
+        <syn lang="en">1Jn</syn>
+        <syn lang="en">1Jo</syn>
+        <syn lang="en">1J</syn>
+        <syn lang="en">I John</syn>
+        <syn lang="en">I Jhn</syn>
+        <syn lang="en">I Joh</syn>
+        <syn lang="en">I Jn</syn>
+        <syn lang="en">I Jo</syn>
+        <syn lang="en">1st John</syn>
+        <syn lang="en">First John</syn>
+        <syn lang="ces">1Janův</syn>
+        <syn lang="slk">1Jána</syn>
+        <syn lang="zh">約翰一書</syn>
+        <syn lang="zh">约翰一书</syn>
+        <syn lang="fr">1Jean</syn>
+        <syn lang="de">1Johannes</syn>
+        <syn lang="it">1Giovanni</syn>
+        <syn lang="pl">1Jana</syn>
+        <syn lang="pt">1João</syn>
+        <syn lang="ro">1Ioan</syn>
+        <syn lang="ru">1Иоанна</syn>
+        <syn lang="es">1Juan</syn>
+        <syn lang="ua">1Івана</syn>
+    </book>
+    <book name="2 John" code="2John" index="63" chapters="1">
+        <syn lang="en">2 Jhn</syn>
+        <syn lang="en">2 Jn</syn>
+        <syn lang="en">2 J</syn>
+        <syn lang="en">2John</syn>
+        <syn lang="en">2Jhn</syn>
+        <syn lang="en">2Joh</syn>
+        <syn lang="en">2Jn</syn>
+        <syn lang="en">2Jo</syn>
+        <syn lang="en">2J</syn>
+        <syn lang="en">II John</syn>
+        <syn lang="en">II Jhn</syn>
+        <syn lang="en">II Joh</syn>
+        <syn lang="en">II Jn</syn>
+        <syn lang="en">II Jo</syn>
+        <syn lang="en">2nd John</syn>
+        <syn lang="en">Second John</syn>
+        <syn lang="ces">2Janův</syn>
+        <syn lang="slk">2Jána</syn>
+        <syn lang="zh">約翰二書</syn>
+        <syn lang="fr">2Jean</syn>
+        <syn lang="de">2Johannes</syn>
+        <syn lang="it">2Giovanni</syn>
+        <syn lang="pl">2Jana</syn>
+        <syn lang="pt">2João</syn>
+        <syn lang="ro">2Ioan</syn>
+        <syn lang="ru">2Иоанна</syn>
+        <syn lang="es">2Juan</syn>
+        <syn lang="ua">2Івана</syn>
+    </book>
+    <book name="3 John" code="3John" index="64" chapters="1">
+        <syn lang="en">3 Jhn</syn>
+        <syn lang="en">3 Jn</syn>
+        <syn lang="en">3 J</syn>
+        <syn lang="en">3John</syn>
+        <syn lang="en">3Jhn</syn>
+        <syn lang="en">3Joh</syn>
+        <syn lang="en">3Jn</syn>
+        <syn lang="en">3Jo</syn>
+        <syn lang="en">3J</syn>
+        <syn lang="en">III John</syn>
+        <syn lang="en">III Jhn</syn>
+        <syn lang="en">III Joh</syn>
+        <syn lang="en">III Jn</syn>
+        <syn lang="en">III Jo</syn>
+        <syn lang="en">3rd John</syn>
+        <syn lang="en">Third John</syn>
+        <syn lang="ces">3Janův</syn>
+        <syn lang="slk">3Jána</syn>
+        <syn lang="zh">約翰三書</syn>
+        <syn lang="fr">3Jean</syn>
+        <syn lang="de">3Johannes</syn>
+        <syn lang="it">3Giovanni</syn>
+        <syn lang="pl">3Jana</syn>
+        <syn lang="pt">3João</syn>
+        <syn lang="ro">3Ioan</syn>
+        <syn lang="ru">3Иоанна</syn>
+        <syn lang="es">3Juan</syn>
+        <syn lang="ua">3Івана</syn>
+    </book>
+    <book name="Jude" code="Jude" index="65" chapters="1">
+        <syn lang="en">Jud</syn>
+        <syn lang="en">Jd</syn>
+        <syn lang="ces">Judův</syn>
+        <syn lang="slk">Júdu</syn>
+        <syn lang="zh">猶大書</syn>
+        <syn lang="fr">Jude</syn>
+        <syn lang="de">Judas</syn>
+        <syn lang="it">Giuda</syn>
+        <syn lang="pl">Judy</syn>
+        <syn lang="pt">Judas</syn>
+        <syn lang="ro">Iuda</syn>
+        <syn lang="ru">Иуды</syn>
+        <syn lang="es">Judas</syn>
+        <syn lang="ua">Юди</syn>
+    </book>
+    <book name="Revelation" code="Rev" index="66" chapters="22">
+        <syn lang="en">Rev</syn>
+        <syn lang="en">Re</syn>
+        <syn lang="en">Revelations</syn>
+        <syn lang="en">The Revelation</syn>
+        <syn lang="ces">Zjevení</syn>
+        <syn lang="slk">ZjavenieJána</syn>
+        <syn lang="slk">Zjavenie Jána</syn>
+        <syn lang="zh">启示录</syn>
+        <syn lang="fr">Apocalypse</syn>
+        <syn lang="de">Offenbarung</syn>
+        <syn lang="it">Apocalisse</syn>
+        <syn lang="pl">Objawienie</syn>
+        <syn lang="pt">Apocalipse</syn>
+        <syn lang="ro">Apocalipsa</syn>
+        <syn lang="ro">Apocalips</syn>
+        <syn lang="ru">Откровение</syn>
+        <syn lang="es">Apocalipsis</syn>
+        <syn lang="ua">Об'явлення</syn>
+    </book>
+</bible>
+

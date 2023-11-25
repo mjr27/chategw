@@ -1,0 +1,14 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{egw_lang_ara}[2023/07/06 EGW Arabic Package]
+\RequirePackage{weml_lang}
+\babelprovide[import, main]{arabic}
+\babelprovide[import, onchar = fonts ids]{english}
+\setupfont{Noto Naskh Arabic:mode=harf;}
+\renewcommand\egwRenderCopyright{
+    \begin{otherlanguage}{english}
+        Copyright~\copyright~\the\year{}\\Ellen G. White Estate, Inc.
+    \end{otherlanguage}
+}
+\babelfont[english]{rm}[Scale=0.8]{\font@serif}
+\selectlanguage{arabic}
+\renewcommand\egwRenderPreface\@empty

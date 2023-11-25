@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid" version="3.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:title>{{ publication.Title | decode }}</dc:title>
+        {% if publication.Isbn != null %}
+            <dc:source>urn:isbn:{{ publication.Isbn }}</dc:source>
+        {% endif %}
+        {% if publication.Author != null %}
+            <dc:creator
+                    id="creator">{{ publication.Author.FirstName | decode }} {{ publication.Author.MiddleName | decode }} {{ publication.Author.LastName | decode }}</dc:creator>
+            <meta refines="#creator" property="role" scheme="marc:relators" id="role">aut</meta>
+            <meta refines="#creator"
+                  property="file-as">{{ publication.Author.LastName | decode }}, {{ publication.Author.FirstName | decode }} {{ publication.Author.MiddleName | decode }}</meta>
+        {% endif %}
+        {% if publication.Publisher != "" %}
+            <dc:publisher>{{ publication.Publisher | decode }}</dc:publisher>
+        {% endif %}
+        <meta property="dcterms:modified">{{ generationTime }}</meta>
+        <dc:language>{{ language }}</dc:language>
+        <dc:rights>Copyright &#169; {{ "now" | date: "%Y" }}, Ellen G. White Estate, Inc.</dc:rights>
+        <dc:identifier id="uuid">urn:uuid:{{ epubGuid }}</dc:identifier>
+        <meta name="cover" content="cover-image"/>
+    </metadata>
+    <manifest>
+        {% for file in files %}
+            <item id="{{ file.Id }}" href="{{ file.File }}" {% if file.Id == "toc" %}properties="nav"{% endif %}
+                  media-type="{{ file.MediaType }}"/>
+        {% endfor %}
+    </manifest>
+    <spine toc="toc-ncx" page-progression-direction="{{ langDir }}">
+        {% for file in files %}
+            {% if file.Extension == "xhtml" %}
+                <itemref idref="{{ file.Name }}"></itemref>
+            {% endif %}
+        {% endfor %}
+    </spine>
+</package>

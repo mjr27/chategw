@@ -1,0 +1,3 @@
+*.json
+*.csv
+!default-permissions.json
