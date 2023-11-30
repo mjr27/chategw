@@ -4,5 +4,5 @@ namespace ChatEgw.UI.Application;
 
 internal interface IQueryPreprocessService
 {
-    Task<PreprocessedQueryResponse> IsQuestion(string query, CancellationToken cancellationToken);
+    Task<PreprocessedQueryResponse> PreprocessQuery(string query, CancellationToken cancellationToken);
 }

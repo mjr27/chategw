@@ -3,22 +3,15 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ChatEgw.UI.Services;
 
-public class TreeModel
+public class TreeModel(string id, string title)
 {
-    public string Id { get; }
+    public string Id { get; } = id;
     public TreeModel? Parent { get; set; }
-    public string Title { get; }
+    public string Title { get; } = title;
     public HashSet<TreeModel> Children { get; set; } = new();
     public bool IsExpanded { get; set; }
     public bool? IsChecked { get; set; } = false;
     public bool HasChildren => Children.Any();
-
-    public TreeModel(string id, string title)
-    {
-        Id = id;
-        Title = title;
-        // Parent = parent;
-    }
 
 
     public void AddChild(TreeModel child)
@@ -72,20 +65,13 @@ public class TreeModel
     }
 }
 
-public class TreeService
+public class TreeService(IDbContextFactory<SearchDbContext> dbContextFactory)
 {
-    private readonly IDbContextFactory<SearchDbContext> _dbContextFactory;
-
     public HashSet<TreeModel> Tree { get; set; } = new();
-
-    public TreeService(IDbContextFactory<SearchDbContext> dbContextFactory)
-    {
-        _dbContextFactory = dbContextFactory;
-    }
 
     public async Task Initialize()
     {
-        await using SearchDbContext dbContext = await _dbContextFactory.CreateDbContextAsync();
+        await using SearchDbContext dbContext = await dbContextFactory.CreateDbContextAsync();
         List<SearchNode> folders = await dbContext.Nodes
             .Where(r => r.IsFolder)
             .OrderBy(r => r.GlobalOrder)
@@ -120,8 +106,12 @@ public class TreeService
         return selected;
     }
 
+    /// <summary> Is EGW Writings Only </summary>
+    public bool EgwWritingsOnly { get; set; } = true;
+
     private static void UpdateSelected(TreeModel model, ISet<string> selected)
     {
+        
         switch (model.IsChecked)
         {
             case true:

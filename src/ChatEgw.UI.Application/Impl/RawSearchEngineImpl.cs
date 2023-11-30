@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Text.Json;
 using ChatEgw.UI.Application.Models;
 using ChatEgw.UI.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -9,38 +10,25 @@ using Pgvector.EntityFrameworkCore;
 
 namespace ChatEgw.UI.Application.Impl;
 
-internal class RawSearchEngineImpl : IRawSearchEngine
+internal class RawSearchEngineImpl(
+    IDbContextFactory<SearchDbContext> dbContextFactory,
+    ILogger<RawSearchEngineImpl> logger) : IRawSearchEngine
 {
-    private readonly IDbContextFactory<SearchDbContext> _dbContextFactory;
-    private readonly ILogger<RawSearchEngineImpl> _logger;
-
-    public RawSearchEngineImpl(
-        IDbContextFactory<SearchDbContext> dbContextFactory,
-        ILogger<RawSearchEngineImpl> logger
-    )
-    {
-        _dbContextFactory = dbContextFactory;
-        _logger = logger;
-    }
-
     public async Task<List<SearchResultDto>> SearchEmbeddings(Vector query,
         int limit,
+        IReadOnlyCollection<string> references,
+        IReadOnlyCollection<PreprocessedEntity> entities,
         SearchFilterRequest filter,
         CancellationToken cancellationToken)
     {
-        await using SearchDbContext db = await _dbContextFactory.CreateDbContextAsync(cancellationToken);
-
+        await using SearchDbContext db = await dbContextFactory.CreateDbContextAsync(cancellationToken);
         IQueryable<SearchChunk> filteredItems = db.Chunks;
         if (filter.Folders.Any())
         {
             filteredItems = filteredItems.Where(s =>
-                EF.Functions.JsonExistAny(s.Paragraph.Node.Children, filter.Folders));
+                s.Paragraph.Node.Children.Intersect(filter.Folders).Any());
         }
-
-        if (filter.IsEgw is not null)
-        {
-            filteredItems = filteredItems.Where(r => r.Paragraph.Node.IsEgw == filter.IsEgw.Value);
-        }
+        Console.WriteLine(JsonSerializer.Serialize(filter.Folders));
 
         if (filter.MinDate is not null)
         {
@@ -55,27 +43,127 @@ internal class RawSearchEngineImpl : IRawSearchEngine
         await using IDbContextTransaction t = await db.Database.BeginTransactionAsync(cancellationToken);
         var sw = Stopwatch.StartNew();
         await ConfigureIndex(db, cancellationToken);
-        List<SearchResultDto> data = await filteredItems
-            .OrderBy(r => r.Embedding.MaxInnerProduct(query))
-            .Take(limit)
-            .Select(r => new SearchResultDto
+        var data = new List<SearchResultDto>();
+        if (entities.Any() || references.Any())
+        {
+            IQueryable<SearchChunk> filteredEntitiesQuery =
+                await FilterEntities(filteredItems, references, entities, cancellationToken);
+
+            if (!references.Any())
             {
-                Id = r.Id,
-                ReferenceCode = r.Paragraph.RefCode,
-                Snippet = r.Content,
-                Content = r.Paragraph.Content,
-                Uri = r.Paragraph.Uri,
-                Distance = r.Embedding.MaxInnerProduct(query)
-            })
-            .ToListAsync(cancellationToken: cancellationToken);
-        _logger.LogInformation("Search took {ElapsedMilliseconds} ms", sw.ElapsedMilliseconds);
+                if (filter.IsEgw is not null)
+                {
+                    filteredEntitiesQuery =
+                        filteredEntitiesQuery.Where(r => r.Paragraph.Node.IsEgw == filter.IsEgw.Value);
+                }
+            }
+
+            data = await filteredEntitiesQuery
+                .OrderBy(r => r.Embedding.MaxInnerProduct(query))
+                .Take(limit)
+                .Select(r => new SearchResultDto
+                {
+                    Id = r.Id,
+                    ReferenceCode = r.Paragraph.RefCode,
+                    Snippet = r.Content,
+                    Content = r.Paragraph.Content,
+                    Uri = r.Paragraph.Uri,
+                    Distance = r.Embedding.MaxInnerProduct(query)
+                })
+                .ToListAsync(cancellationToken: cancellationToken);
+            logger.LogError("Found results: {Count}", data.Count);
+        }
+
+        if (!data.Any())
+        {
+            if (filter.IsEgw is not null)
+            {
+                filteredItems = filteredItems.Where(r => r.Paragraph.Node.IsEgw == filter.IsEgw.Value);
+            }
+
+            data = await filteredItems
+                .OrderBy(r => r.Embedding.MaxInnerProduct(query))
+                .Take(limit)
+                .Select(r => new SearchResultDto
+                {
+                    Id = r.Id,
+                    ReferenceCode = r.Paragraph.RefCode,
+                    Snippet = r.Content,
+                    Content = r.Paragraph.Content,
+                    Uri = r.Paragraph.Uri,
+                    Distance = r.Embedding.MaxInnerProduct(query)
+                })
+                .ToListAsync(cancellationToken: cancellationToken);
+        }
+
+        logger.LogInformation("Search took {ElapsedMilliseconds} ms", sw.ElapsedMilliseconds);
         return data;
+    }
+
+    private async Task<IQueryable<SearchChunk>> FilterEntities(
+        IQueryable<SearchChunk> query,
+        IReadOnlyCollection<string> references,
+        IEnumerable<PreprocessedEntity> entities,
+        CancellationToken cancellationToken)
+    {
+        IDictionary<SearchEntityTypeEnum, HashSet<string>> data = await GetFilteredData(cancellationToken);
+        foreach (PreprocessedEntity entity in entities)
+        {
+            if (!data.TryGetValue(entity.Type, out HashSet<string>? values))
+            {
+                continue;
+            }
+
+            if (values.Contains(entity.Text))
+            {
+                query = query.Where(r => r.Entities.Any(p => p.Content == entity.Text));
+            }
+        }
+
+        if (references.Any())
+        {
+            query = query.Where(p => p.Paragraph.References.Any(r => references.Contains(r.ReferenceCode)));
+        }
+
+        return query;
+    }
+
+    private static readonly SemaphoreSlim Sem = new(1, 1);
+    private IDictionary<SearchEntityTypeEnum, HashSet<string>>? _entities;
+
+    private async Task<IDictionary<SearchEntityTypeEnum, HashSet<string>>> GetFilteredData(
+        CancellationToken cancellationToken)
+    {
+        if (_entities is not null)
+        {
+            return _entities;
+        }
+
+        await Sem.WaitAsync(cancellationToken);
+        try
+        {
+            if (_entities is not null)
+            {
+                return _entities;
+            }
+
+            await using SearchDbContext db = await dbContextFactory.CreateDbContextAsync(cancellationToken);
+            var entities = await db.Entities.Select(r => new { r.Type, r.Content }).ToListAsync(cancellationToken);
+            _entities = entities.GroupBy(r => r.Type)
+                .ToDictionary(r => r.Key, r => new HashSet<string>(r.Select(b => b.Content)));
+            logger.LogInformation("Fetched {Count} entities", _entities.Sum(r => r.Value.Count));
+            return _entities;
+        }
+        finally
+        {
+            Sem.Release();
+        }
     }
 
     public async Task<List<SearchResultDto>> SearchFts(string query, int limit, SearchFilterRequest filter,
         CancellationToken cancellationToken)
     {
-        await using SearchDbContext db = await _dbContextFactory.CreateDbContextAsync(cancellationToken);
+        await using SearchDbContext db = await dbContextFactory.CreateDbContextAsync(cancellationToken);
         var sw = Stopwatch.StartNew();
         IQueryable<SearchParagraph> filteredItems = db.Paragraphs;
         if (filter.Folders.Any())
@@ -114,7 +202,7 @@ internal class RawSearchEngineImpl : IRawSearchEngine
             })
             .OrderByDescending(r => r.Distance)
             .ToListAsync(cancellationToken: cancellationToken);
-        _logger.LogInformation("Search took {ElapsedMilliseconds} ms", sw.ElapsedMilliseconds);
+        logger.LogInformation("Search took {ElapsedMilliseconds} ms", sw.ElapsedMilliseconds);
         return result;
     }
 

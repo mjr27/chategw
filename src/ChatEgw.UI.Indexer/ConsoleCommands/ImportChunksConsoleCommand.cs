@@ -1,5 +1,5 @@
-using System.Text.RegularExpressions;
 using ChatEgw.UI.Persistence;
+using ChatEgw.UI.Persistence.Utils;
 using CliFx.Attributes;
 using CliFx.Infrastructure;
 using Microsoft.EntityFrameworkCore;
@@ -10,7 +10,7 @@ using ShellProgressBar;
 namespace ChatEgw.UI.Indexer.ConsoleCommands;
 
 [Command("import embeddings", Description = "Imports english publications from EGW Writings database")]
-public partial class ImportChunksConsoleCommand : ConsoleCommandBase
+public class ImportChunksConsoleCommand : ConsoleCommandBase
 {
     [CommandParameter(0,
         Description = "Database to convert from", IsRequired = true
@@ -35,7 +35,7 @@ public partial class ImportChunksConsoleCommand : ConsoleCommandBase
         db.ChangeTracker.AutoDetectChangesEnabled = true;
     }
 
-    private IEnumerable<SearchChunk> ReadFile(HashSet<long> paragraphs)
+    private IEnumerable<SearchChunk> ReadFile(IReadOnlySet<long> paragraphs)
     {
         var totalCount = 0;
         using (StreamReader f1 = FromFilename.OpenText())
@@ -76,7 +76,7 @@ public partial class ImportChunksConsoleCommand : ConsoleCommandBase
                 entities.Add(new SearchEntity
                 {
                     Type = GetEntityType(buf2[0]),
-                    Content = NormalizeEntityValue(buf2[1])
+                    Content = EntityUtilities.NormalizeEntityValue(buf2[1])
                 });
             }
 
@@ -109,28 +109,7 @@ public partial class ImportChunksConsoleCommand : ConsoleCommandBase
             "PERSON" => SearchEntityTypeEnum.Person,
             "GPE" => SearchEntityTypeEnum.Place,
             "LOC" => SearchEntityTypeEnum.Place,
-            "REFERENCE" => SearchEntityTypeEnum.Reference,
             _ => throw new ArgumentOutOfRangeException(nameof(typeCode), typeCode, null)
         };
     }
-
-    private static string NormalizeEntityValue(string s)
-    {
-        return ReMultipleSpaces()
-            .Replace(
-                new string(s.Normalize().ToCharArray()
-                    .Select(c =>
-                    {
-                        if (char.IsWhiteSpace(c) || char.IsPunctuation(c))
-                        {
-                            return ' ';
-                        }
-
-                        return char.ToLowerInvariant(c);
-                    }).ToArray()),
-                " ");
-    }
-
-    [GeneratedRegex(@"\s+", RegexOptions.Compiled)]
-    private static partial Regex ReMultipleSpaces();
 }

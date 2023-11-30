@@ -31,10 +31,12 @@ public class IndexExporterService
                  | r.Parent.Parent.Parent.Parent!.Parent!.Parent!.ParentId == 2)
                 && r.Id != 218
         ).Select(r => r.Id).ToArray();
-        PublicationType[] disallowedTypes = { PublicationType.TopicalIndex,
-            PublicationType.ScriptureIndex };
+        PublicationType[] disallowedTypes =
+        {
+            PublicationType.TopicalIndex,
+            PublicationType.ScriptureIndex
+        };
         var allPublications = _db.Publications
-            // .Where(r=>r.PublicationId == 127 ||r.PublicationId == 1965)
             .Where(r => r.LanguageCode == "eng")
             .Where(r => !disallowedTypes.Contains(r.Type))
             .Where(r => r.Type != PublicationType.Bible || r.PublicationId == 1965)
@@ -171,15 +173,13 @@ public class IndexExporterService
     {
         foreach (SearchNode node in nodes)
         {
-            var children = new List<string>();
+            // var children = new List<string>();
             SearchNode? current = node;
             do
             {
-                children.Add(current.Id);
+                node.Children.Add(current.Id);
                 current = nodes.FirstOrDefault(r => r.Id == current.ParentId);
             } while (current != null);
-
-            node.Children = children.ToArray();
         }
     }
 }

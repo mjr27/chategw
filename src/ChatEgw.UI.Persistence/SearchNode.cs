@@ -9,6 +9,6 @@ public class SearchNode
     public required string? ParentId { get; set; }
     public required int GlobalOrder { get; set; }
     public required DateOnly? Date { get; set; }
-    public string[] Children { get; set; } = Array.Empty<string>();
+    public List<string> Children { get; set; } = new();
     public List<SearchParagraph> Paragraphs { get; set; } = new();
 }

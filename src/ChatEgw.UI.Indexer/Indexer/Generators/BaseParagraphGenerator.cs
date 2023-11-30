@@ -11,7 +11,9 @@ namespace ChatEgw.UI.Indexer.Indexer.Generators;
 
 public abstract partial class BaseParagraphGenerator
 {
-    protected record ParagraphModel(ParaId ParaId, string Content, ParagraphMetadata? Metadata);
+    protected record ParagraphModel(ParaId ParaId, string Content, ParagraphMetadata? Metadata,
+        List<string> References);
+    // protected record ParagraphModel(ParaId ParaId, string Content, List<string> References);
 
     private readonly PublicationDbContext _db;
     protected readonly IndexPublicationDto Publication;
@@ -47,6 +49,9 @@ public abstract partial class BaseParagraphGenerator
                           ?? "",
                 IsEgw = Publication.IsEgw,
                 NodeId = $"p{Publication.PublicationId}",
+                References = paragraph.References
+                    .Distinct()
+                    .Select(reference => new SearchParagraphReference { ReferenceCode = reference }).ToList(),
             };
             if (string.IsNullOrWhiteSpace(para.RefCode)
                 || string.IsNullOrWhiteSpace(para.Content)
@@ -57,21 +62,16 @@ public abstract partial class BaseParagraphGenerator
                 continue;
             }
 
-            foreach (var referenceText in GetReferences(paragraph.Metadata))
-            {
-                para.References.Add(new SearchParagraphReference
-                {
-                    ReferenceCode = referenceText
-                });
-            }
-
             yield return para;
         }
     }
 
     protected virtual IEnumerable<string> GetReferences(ParagraphMetadata? paragraphMetadata)
     {
-        string[] refCodes = GetReferenceCodes(paragraphMetadata).Select(NormalizeTitle).ToArray();
+        string[] refCodes = GetReferenceCodes(paragraphMetadata)
+            .Select(NormalizeTitle)
+            .Distinct()
+            .ToArray();
         if (refCodes.Length == 0)
         {
             yield break;

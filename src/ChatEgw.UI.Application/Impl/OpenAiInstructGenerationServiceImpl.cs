@@ -1,5 +1,4 @@
 using System.Runtime.CompilerServices;
-using System.Text.Json;
 using Azure.AI.OpenAI;
 using ChatEgw.UI.Application.Models;
 using Microsoft.Extensions.Configuration;
@@ -18,8 +17,10 @@ internal class OpenAiInstructGenerationServiceImpl : IInstructGenerationService
         _prompt = section.GetValue<string?>("PromptTemplate")
                   ?? """
                      Synthesize a comprehensive answer from the text above for the given question.
+                     Each paragraph of text ends with references. The references are in the format of (book, p. page.paragraph).
                      Provide a clear and concise response that summarizes the key points and information presented
-                     in the text.
+                     in the text. Include references.
+                     If no answer can be found, please write "No answer found".
                      Your answer should be in your own words and be no longer than 100 words.\n\n
 
                      Question: #QUERY#
@@ -31,11 +32,16 @@ internal class OpenAiInstructGenerationServiceImpl : IInstructGenerationService
                      """;
     }
 
+    public string GetPrompt(string query, List<AnswerResponse> answers)
+    {
+        string prompt = GeneratePrompt(query, answers);
+        prompt = LimitWords(prompt, 3000);
+        return prompt;
+    }
+
     public async IAsyncEnumerable<string> AutoComplete(string query, List<AnswerResponse> answers,
         [EnumeratorCancellation] CancellationToken cancellationToken)
     {
-        string prompt = GeneratePrompt(query, answers);
-        prompt = LimitWords(prompt, 2500);
         var options = new CompletionsOptions
         {
             DeploymentName = "gpt-3.5-turbo-instruct",
@@ -43,15 +49,13 @@ internal class OpenAiInstructGenerationServiceImpl : IInstructGenerationService
             MaxTokens = 200,
             Prompts =
             {
-                prompt
+                GetPrompt(query, answers)
             }
         };
         StreamingResponse<Completions>? streaming =
             await _openai.GetCompletionsStreamingAsync(options, cancellationToken);
-        Console.WriteLine("BEFORE 1");
         await foreach (Completions? choice in streaming)
         {
-            Console.WriteLine(JsonSerializer.Serialize(choice));
             if (choice is null)
             {
                 break;
@@ -59,19 +63,19 @@ internal class OpenAiInstructGenerationServiceImpl : IInstructGenerationService
 
             yield return choice.Choices[0].Text;
         }
-
-        Console.WriteLine("AFTER 1");
     }
 
-    private string LimitWords(string prompt, int maxCount)
+
+    private static string LimitWords(string prompt, int maxCount)
     {
-        return string.Join(" ", prompt.Split(' ').Take(maxCount)) + "\n\n";
+        return string.Join(" ", prompt.Split(' ').Take(maxCount * 3 / 4)) + "\n\n";
     }
 
-    private string GeneratePrompt(string query, IReadOnlyCollection<AnswerResponse> answers)
+    private string GeneratePrompt(string query, IEnumerable<AnswerResponse> answers)
     {
+        var commonText = string.Join("\n", answers.Select(r => r.Content + " (" + r.ReferenceCode + ")"));
         string answer = _prompt.Replace("#QUERY#", query)
-            .Replace("#TEXT#", string.Join("\n", answers.Select(r => r.Content)));
+            .Replace("#TEXT#", commonText) + "\n\n\n";
         return answer;
     }
 }

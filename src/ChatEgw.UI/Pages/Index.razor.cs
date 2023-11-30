@@ -28,6 +28,8 @@ public partial class Index
 
     private EditContext _editContext = null!;
 
+    private string _error = "";
+
 
     private void HandleAdornmentClick()
     {
@@ -43,6 +45,7 @@ public partial class Index
     }
 
     private CancellationTokenSource _cancellationTokenSource = new();
+    private string _prompt = "";
 
     private void HandleValidSubmit()
     {
@@ -54,46 +57,66 @@ public partial class Index
 
     private async Task DoSearch()
     {
-        _aiResponseCompleted = false;
-        _showAiResponse = false;
-        AiResponseWords = null;
-        CancellationToken ct = _cancellationTokenSource.Token;
-        HashSet<string> folders = TreeService.GetSelected();
-        AnsweringResponse answer = await SearchService.Search(_aiType, Model.Query,
-            new SearchFilterRequest
-            {
-                Folders = folders.ToArray()
-            }, ct);
-        Answers = answer.Answers.ToList();
-        _state = LoadingState.Completed;
-        await InvokeAsync(StateHasChanged);
-        if (answer.IsAiResponse && answer.Answers.Any())
+        _error = "";
+        _prompt = "";
+        try
         {
-            _showAiResponse = true;
-            await InvokeAsync(StateHasChanged);
-            AiResponseWords = new List<string>();
-            try
-            {
-                await foreach (string word in InstructGenerationService.AutoComplete(answer.UpdatedQuery, Answers, ct))
+            _aiResponseCompleted = false;
+            _showAiResponse = false;
+            AiResponseWords = null;
+            CancellationToken ct = _cancellationTokenSource.Token;
+            HashSet<string> folders = TreeService.GetSelected();
+            AnsweringResponse answer = await SearchService.Search(_aiType, Model.Query,
+                new SearchFilterRequest
                 {
-                    AiResponseWords.Add(word);
+                    Folders = folders.ToArray(),
+                    IsEgw = TreeService.EgwWritingsOnly ? true : null
+                }, ct);
+            AiResponseWords = new List<string>();
+            Answers = answer.Answers.ToList();
+            _state = LoadingState.Completed;
+            await InvokeAsync(StateHasChanged);
+            _prompt = InstructGenerationService.GetPrompt(answer.UpdatedQuery, Answers);
+            if (answer.IsAiResponse && answer.Answers.Count != 0)
+            {
+                _showAiResponse = true;
+                await InvokeAsync(StateHasChanged);
+                try
+                {
+                    await foreach (string word in InstructGenerationService
+                                       .AutoComplete(answer.UpdatedQuery, Answers, ct))
+                    {
+                        AiResponseWords.Add(word);
+                        await InvokeAsync(StateHasChanged);
+                    }
+
+                    _aiResponseCompleted = true;
                     await InvokeAsync(StateHasChanged);
                 }
-
-                _aiResponseCompleted = true;
-                await InvokeAsync(StateHasChanged);
+                catch (OperationCanceledException)
+                {
+                    Logger.LogError("Operation cancelled");
+                }
+                catch (Exception e)
+                {
+                    
+                    AiResponseWords?.Add(e.Message);
+                    _aiResponseCompleted = true;
+                    Logger.LogError(e, "Error while invoking OpenAI API");
+                    await InvokeAsync(StateHasChanged);
+                }
             }
-            catch (Exception e)
+            else
             {
-                AiResponseWords.Add(e.Message);
                 _aiResponseCompleted = true;
-                Logger.LogError(e, "Error while invoking OpenAI API");
                 await InvokeAsync(StateHasChanged);
             }
         }
-        else
+        catch (Exception e)
         {
+            _error = e.Message;
             _aiResponseCompleted = true;
+            Logger.LogError(e, "Error while invoking");
             await InvokeAsync(StateHasChanged);
         }
     }

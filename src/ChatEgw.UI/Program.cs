@@ -2,10 +2,8 @@ using ChatEgw.UI.Persistence;
 using ChatEgw.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using MudBlazor.Services;
-using Pgvector.EntityFrameworkCore;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
-
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 

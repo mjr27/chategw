@@ -27,6 +27,18 @@ internal sealed class BookParagraphGenerator : BaseParagraphGenerator
     {
         return paragraphs
             .Where(r => r.HeadingLevel == 0)
-            .Select(r => new ParagraphModel(r.ParaId, r.Content, r.Metadata));
+            .Select(r=> new
+            {
+                r.ParaId,
+                r.Content,
+                r.Metadata
+            })
+            .AsEnumerable()
+            .Select(r => new ParagraphModel(
+                r.ParaId,
+                r.Content,
+                r.Metadata,
+                GetReferences(r.Metadata).ToList()
+            ));
     }
 }

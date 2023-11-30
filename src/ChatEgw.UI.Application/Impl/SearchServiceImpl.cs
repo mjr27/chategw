@@ -1,4 +1,3 @@
-using System.Text.Json;
 using ChatEgw.UI.Application.Models;
 using Microsoft.Extensions.Configuration;
 using Pgvector;
@@ -28,13 +27,14 @@ internal class SearchServiceImpl : ISearchService
         _limit = configuration.GetValue<int>("Search:TopN");
     }
 
-    public async Task<AnsweringResponse> Search(SearchTypeEnum searchType,
+    public async Task<AnsweringResponse> Search(
+        SearchTypeEnum searchType,
         string query,
         SearchFilterRequest filter,
         CancellationToken cancellationToken)
     {
         PreprocessedQueryResponse preprocessedInfo =
-            await _queryPreprocessService.IsQuestion(query, cancellationToken);
+            await _queryPreprocessService.PreprocessQuery(query, cancellationToken);
         bool isQuestion = searchType switch
         {
             SearchTypeEnum.Auto => preprocessedInfo.IsQuestion,
@@ -42,14 +42,16 @@ internal class SearchServiceImpl : ISearchService
             _ => false
         };
         AnsweringResponse response = isQuestion
-            ? await AiSearch(preprocessedInfo.NormalizedQuery, filter, cancellationToken)
+            ? await AiSearch(preprocessedInfo.NormalizedQuery, preprocessedInfo.References, preprocessedInfo.Entities,
+                filter, cancellationToken)
             : await KeywordSearch(preprocessedInfo.NormalizedQuery, filter, cancellationToken);
         response.UpdatedQuery = preprocessedInfo.NormalizedQuery;
         return response;
     }
 
-    private async Task<AnsweringResponse> AiSearch(
-        string query,
+    private async Task<AnsweringResponse> AiSearch(string query,
+        IReadOnlyCollection<string> references,
+        IReadOnlyCollection<PreprocessedEntity> entities,
         SearchFilterRequest filter,
         CancellationToken cancellationToken)
     {
@@ -57,6 +59,8 @@ internal class SearchServiceImpl : ISearchService
         List<SearchResultDto> result = await _rawSearchEngine.SearchEmbeddings(
             embedding,
             _limit,
+            references,
+            entities,
             filter,
             cancellationToken);
         return new AnsweringResponse(
@@ -70,10 +74,6 @@ internal class SearchServiceImpl : ISearchService
         CancellationToken cancellationToken)
     {
         List<SearchResultDto> data = await _rawSearchEngine.SearchFts(query, _limit, filter, cancellationToken);
-        Console.WriteLine(JsonSerializer.Serialize(data, new JsonSerializerOptions
-        {
-            WriteIndented = true
-        }));
         return new AnsweringResponse(false,
             data.Select((r, i) => new AnswerResponse
             {

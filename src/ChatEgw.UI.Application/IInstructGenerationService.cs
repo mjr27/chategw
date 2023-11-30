@@ -6,4 +6,6 @@ public interface IInstructGenerationService
 {
     public IAsyncEnumerable<string> AutoComplete(string query, List<AnswerResponse> answers,
         CancellationToken cancellationToken);
+
+    string GetPrompt(string query, List<AnswerResponse> answers);
 }

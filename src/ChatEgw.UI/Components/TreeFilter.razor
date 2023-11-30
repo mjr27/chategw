@@ -11,7 +11,7 @@
                 <MudCheckBox Dense="true" T="bool?" Checked="@(context.IsChecked)"
                              CheckedChanged="@((e) => CheckedChanged(context))"
                              Class="mr-2"/>
-                
+
                 <MudText>@context.Title</MudText>
             </Content>
         </MudTreeViewItem>
@@ -22,7 +22,9 @@
 
     protected void CheckedChanged(TreeModel item)
     {
+        TreeService.EgwWritingsOnly = false;
         item.SwitchCheck();
+        InvokeAsync(StateHasChanged);
     }
 
     protected override async Task OnInitializedAsync()

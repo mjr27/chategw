@@ -4,6 +4,7 @@ using CliFx.Attributes;
 using CliFx.Infrastructure;
 using Egw.PubManagement.Persistence;
 using Microsoft.EntityFrameworkCore;
+using Npgsql;
 
 namespace ChatEgw.UI.Indexer.ConsoleCommands;
 
@@ -19,7 +20,14 @@ public class ImportEgwConsoleCommand : ConsoleCommandBase
     [CommandOption("batch-size", 'b', Description = "Batch size", IsRequired = false)]
     public int BatchSize { get; init; } = 10_000;
 
-    protected override async ValueTask Execute(IConsole console, SearchDbContext db, CancellationToken cancellationToken)
+    [Obsolete("Obsolete")]
+    public ImportEgwConsoleCommand()
+    {
+        NpgsqlConnection.GlobalTypeMapper.EnableDynamicJson();
+    }
+
+    protected override async ValueTask Execute(IConsole console, SearchDbContext db,
+        CancellationToken cancellationToken)
     {
         await using var fromContext = new PublicationDbContext(
             CreateDbContext<PublicationDbContext>(
@@ -34,7 +42,8 @@ public class ImportEgwConsoleCommand : ConsoleCommandBase
         await db.SaveChangesAsync(cancellationToken);
         db.ChangeTracker.Clear();
 
-        var egwPublicationStatus = nodes.Where(r => !r.IsFolder).ToDictionary(r => int.Parse(r.Id[1..]), r => r.IsEgw);
+        var egwPublicationStatus = nodes.Where(r => !r.IsFolder)
+            .ToDictionary(r => int.Parse(r.Id[1..]), r => r.IsEgw);
         db.ChangeTracker.AutoDetectChangesEnabled = false;
         foreach (SearchParagraph[] paragraphs in service.FetchParagraphs(egwPublicationStatus).Chunk(BatchSize))
         {

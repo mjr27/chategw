@@ -2,6 +2,8 @@ using System.Net.Http.Json;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using ChatEgw.UI.Application.Models;
+using ChatEgw.UI.Persistence;
+using ChatEgw.UI.Persistence.Utils;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
@@ -63,7 +65,6 @@ internal class PythonInteropServiceImpl : IQuestionAnsweringService, IQueryEmbed
             Answers = searchResults.Select(r => new { r.Id, r.Content })
         };
         var content = JsonContent.Create(payload, options: _jsonOptions);
-        // StringContent content = new StringContent(payload, new MediaTypeHeaderValue("application/json"));
         using HttpResponseMessage response =
             await _httpClient.PostAsync(_answerQuestionsUri, content, cancellationToken);
         response.EnsureSuccessStatusCode();
@@ -98,13 +99,18 @@ internal class PythonInteropServiceImpl : IQuestionAnsweringService, IQueryEmbed
         return result;
     }
 
+    private record PreprocessedEntityPayload(string Type, string Text);
+
     private class PreprocessPayload
     {
         [JsonPropertyName("is_question")] public required bool IsQuestion { get; set; }
         [JsonPropertyName("normalized_query")] public required string Query { get; set; }
+
+        // ReSharper disable once CollectionNeverUpdated.Local
+        [JsonPropertyName("entities")] public required List<PreprocessedEntityPayload> Entities { get; set; }
     }
 
-    public async Task<PreprocessedQueryResponse> IsQuestion(string query, CancellationToken cancellationToken)
+    public async Task<PreprocessedQueryResponse> PreprocessQuery(string query, CancellationToken cancellationToken)
     {
         Uri uri = new UriBuilder(_preprocessQuestionsUri)
         {
@@ -115,6 +121,27 @@ internal class PythonInteropServiceImpl : IQuestionAnsweringService, IQueryEmbed
         string content = await response.Content.ReadAsStringAsync(cancellationToken);
         PreprocessPayload payload = JsonSerializer.Deserialize<PreprocessPayload>(content, options: _jsonOptions)
                                     ?? throw new InvalidOperationException();
-        return new PreprocessedQueryResponse(payload.IsQuestion, payload.Query);
+
+        var entities = new List<PreprocessedEntity>();
+        var references = new List<string>();
+        foreach (PreprocessedEntityPayload item in payload.Entities)
+        {
+            string entityValue = EntityUtilities.NormalizeEntityValue(item.Text);
+            switch (item.Type)
+            {
+                case "REFERENCE":
+                    references.Add(EntityUtilities.NormalizeEntityValue(entityValue));
+                    break;
+                case "LOC":
+                case "GPE":
+                    entities.Add(new PreprocessedEntity(SearchEntityTypeEnum.Place, entityValue));
+                    break;
+                case "PERSON":
+                    entities.Add(new PreprocessedEntity(SearchEntityTypeEnum.Person, entityValue));
+                    break;
+            }
+        }
+
+        return new PreprocessedQueryResponse(payload.IsQuestion, payload.Query, references, entities);
     }
 }

@@ -5,9 +5,20 @@ namespace ChatEgw.UI.Application;
 
 internal interface IRawSearchEngine
 {
-    Task<List<SearchResultDto>> SearchEmbeddings(
-        Vector query,
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="query">Search query</param>
+    /// <param name="limit">Limit</param>
+    /// <param name="references">List of references to include</param>
+    /// <param name="entities">List of entities to include</param>
+    /// <param name="filter">Filter</param>
+    /// <param name="cancellationToken">Cancellation token</param>
+    /// <returns></returns>
+    Task<List<SearchResultDto>> SearchEmbeddings(Vector query,
         int limit,
+        IReadOnlyCollection<string> references,
+        IReadOnlyCollection<PreprocessedEntity> entities,
         SearchFilterRequest filter,
         CancellationToken cancellationToken);
 

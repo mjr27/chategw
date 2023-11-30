@@ -5,7 +5,6 @@ using CliFx.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure;
-using Pgvector.EntityFrameworkCore;
 
 namespace ChatEgw.UI.Indexer.ConsoleCommands;
 

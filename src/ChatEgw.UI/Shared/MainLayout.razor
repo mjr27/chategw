@@ -1,5 +1,7 @@
 ﻿@using MudBlazor.Utilities
+@using ChatEgw.UI.Services
 @inherits LayoutComponentBase
+@inject TreeService TreeService
 
 <PageTitle>ChatEgw</PageTitle>
 <MudThemeProvider Theme="CustomTheme"/>
@@ -18,6 +20,10 @@
     <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2" Variant="DrawerVariant.Responsive" Class="drawer-container">
         <MudDrawerContainer Class="pt-4">
             <TreeFilter/>
+            <MudDivider Class="mt-2" />
+            <div class="mx-2">
+            <MudSwitch @bind-Checked="@TreeService.EgwWritingsOnly">EGW Writings Only</MudSwitch>
+            </div>
         </MudDrawerContainer>
     </MudDrawer>
     <MudMainContent>

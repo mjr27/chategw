@@ -69,8 +69,7 @@ class AiClient:
         self.activation_function = torch.nn.Sigmoid().to(self.device)
 
         self.qa = pipeline('question-answering', model=ANSWERING_MODEL, tokenizer=ANSWERING_MODEL, device=self.device)
-        self._detector = LanguageDetector(Language.ENGLISH, Language.RUSSIAN, Language.UKRAINIAN, Language.SPANISH,
-                                          Language.PORTUGUESE)
+        self._detector = LanguageDetector(Language.ENGLISH, Language.RUSSIAN, Language.UKRAINIAN, Language.SPANISH)
         self._translator = UniversalTranslator()
         self._question_detector = QuestionDetector()
         self._entity_parser = EntityParser(SPACY_MODEL)

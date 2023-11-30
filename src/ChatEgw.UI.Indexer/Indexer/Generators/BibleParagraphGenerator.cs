@@ -5,16 +5,10 @@ using WhiteEstate.DocFormat;
 
 namespace ChatEgw.UI.Indexer.Indexer.Generators;
 
-internal sealed class BibleParagraphGenerator : BaseParagraphGenerator
-{
-    private readonly int _level;
-
-    public BibleParagraphGenerator(PublicationDbContext db, IndexPublicationDto publication, int level) : base(db,
+internal sealed class BibleParagraphGenerator(PublicationDbContext db, IndexPublicationDto publication, int level)
+    : BaseParagraphGenerator(db,
         publication)
-    {
-        _level = level;
-    }
-
+{
     protected override IEnumerable<string> GetReferenceCodes(ParagraphMetadata? paragraphMetadata)
     {
         if (paragraphMetadata?.BibleMetadata is null)
@@ -34,8 +28,8 @@ internal sealed class BibleParagraphGenerator : BaseParagraphGenerator
 
     protected override IEnumerable<ParagraphModel> FetchParagraphs(IQueryable<Paragraph> paragraphs)
     {
-        var currentContent = new ParagraphModel(new ParaId(), "", null);
-        foreach (var paragraph in paragraphs.Where(r => r.HeadingLevel == 0 || r.HeadingLevel >= _level)
+        var currentContent = new ParagraphModel(new ParaId(), "", null, new List<string>());
+        foreach (var paragraph in paragraphs.Where(r => r.HeadingLevel == 0 || r.HeadingLevel >= level)
                      .Select(
                          r => new
                          {
@@ -47,7 +41,7 @@ internal sealed class BibleParagraphGenerator : BaseParagraphGenerator
                          }
                      ))
         {
-            if (paragraph.HeadingLevel == _level)
+            if (paragraph.HeadingLevel == level)
             {
                 if (!currentContent.ParaId.IsEmpty)
                 {
@@ -57,12 +51,14 @@ internal sealed class BibleParagraphGenerator : BaseParagraphGenerator
                 currentContent = new ParagraphModel(
                     paragraph.ParaId,
                     "",
-                    paragraph.Metadata
+                    paragraph.Metadata,
+                    GetReferences(paragraph.Metadata).ToList()
                 );
             }
             else
             {
                 currentContent = currentContent with { Content = currentContent.Content + " " + paragraph.Content };
+                currentContent.References.AddRange(GetReferences(paragraph.Metadata));
             }
         }
 
@@ -75,7 +71,9 @@ internal sealed class BibleParagraphGenerator : BaseParagraphGenerator
     protected override IEnumerable<string> GetReferences(ParagraphMetadata? paragraphMetadata)
     {
         string[] refCodes = GetReferenceCodes(paragraphMetadata)
-            .Select(NormalizeTitle).ToArray();
+            .Select(NormalizeTitle)
+            .Distinct()
+            .ToArray();
         if (refCodes.Length == 0)
         {
             yield break;
