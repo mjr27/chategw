@@ -64,6 +64,7 @@ internal class PythonInteropServiceImpl : IQuestionAnsweringService, IQueryEmbed
             Query = query,
             Answers = searchResults.Select(r => new { r.Id, r.Content })
         };
+        _logger.LogInformation("Sending payload to Python API: {Count} answers", searchResults.Count);
         var content = JsonContent.Create(payload, options: _jsonOptions);
         using HttpResponseMessage response =
             await _httpClient.PostAsync(_answerQuestionsUri, content, cancellationToken);
@@ -72,6 +73,7 @@ internal class PythonInteropServiceImpl : IQuestionAnsweringService, IQueryEmbed
         List<AnswerPayload> answers =
             JsonSerializer.Deserialize<List<AnswerPayload>>(responseContent, options: _jsonOptions)
             ?? throw new InvalidOperationException();
+        _logger.LogInformation("Got {Count} results from python api", answers.Count);
         var result = new List<AnswerResponse>();
         for (var i = 0; i < answers.Count; i++)
         {
@@ -101,6 +103,13 @@ internal class PythonInteropServiceImpl : IQuestionAnsweringService, IQueryEmbed
 
     private record PreprocessedEntityPayload(string Type, string Text);
 
+    private record PreprocessedPubPayload(
+        string Book,
+        int? Chapter,
+        int? Endchapter,
+        int? Page,
+        int? Endpage);
+
     private class PreprocessPayload
     {
         [JsonPropertyName("is_question")] public required bool IsQuestion { get; set; }
@@ -108,6 +117,8 @@ internal class PythonInteropServiceImpl : IQuestionAnsweringService, IQueryEmbed
 
         // ReSharper disable once CollectionNeverUpdated.Local
         [JsonPropertyName("entities")] public required List<PreprocessedEntityPayload> Entities { get; set; }
+        // ReSharper disable once CollectionNeverUpdated.Local
+        [JsonPropertyName("references")] public required List<PreprocessedPubPayload> References { get; set; }
     }
 
     public async Task<PreprocessedQueryResponse> PreprocessQuery(string query, CancellationToken cancellationToken)
@@ -123,15 +134,23 @@ internal class PythonInteropServiceImpl : IQuestionAnsweringService, IQueryEmbed
                                     ?? throw new InvalidOperationException();
 
         var entities = new List<PreprocessedEntity>();
-        var references = new List<string>();
+        var references = payload.References
+            .Select(r => new PreprocessedPublicationReference
+            {
+                Publication = r.Book,
+                Chapter = r.Chapter,
+                EndChapter = r.Endchapter,
+                Page = r.Page,
+                EndPage = r.Endpage
+            }).ToList();
         foreach (PreprocessedEntityPayload item in payload.Entities)
         {
             string entityValue = EntityUtilities.NormalizeEntityValue(item.Text);
             switch (item.Type)
             {
-                case "REFERENCE":
-                    references.Add(EntityUtilities.NormalizeEntityValue(entityValue));
-                    break;
+                // case "REFERENCE":
+                //     references.Add(EntityUtilities.NormalizeEntityValue(entityValue));
+                //     break;
                 case "LOC":
                 case "GPE":
                     entities.Add(new PreprocessedEntity(SearchEntityTypeEnum.Place, entityValue));
@@ -142,6 +161,9 @@ internal class PythonInteropServiceImpl : IQuestionAnsweringService, IQueryEmbed
             }
         }
 
-        return new PreprocessedQueryResponse(payload.IsQuestion, payload.Query, references, entities);
+        Console.WriteLine(
+            JsonSerializer.Serialize(new PreprocessedQueryResponse(payload.IsQuestion, payload.Query, entities,
+                references)));
+        return new PreprocessedQueryResponse(payload.IsQuestion, payload.Query, entities, references);
     }
 }

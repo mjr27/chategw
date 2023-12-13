@@ -11,6 +11,7 @@
     private List<AnswerResponse>? Answers { get; set; } = new();
     private SearchTypeEnum _aiType = SearchTypeEnum.AiSearch;
     private bool _showAiResponse;
+    private bool _expanded;
 
 }
 
@@ -45,7 +46,7 @@ else
     switch (_state)
     {
         case LoadingState.New:
-            <p>TODO some help</p>
+            <p>Working BETA</p>
             break;
         case LoadingState.Loading:
             <MudElement Class="align-center align-content-center  d-flex align-self-center justify-center my-12">
@@ -61,6 +62,13 @@ else
                             <MudText Typo="Typo.h6">Response</MudText>
                         </CardHeaderContent>
 
+                        <CardHeaderActions>
+                            @if (!string.IsNullOrWhiteSpace(_prompt))
+                            {
+                                <MudIconButton Icon="@Icons.Material.Filled.Info" Color="Color.Default" OnClick="@(() => HandleShowPrompt(_prompt))"/>
+                            }
+                        </CardHeaderActions>
+
                     </MudCardHeader>
                     <MudCardContent>
                         @if (AiResponseWords == null)
@@ -69,16 +77,7 @@ else
                         }
                         else
                         {
-                            <MudText Typo="Typo.body2">
-                                @foreach (string word in AiResponseWords)
-                                {
-                                    <span class="word">@word</span>
-                                }
-                                @if (!_aiResponseCompleted)
-                                {
-                                    <span class="word">&hellip;</span>
-                                }
-                            </MudText>
+                            <ResponseDisplay Words="@AiResponseWords" Answers="@Answers" Completed="@_aiResponseCompleted" />
                         }
                     </MudCardContent>
                 </MudCard>
@@ -97,9 +96,16 @@ else
                 }
                 else
                 {
-                    foreach (AnswerResponse answer in Answers)
+                    int i = 0;
+                    foreach (AnswerResponse answer in _expanded ? Answers : Answers.Take(10))
                     {
-                        <AiAnswer Answer="answer"/>
+                        var index = i;
+                        <AiAnswer Id="@("answer-"+ index)"  Answer="answer"/>
+                        i++;
+                    }
+                    if (!_expanded && Answers.Count > 10)
+                    {
+                        <MudButton Variant="Variant.Text" Color="Color.Primary" OnClick="@(() => _expanded = true)">Show all</MudButton>
                     }
                 }
             </MudPaper>

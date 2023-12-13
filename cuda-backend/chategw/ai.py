@@ -1,5 +1,4 @@
 import typing
-from timeit import default_timer as timer
 
 import spacy
 import torch
@@ -10,15 +9,18 @@ from sentence_transformers import SentenceTransformer
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, pipeline
 
 from chategw.models import LanguageDetector, QuestionDetector, UniversalTranslator
+from chategw.models.book_parsing import BookReference, EgwBookMatcher
 from chategw.models.entity_parser import EntityParser, RecognizedEntity
 
 DEDUPLICATION_MODEL = "all-MiniLM-L6-v2"
 EMBEDDING_MODEL = "sentence-transformers/multi-qa-mpnet-base-dot-v1"
 RANKER_MODEL = "cross-encoder/ms-marco-MiniLM-L-12-v2"
 ANSWERING_MODEL = "deepset/roberta-base-squad2"
-SPACY_MODEL = "models/spacy"
 
+SPACY_NER_MODEL = "models/spacy-ner"
+SPACY_REFERENCE_MODEL = "models/spacy-ref"
 spacy.prefer_gpu()
+
 
 class SearchResultDocument(BaseModel):
     id: int = Field(description="Unique ID")
@@ -36,6 +38,7 @@ class PreprocessQueryDocument(BaseModel):
     language: str = Field(description="Language")
     normalized_query: str = Field(description="Normalized query")
     entities: typing.List[RecognizedEntity] = Field(description="Entities")
+    references: typing.List[BookReference] = Field(description="References")
 
 
 class _Dto(typing.TypedDict):
@@ -72,7 +75,8 @@ class AiClient:
         self._detector = LanguageDetector(Language.ENGLISH, Language.RUSSIAN, Language.UKRAINIAN, Language.SPANISH)
         self._translator = UniversalTranslator()
         self._question_detector = QuestionDetector()
-        self._entity_parser = EntityParser(SPACY_MODEL)
+        self._entity_parser = EntityParser(SPACY_NER_MODEL)
+        self._ref_parser = EgwBookMatcher(SPACY_REFERENCE_MODEL)
 
     def preprocess_query(self, query: str) -> PreprocessQueryDocument:
         language = self._detector.detect(query)
@@ -87,7 +91,9 @@ class AiClient:
             is_question=is_question,
             language=language.name,
             normalized_query=new_query,
-            entities=entities)
+            entities=entities,
+            references=[match for _, match in self._ref_parser(query)]
+        )
 
     def encode_embedding(self, query: str) -> ndarray:
         return self.embedding_transformer.encode(query, convert_to_numpy=True)
@@ -100,16 +106,11 @@ class AiClient:
                               threshold: float = 0.5, ) -> \
             typing.List[SearchAnswerDocument]:
         query = self._fix_query(query)
-        start = timer()
         docs: typing.List[_Dto] = [dict(id=d.id, content=d.content, score=0, answer=None) for d in documents]
-        print("after docs", timer() - start)
         with torch.inference_mode():
             docs = self._rerank(query, docs, self.batch_size)
-            print("after rerank", timer() - start)
             docs = self._deduplicate(docs)
-            print("after deduplicate", timer() - start)
             docs = self._extract_answers(query, docs, threshold)
-            print("after answers", timer() - start)
         return [SearchAnswerDocument(**d) for d in docs[:count]]
 
     @staticmethod

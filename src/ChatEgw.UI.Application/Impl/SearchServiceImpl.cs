@@ -1,5 +1,6 @@
 using ChatEgw.UI.Application.Models;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using Pgvector;
 
 namespace ChatEgw.UI.Application.Impl;
@@ -10,6 +11,7 @@ internal class SearchServiceImpl : ISearchService
     private readonly IQueryPreprocessService _queryPreprocessService;
     private readonly IQueryEmbeddingService _queryEmbeddingService;
     private readonly IQuestionAnsweringService _questionAnsweringService;
+    private readonly ILogger<SearchServiceImpl> _logger;
     private readonly int _limit;
 
     public SearchServiceImpl(
@@ -17,13 +19,14 @@ internal class SearchServiceImpl : ISearchService
         IRawSearchEngine rawSearchEngine,
         IQueryPreprocessService queryPreprocessService,
         IQueryEmbeddingService queryEmbeddingService,
-        IQuestionAnsweringService questionAnsweringService
-    )
+        IQuestionAnsweringService questionAnsweringService,
+        ILogger<SearchServiceImpl> logger)
     {
         _rawSearchEngine = rawSearchEngine;
         _queryPreprocessService = queryPreprocessService;
         _queryEmbeddingService = queryEmbeddingService;
         _questionAnsweringService = questionAnsweringService;
+        _logger = logger;
         _limit = configuration.GetValue<int>("Search:TopN");
     }
 
@@ -50,7 +53,7 @@ internal class SearchServiceImpl : ISearchService
     }
 
     private async Task<AnsweringResponse> AiSearch(string query,
-        IReadOnlyCollection<string> references,
+        IReadOnlyCollection<PreprocessedPublicationReference> references,
         IReadOnlyCollection<PreprocessedEntity> entities,
         SearchFilterRequest filter,
         CancellationToken cancellationToken)
@@ -63,6 +66,7 @@ internal class SearchServiceImpl : ISearchService
             entities,
             filter,
             cancellationToken);
+        _logger.LogInformation("Found {Count} results", result.Count);
         return new AnsweringResponse(
             true,
             await _questionAnsweringService.AnswerQuestions(query, result, cancellationToken));

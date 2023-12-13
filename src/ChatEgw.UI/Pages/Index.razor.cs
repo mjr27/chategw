@@ -1,8 +1,10 @@
 using System.ComponentModel.DataAnnotations;
 using ChatEgw.UI.Application;
 using ChatEgw.UI.Application.Models;
+using ChatEgw.UI.Components;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
+using MudBlazor;
 
 namespace ChatEgw.UI.Pages;
 
@@ -11,6 +13,7 @@ public partial class Index
     [Inject] public required ISearchService SearchService { get; set; }
     [Inject] public required IInstructGenerationService InstructGenerationService { get; set; }
     [Inject] public required ILogger<Index> Logger { get; set; }
+    [Inject] public required IDialogService DialogService { get; set; }
 
     private enum LoadingState
     {
@@ -57,6 +60,7 @@ public partial class Index
 
     private async Task DoSearch()
     {
+        _expanded = false;
         _error = "";
         _prompt = "";
         try
@@ -65,7 +69,7 @@ public partial class Index
             _showAiResponse = false;
             AiResponseWords = null;
             CancellationToken ct = _cancellationTokenSource.Token;
-            HashSet<string> folders = TreeService.GetSelected();
+            HashSet<string> folders = TreeService.Selected;
             AnsweringResponse answer = await SearchService.Search(_aiType, Model.Query,
                 new SearchFilterRequest
                 {
@@ -99,7 +103,6 @@ public partial class Index
                 }
                 catch (Exception e)
                 {
-                    
                     AiResponseWords?.Add(e.Message);
                     _aiResponseCompleted = true;
                     Logger.LogError(e, "Error while invoking OpenAI API");
@@ -124,5 +127,15 @@ public partial class Index
     private void HandleInvalidSubmit()
     {
         _state = LoadingState.New;
+    }
+
+    private void HandleShowPrompt(string prompt)
+    {
+        var parameters = new DialogParameters<PromptDialog> { { x => x.Prompt, prompt } };
+        var options = new DialogOptions
+        {
+            FullWidth = true
+        };
+        DialogService.Show<PromptDialog>("", parameters, options);
     }
 }

@@ -18,6 +18,7 @@ public abstract partial class BaseParagraphGenerator
     private readonly PublicationDbContext _db;
     protected readonly IndexPublicationDto Publication;
     private readonly IElement _div;
+    private readonly IDocument _document;
 
     protected BaseParagraphGenerator(PublicationDbContext db, IndexPublicationDto publication)
     {
@@ -25,8 +26,8 @@ public abstract partial class BaseParagraphGenerator
         Publication = publication;
 
         using IBrowsingContext context = BrowsingContext.New();
-        IDocument document = context.OpenNewAsync().Result;
-        _div = document.CreateElement("div");
+        _document = context.OpenNewAsync().Result;
+        _div = _document.CreateElement("div");
     }
 
     public IEnumerable<SearchParagraph> Index()
@@ -103,20 +104,26 @@ public abstract partial class BaseParagraphGenerator
     private string ExtractContent(string content)
     {
         content = content.Replace("</w-text-block>", "</w-text-block> ");
+        content = ReBr().Replace(content, "\n");
         _div.InnerHtml = content;
         IElement[] notes = _div.QuerySelectorAll("w-note, w-non-egw").ToArray();
         foreach (IElement note in notes)
         {
-            note.Remove();
+            note.Replace(_document.CreateTextNode(" "));
         }
 
         content = _div.TextContent;
         content = ReSpaces().Replace(content, " ").Trim();
-
+        content = RePunctuationBetweenCharacters().Replace(content, " ");
         return content;
     }
 
 
     [GeneratedRegex("\\s+")]
     private static partial Regex ReSpaces();
+
+    [GeneratedRegex(@"<br\s*/?>")]
+    private static partial Regex ReBr();
+    [GeneratedRegex(@"(?<=[\.,;:!?])(?=[\p{L}])")]
+    private static partial Regex RePunctuationBetweenCharacters();
 }

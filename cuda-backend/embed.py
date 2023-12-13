@@ -12,18 +12,30 @@ from chategw.ai import AiClient
 
 
 class Paragraph:
-    __slots__ = ['id', 'content', 'embedding', 'entities']
+    __slots__ = ['id', 'is_egw', 'code', 'refcode', 'content', 'embedding', 'entities']
 
-    def __init__(self, id: str, content: str, entities: str | None):
+    def __init__(self, id: str, is_egw: bool, code: str, refcode: str, content: str, entities: str | None):
         self.id = id
         self.content = content
         self.entities = entities
+        self.is_egw = is_egw
+        self.code = code
+        self.refcode = refcode
+
+    def embedding_content(self):
+        result = ''
+        refcode = (('(' + self.code + ') ') if self.code else '') + self.refcode
+        if self.is_egw:
+            result = f'Ellen G. White wrote in {refcode}: '
+        else:
+            result = f"In {refcode} was written: "
+        return result + self.content
 
 
 def iterate_passages(lines: typing.List[str]) -> typing.Iterable[Paragraph]:
     for line in tqdm(lines, total=len(lines), desc="Embedding", mininterval=2):
-        a = line.strip().split('\t', 2)
-        yield Paragraph(a[0], a[1], a[2] if len(a) > 2 else None)
+        a = line.strip().split('\t', 5)
+        yield Paragraph(a[0], a[1] == '+', a[2], a[3], a[4], a[5] if len(a) > 5 else None)
 
 
 def split_every(n, iterable):
@@ -36,7 +48,7 @@ def split_every(n, iterable):
 
 def calculate_passages(n: int, client, lines: typing.List[str]) -> typing.Iterable[Paragraph]:
     for group in split_every(n, iterate_passages(lines)):
-        content = [passage.content for passage in group]
+        content = [passage.embedding_content() for passage in group]
         embeddings = client.encode_embeddings(content)
         for passage, embedding in zip(group, embeddings):
             passage.embedding = embedding
@@ -52,6 +64,7 @@ def index(source: str, output: str):
     out_f = codecs.open(output, 'w', buffering=True, encoding='utf-8')
     with codecs.open(source, 'r', encoding='utf-8') as f:
         lines = f.readlines()
+    # for passage in calculate_passages(10, client, lines):
     for passage in calculate_passages(10_000, client, lines):
         b = passage.embedding.tobytes()
         bytes_embedding = base64.b64encode(b).decode('utf-8')

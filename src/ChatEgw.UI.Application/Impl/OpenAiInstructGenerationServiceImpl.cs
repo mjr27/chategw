@@ -10,6 +10,8 @@ internal class OpenAiInstructGenerationServiceImpl : IInstructGenerationService
     private readonly OpenAIClient _openai;
     private readonly string _prompt;
 
+    private const int ResponseTokenCount = 250;
+
     public OpenAiInstructGenerationServiceImpl(IConfiguration configuration)
     {
         IConfigurationSection section = configuration.GetSection("OpenAI");
@@ -17,25 +19,23 @@ internal class OpenAiInstructGenerationServiceImpl : IInstructGenerationService
         _prompt = section.GetValue<string?>("PromptTemplate")
                   ?? """
                      Synthesize a comprehensive answer from the text above for the given question.
-                     Each paragraph of text ends with references. The references are in the format of (book, p. page.paragraph).
+                     Each paragraph of text ends with reference number. 
                      Provide a clear and concise response that summarizes the key points and information presented
-                     in the text. Include references.
+                     in the text. Include quoted reference numbers at the end of your answer.
                      If no answer can be found, please write "No answer found".
-                     Your answer should be in your own words and be no longer than 100 words.\n\n
+                     Your answer should be in your own words and be no longer than #COUNT# words.\n\n
 
                      Question: #QUERY#
 
                      Related text:
                      #TEXT#
-
-
                      """;
     }
 
     public string GetPrompt(string query, List<AnswerResponse> answers)
     {
         string prompt = GeneratePrompt(query, answers);
-        prompt = LimitWords(prompt, 3000);
+        prompt = LimitWords(prompt, 3000 );
         return prompt;
     }
 
@@ -45,8 +45,8 @@ internal class OpenAiInstructGenerationServiceImpl : IInstructGenerationService
         var options = new CompletionsOptions
         {
             DeploymentName = "gpt-3.5-turbo-instruct",
-            Temperature = 0.1f,
-            MaxTokens = 200,
+            Temperature = 0.01f,
+            MaxTokens = ResponseTokenCount + 50,
             Prompts =
             {
                 GetPrompt(query, answers)
@@ -61,7 +61,7 @@ internal class OpenAiInstructGenerationServiceImpl : IInstructGenerationService
                 break;
             }
 
-            yield return choice.Choices[0].Text;
+            yield return  choice.Choices[0].Text;
         }
     }
 
@@ -73,9 +73,12 @@ internal class OpenAiInstructGenerationServiceImpl : IInstructGenerationService
 
     private string GeneratePrompt(string query, IEnumerable<AnswerResponse> answers)
     {
-        var commonText = string.Join("\n", answers.Select(r => r.Content + " (" + r.ReferenceCode + ")"));
+        var commonText = string.Join("\n", answers
+            .Select((r, i) => r.Content + " ( " + i + " )"));
         string answer = _prompt.Replace("#QUERY#", query)
-            .Replace("#TEXT#", commonText) + "\n\n\n";
+                            .Replace("#TEXT#", commonText)
+                            .Replace("#COUNT#", ResponseTokenCount.ToString())
+                        + "\n\n\n";
         return answer;
     }
 }

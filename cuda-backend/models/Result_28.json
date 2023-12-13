@@ -1,0 +1,2617 @@
+[
+  {
+    "publication_id": 1,
+    "type": "book",
+    "synonyms": ["Call to Medical Evangelism and Health Education", "CME", "A Call to Medical Evangelism and Health Education"]
+  },
+  {
+    "publication_id": 2,
+    "type": "book",
+    "synonyms": ["Call To Stand Apart", "CSA", "A Call To Stand Apart"]
+  },
+  {
+    "publication_id": 3,
+    "type": "book",
+    "synonyms": ["Sketch of the Christian Experience and Views of Ellen G. White", "ExV", "A Sketch of the Christian Experience and Views of Ellen G. White"]
+  },
+  {
+    "publication_id": 4,
+    "type": "book",
+    "synonyms": ["Solemn Appeal", "SA", "A Solemn Appeal"]
+  },
+  {
+    "publication_id": 6,
+    "type": "book",
+    "synonyms": ["Appeal to Mothers", "ApM", "An Appeal to Mothers"]
+  },
+  {
+    "publication_id": 7,
+    "type": "book",
+    "synonyms": ["Appeal to the Youth", "AY", "An Appeal to the Youth"]
+  },
+  {
+    "publication_id": 8,
+    "type": "book",
+    "synonyms": ["CG", "Child Guidance"]
+  },
+  {
+    "publication_id": 9,
+    "type": "devotional",
+    "synonyms": ["CTr", "Christ Triumphant"]
+  },
+  {
+    "publication_id": 10,
+    "type": "book",
+    "synonyms": ["CE", "Christian Education"]
+  },
+  {
+    "publication_id": 11,
+    "type": "book",
+    "synonyms": ["CET", "Christian Experience and Teachings of Ellen G. White"]
+  },
+  {
+    "publication_id": 12,
+    "type": "book",
+    "synonyms": ["ChL", "Christian Leadership"]
+  },
+  {
+    "publication_id": 13,
+    "type": "book",
+    "synonyms": ["ChS", "Christian Service"]
+  },
+  {
+    "publication_id": 14,
+    "type": "book",
+    "synonyms": ["CTBH", "Christian Temperance and Bible Hygiene"]
+  },
+  {
+    "publication_id": 15,
+    "type": "book",
+    "synonyms": ["COL", "Christ’s Object Lessons"]
+  },
+  {
+    "publication_id": 16,
+    "type": "book",
+    "synonyms": ["CM", "Colporteur Ministry"]
+  },
+  {
+    "publication_id": 17,
+    "type": "devotional",
+    "synonyms": ["CC", "Conflict and Courage"]
+  },
+  {
+    "publication_id": 18,
+    "type": "book",
+    "synonyms": ["Con", "Confrontation"]
+  },
+  {
+    "publication_id": 19,
+    "type": "book",
+    "synonyms": ["CCh", "Counsels for the Church"]
+  },
+  {
+    "publication_id": 20,
+    "type": "book",
+    "synonyms": ["CH", "Counsels on Health"]
+  },
+  {
+    "publication_id": 21,
+    "type": "book",
+    "synonyms": ["CSW", "Counsels on Sabbath School Work"]
+  },
+  {
+    "publication_id": 22,
+    "type": "book",
+    "synonyms": ["CS", "Counsels on Stewardship"]
+  },
+  {
+    "publication_id": 23,
+    "type": "book",
+    "synonyms": ["CT", "Counsels to Parents, Teachers, and Students"]
+  },
+  {
+    "publication_id": 24,
+    "type": "book",
+    "synonyms": ["CW", "Counsels to Writers and Editors"]
+  },
+  {
+    "publication_id": 25,
+    "type": "book",
+    "synonyms": ["CL", "Country Living"]
+  },
+  {
+    "publication_id": 26,
+    "type": "book",
+    "synonyms": ["DD", "Darkness Before Dawn"]
+  },
+  {
+    "publication_id": 27,
+    "type": "book",
+    "synonyms": ["DG", "Daughters of God"]
+  },
+  {
+    "publication_id": 28,
+    "type": "book",
+    "synonyms": ["EW", "Early Writings"]
+  },
+  {
+    "publication_id": 29,
+    "type": "book",
+    "synonyms": ["Ed", "Education"]
+  },
+  {
+    "publication_id": 30,
+    "type": "book",
+    "synonyms": ["Ev", "Evangelism"]
+  },
+  {
+    "publication_id": 31,
+    "type": "book",
+    "synonyms": ["FW", "Faith and Works"]
+  },
+  {
+    "publication_id": 32,
+    "type": "book",
+    "synonyms": ["FE", "Fundamentals of Christian Education"]
+  },
+  {
+    "publication_id": 33,
+    "type": "devotional",
+    "synonyms": ["AG", "God's Amazing Grace"]
+  },
+  {
+    "publication_id": 34,
+    "type": "book",
+    "synonyms": ["Gospel Workers1892", "GW92", "Gospel Workers (1892/1893 ed.)"]
+  },
+  {
+    "publication_id": 35,
+    "type": "book",
+    "synonyms": ["Gospel Workers1915", "GW", "Gospel Workers (1915 ed.)"]
+  },
+  {
+    "publication_id": 36,
+    "type": "book",
+    "synonyms": ["Hvn", "Heaven"]
+  },
+  {
+    "publication_id": 37,
+    "type": "book",
+    "synonyms": ["HDL", "Help In Daily Living"]
+  },
+  {
+    "publication_id": 38,
+    "type": "devotional",
+    "synonyms": ["HP", "In Heavenly Places"]
+  },
+  {
+    "publication_id": 39,
+    "type": "book",
+    "synonyms": ["LDE", "Last Day Events"]
+  },
+  {
+    "publication_id": 40,
+    "type": "book",
+    "synonyms": ["LYL", "Letters to Young Lovers"]
+  },
+  {
+    "publication_id": 41,
+    "type": "book",
+    "synonyms": ["LS", "Life Sketches of Ellen G. White"]
+  },
+  {
+    "publication_id": 42,
+    "type": "book",
+    "synonyms": ["Life Sketches of James White and Ellen G. White1880", "LS80", "Life Sketches of James White and Ellen G. White (1880 ed.)"]
+  },
+  {
+    "publication_id": 43,
+    "type": "book",
+    "synonyms": ["Life Sketches of James White and Ellen G. White1888", "LS88", "Life Sketches of James White and Ellen G. White (1888 ed.)"]
+  },
+  {
+    "publication_id": 44,
+    "type": "devotional",
+    "synonyms": ["LHU", "Lift Him Up"]
+  },
+  {
+    "publication_id": 45,
+    "type": "book",
+    "synonyms": ["MC", "Manual for Canvassers"]
+  },
+  {
+    "publication_id": 46,
+    "type": "book",
+    "synonyms": ["MR1033", "Manuscript Release No 1033"]
+  },
+  {
+    "publication_id": 47,
+    "type": "book",
+    "synonyms": ["MR728", "Manuscript Release No. 728"]
+  },
+  {
+    "publication_id": 48,
+    "type": "book",
+    "synonyms": ["MR760", "Manuscript Release No. 760"]
+  },
+  {
+    "publication_id": 50,
+    "type": "book",
+    "synonyms": ["MR852", "Manuscript Release No. 852"]
+  },
+  {
+    "publication_id": 51,
+    "type": "book",
+    "synonyms": ["MR926", "Manuscript Release No. 926"]
+  },
+  {
+    "publication_id": 52,
+    "type": "book",
+    "synonyms": ["8MR", "Manuscript Releases, vol. 8 [Nos. 526-663]"]
+  },
+  {
+    "publication_id": 53,
+    "type": "book",
+    "synonyms": ["18MR", "Manuscript Releases, vol. 18 [Nos. 1301-1359]"]
+  },
+  {
+    "publication_id": 54,
+    "type": "book",
+    "synonyms": ["11MR", "Manuscript Releases, vol. 11 [Nos. 851-920]"]
+  },
+  {
+    "publication_id": 55,
+    "type": "book",
+    "synonyms": ["15MR", "Manuscript Releases, vol. 15 [Nos. 1136-1185]"]
+  },
+  {
+    "publication_id": 56,
+    "type": "book",
+    "synonyms": ["5MR", "Manuscript Releases, vol. 5 [Nos. 260-346]"]
+  },
+  {
+    "publication_id": 57,
+    "type": "book",
+    "synonyms": ["4MR", "Manuscript Releases, vol. 4 [Nos. 210-259]"]
+  },
+  {
+    "publication_id": 58,
+    "type": "book",
+    "synonyms": ["14MR", "Manuscript Releases, vol. 14 [Nos. 1081-1135]"]
+  },
+  {
+    "publication_id": 59,
+    "type": "book",
+    "synonyms": ["9MR", "Manuscript Releases, vol. 9 [Nos. 664-770]"]
+  },
+  {
+    "publication_id": 60,
+    "type": "book",
+    "synonyms": ["19MR", "Manuscript Releases, vol. 19 [Nos. 1360-1419]"]
+  },
+  {
+    "publication_id": 61,
+    "type": "book",
+    "synonyms": ["1MR", "Manuscript Releases, vol. 1 [Nos. 19-96]"]
+  },
+  {
+    "publication_id": 62,
+    "type": "book",
+    "synonyms": ["7MR", "Manuscript Releases, vol. 7 [Nos. 419-525]"]
+  },
+  {
+    "publication_id": 63,
+    "type": "book",
+    "synonyms": ["17MR", "Manuscript Releases, vol. 17 [Nos. 1236-1300]"]
+  },
+  {
+    "publication_id": 64,
+    "type": "book",
+    "synonyms": ["6MR", "Manuscript Releases, vol. 6 [Nos. 347-418]"]
+  },
+  {
+    "publication_id": 65,
+    "type": "book",
+    "synonyms": ["16MR", "Manuscript Releases, vol. 16 [Nos. 1186-1235]"]
+  },
+  {
+    "publication_id": 66,
+    "type": "book",
+    "synonyms": ["10MR", "Manuscript Releases, vol. 10 [Nos. 771-850]"]
+  },
+  {
+    "publication_id": 67,
+    "type": "book",
+    "synonyms": ["13MR", "Manuscript Releases, vol. 13 [Nos. 1000-1080]"]
+  },
+  {
+    "publication_id": 69,
+    "type": "book",
+    "synonyms": ["3MR", "Manuscript Releases, vol. 3 [Nos. 162-209]"]
+  },
+  {
+    "publication_id": 70,
+    "type": "book",
+    "synonyms": ["12MR", "Manuscript Releases, vol. 12 [Nos. 921-999]"]
+  },
+  {
+    "publication_id": 71,
+    "type": "book",
+    "synonyms": ["20MR", "Manuscript Releases, vol. 20 [Nos. 1420-1500]"]
+  },
+  {
+    "publication_id": 72,
+    "type": "book",
+    "synonyms": ["21MR", "Manuscript Releases, vol. 21 [Nos. 1501-1598]"]
+  },
+  {
+    "publication_id": 73,
+    "type": "book",
+    "synonyms": ["2MR", "Manuscript Releases, vol. 2 [Nos. 97-161]"]
+  },
+  {
+    "publication_id": 74,
+    "type": "devotional",
+    "synonyms": ["Mar", "Maranatha"]
+  },
+  {
+    "publication_id": 75,
+    "type": "book",
+    "synonyms": ["MM", "Medical Ministry"]
+  },
+  {
+    "publication_id": 76,
+    "type": "book",
+    "synonyms": ["MYP", "Messages to Young People"]
+  },
+  {
+    "publication_id": 77,
+    "type": "book",
+    "synonyms": ["1MCP", "Mind, Character, and Personality, vol. 1"]
+  },
+  {
+    "publication_id": 78,
+    "type": "book",
+    "synonyms": ["2MCP", "Mind, Character, and Personality, vol. 2"]
+  },
+  {
+    "publication_id": 79,
+    "type": "devotional",
+    "synonyms": ["ML", "My Life Today"]
+  },
+  {
+    "publication_id": 80,
+    "type": "devotional",
+    "synonyms": ["OFC", "Our Father Cares"]
+  },
+  {
+    "publication_id": 81,
+    "type": "devotional",
+    "synonyms": ["OHC", "Our High Calling"]
+  },
+  {
+    "publication_id": 82,
+    "type": "periodical/no-page-break",
+    "synonyms": ["PUR", "Pacific Union Recorder"]
+  },
+  {
+    "publication_id": 83,
+    "type": "book",
+    "synonyms": ["PaM", "Pastoral Ministry"]
+  },
+  {
+    "publication_id": 84,
+    "type": "book",
+    "synonyms": ["PP", "Patriarchs and Prophets"]
+  },
+  {
+    "publication_id": 86,
+    "type": "book",
+    "synonyms": ["PCP", "Peter’s Counsel to Parents"]
+  },
+  {
+    "publication_id": 87,
+    "type": "book",
+    "synonyms": ["Pr", "Prayer"]
+  },
+  {
+    "publication_id": 88,
+    "type": "book",
+    "synonyms": ["PK", "Prophets and Kings"]
+  },
+  {
+    "publication_id": 89,
+    "type": "devotional",
+    "synonyms": ["RC", "Reflecting Christ"]
+  },
+  {
+    "publication_id": 90,
+    "type": "bible-commentary",
+    "synonyms": ["1BC", "EGW SDA Bible Commentary, vol. 1"]
+  },
+  {
+    "publication_id": 91,
+    "type": "bible-commentary",
+    "synonyms": ["2BC", "EGW SDA Bible Commentary, vol. 2"]
+  },
+  {
+    "publication_id": 92,
+    "type": "bible-commentary",
+    "synonyms": ["3BC", "EGW SDA Bible Commentary, vol. 3"]
+  },
+  {
+    "publication_id": 93,
+    "type": "bible-commentary",
+    "synonyms": ["4BC", "EGW SDA Bible Commentary, vol. 4"]
+  },
+  {
+    "publication_id": 94,
+    "type": "bible-commentary",
+    "synonyms": ["5BC", "EGW SDA Bible Commentary, vol. 5"]
+  },
+  {
+    "publication_id": 95,
+    "type": "bible-commentary",
+    "synonyms": ["6BC", "EGW SDA Bible Commentary, vol. 6"]
+  },
+  {
+    "publication_id": 96,
+    "type": "bible-commentary",
+    "synonyms": ["7BC", "EGW SDA Bible Commentary, vol. 7"]
+  },
+  {
+    "publication_id": 97,
+    "type": "bible-commentary",
+    "synonyms": ["7ABC", "EGW SDA Bible Commentary, vol. 7A"]
+  },
+  {
+    "publication_id": 98,
+    "type": "book",
+    "synonyms": ["1SM", "Selected Messages Book 1"]
+  },
+  {
+    "publication_id": 99,
+    "type": "book",
+    "synonyms": ["2SM", "Selected Messages Book 2"]
+  },
+  {
+    "publication_id": 100,
+    "type": "book",
+    "synonyms": ["3SM", "Selected Messages Book 3"]
+  },
+  {
+    "publication_id": 101,
+    "type": "book",
+    "synonyms": ["LP", "Sketches from the Life of Paul"]
+  },
+  {
+    "publication_id": 102,
+    "type": "devotional",
+    "synonyms": ["SD", "Sons and Daughters of God"]
+  },
+  {
+    "publication_id": 103,
+    "type": "book",
+    "synonyms": ["SpTEd", "Special Testimonies On Education"]
+  },
+  {
+    "publication_id": 104,
+    "type": "book",
+    "synonyms": ["1SG", "Spiritual Gifts, vol. 1"]
+  },
+  {
+    "publication_id": 105,
+    "type": "book",
+    "synonyms": ["Spiritual Gifts. Volume 2", "2SG", "Spiritual Gifts, vol. 2"]
+  },
+  {
+    "publication_id": 106,
+    "type": "book",
+    "synonyms": ["Spiritual Gifts. Volume 3", "3SG", "Spiritual Gifts, vol. 3"]
+  },
+  {
+    "publication_id": 107,
+    "type": "book",
+    "synonyms": ["Spiritual Gifts. Volume 4A", "4aSG", "Spiritual Gifts, vol. 4a"]
+  },
+  {
+    "publication_id": 108,
+    "type": "book",
+    "synonyms": ["SC", "Steps to Christ"]
+  },
+  {
+    "publication_id": 109,
+    "type": "book",
+    "synonyms": ["ExV54", "Supplement to the Christian Experience and Views of Ellen G. White"]
+  },
+  {
+    "publication_id": 110,
+    "type": "book",
+    "synonyms": ["Te", "Temperance"]
+  },
+  {
+    "publication_id": 112,
+    "type": "book",
+    "synonyms": ["Testimonies for the Church Volume Eight", "8T", "Testimonies for the Church, vol. 8"]
+  },
+  {
+    "publication_id": 113,
+    "type": "book",
+    "synonyms": ["Testimonies for the Church Volume Five", "5T", "Testimonies for the Church, vol. 5"]
+  },
+  {
+    "publication_id": 114,
+    "type": "book",
+    "synonyms": ["Testimonies for the Church Volume Four", "4T", "Testimonies for the Church, vol. 4"]
+  },
+  {
+    "publication_id": 115,
+    "type": "book",
+    "synonyms": ["Testimonies for the Church Volume Nine", "9T", "Testimonies for the Church, vol. 9"]
+  },
+  {
+    "publication_id": 116,
+    "type": "book",
+    "synonyms": ["Testimonies for the Church Volume One", "1T", "Testimonies for the Church, vol. 1"]
+  },
+  {
+    "publication_id": 117,
+    "type": "book",
+    "synonyms": ["Testimonies for the Church Volume Seven", "7T", "Testimonies for the Church, vol. 7"]
+  },
+  {
+    "publication_id": 118,
+    "type": "book",
+    "synonyms": ["Testimonies for the Church Volume Six", "6T", "Testimonies for the Church, vol. 6"]
+  },
+  {
+    "publication_id": 119,
+    "type": "book",
+    "synonyms": ["Testimonies for the Church Volume Three", "3T", "Testimonies for the Church, vol. 3"]
+  },
+  {
+    "publication_id": 120,
+    "type": "book",
+    "synonyms": ["Testimonies for the Church Volume Two", "2T", "Testimonies for the Church, vol. 2"]
+  },
+  {
+    "publication_id": 121,
+    "type": "book",
+    "synonyms": ["TSS", "Testimonies on Sabbath-School Work"]
+  },
+  {
+    "publication_id": 122,
+    "type": "book",
+    "synonyms": ["TSB", "Testimonies on Sexual Behavior, Adultery, and Divorce"]
+  },
+  {
+    "publication_id": 123,
+    "type": "book",
+    "synonyms": ["TM", "Testimonies to Ministers and Gospel Workers"]
+  },
+  {
+    "publication_id": 124,
+    "type": "book",
+    "synonyms": ["TSA", "Testimonies to Southern Africa"]
+  },
+  {
+    "publication_id": 125,
+    "type": "book",
+    "synonyms": ["TSDF", "Testimony Studies on Diet and Foods"]
+  },
+  {
+    "publication_id": 126,
+    "type": "devotional",
+    "synonyms": ["TMK", "That I May Know Him"]
+  },
+  {
+    "publication_id": 127,
+    "type": "book",
+    "synonyms": ["Acts of the Apostles", "AA", "The Acts of the Apostles"]
+  },
+  {
+    "publication_id": 128,
+    "type": "book",
+    "synonyms": ["Adventist Home", "AH", "The Adventist Home"]
+  },
+  {
+    "publication_id": 130,
+    "type": "book",
+    "synonyms": ["Desire of Ages", "DA", "The Desire of Ages"]
+  },
+  {
+    "publication_id": 131,
+    "type": "devotional",
+    "synonyms": ["Faith I Live By", "FLB", "The Faith I Live By"]
+  },
+  {
+    "publication_id": 132,
+    "type": "book",
+    "synonyms": ["The Great Controversy1911", "The Great Controversy 1911", "Great Controversy 1911", "Great Controversy", "GC", "The Great Controversy"]
+  },
+  {
+    "publication_id": 133,
+    "type": "book",
+    "synonyms": ["The Great Controversy1888", "Great Controversy 1888", "GC88", "The Great Controversy (1888 ed.)"]
+  },
+  {
+    "publication_id": 135,
+    "type": "book",
+    "synonyms": ["Ministry of Healing", "MH", "The Ministry of Healing"]
+  },
+  {
+    "publication_id": 136,
+    "type": "book",
+    "synonyms": ["Remnant Church; Its Organization, Authority, Unity, and Triumph", "MR311", "The Remnant Church; Its Organization, Authority, Unity, and Triumph"]
+  },
+  {
+    "publication_id": 137,
+    "type": "book",
+    "synonyms": ["Retirement Years", "RY", "The Retirement Years"]
+  },
+  {
+    "publication_id": 138,
+    "type": "book",
+    "synonyms": ["Sanctified Life", "SL", "The Sanctified Life"]
+  },
+  {
+    "publication_id": 139,
+    "type": "book",
+    "synonyms": ["Southern Work", "SWk", "The Southern Work"]
+  },
+  {
+    "publication_id": 140,
+    "type": "book",
+    "synonyms": ["Spirit of Prophecy Volume 4", "The Spirit of Prophecy Volume Four", "4SP", "The Spirit of Prophecy, vol. 4"]
+  },
+  {
+    "publication_id": 141,
+    "type": "book",
+    "synonyms": ["Spirit of Prophecy Volume 1", "The Spirit of Prophecy Volume One", "1SP", "The Spirit of Prophecy, vol. 1"]
+  },
+  {
+    "publication_id": 142,
+    "type": "book",
+    "synonyms": ["The Spirit of Prophecy Volume Three", "Spirit of Prophecy Volume 3", "3SP", "The Spirit of Prophecy, vol. 3"]
+  },
+  {
+    "publication_id": 143,
+    "type": "book",
+    "synonyms": ["The Spirit of Prophecy Volume Two", "Spirit of Prophecy Volume 2", "2SP", "The Spirit of Prophecy, vol. 2"]
+  },
+  {
+    "publication_id": 144,
+    "type": "book",
+    "synonyms": ["Story of Jesus", "SJ", "The Story of Jesus"]
+  },
+  {
+    "publication_id": 145,
+    "type": "book",
+    "synonyms": ["Story of Redemption", "SR", "The Story of Redemption"]
+  },
+  {
+    "publication_id": 146,
+    "type": "book",
+    "synonyms": ["Truth About Angels", "TA", "The Truth About Angels"]
+  },
+  {
+    "publication_id": 147,
+    "type": "devotional",
+    "synonyms": ["Upward Look", "UL", "The Upward Look"]
+  },
+  {
+    "publication_id": 148,
+    "type": "book",
+    "synonyms": ["Voice in Speech and Song", "VSS", "The Voice in Speech and Song"]
+  },
+  {
+    "publication_id": 149,
+    "type": "devotional",
+    "synonyms": ["TDG", "This Day With God"]
+  },
+  {
+    "publication_id": 150,
+    "type": "book",
+    "synonyms": ["MB", "Thoughts From the Mount of Blessing"]
+  },
+  {
+    "publication_id": 151,
+    "type": "devotional",
+    "synonyms": ["BLJ", "To Be Like Jesus"]
+  },
+  {
+    "publication_id": 152,
+    "type": "book",
+    "synonyms": ["WM", "Welfare Ministry"]
+  },
+  {
+    "publication_id": 153,
+    "type": "devotional",
+    "synonyms": ["YRP", "Ye Shall Receive Power"]
+  },
+  {
+    "publication_id": 237,
+    "type": "book",
+    "synonyms": ["PH155", "Special Testimony to the Battle Creek Church"]
+  },
+  {
+    "publication_id": 238,
+    "type": "book",
+    "synonyms": ["Appeal to Seventh-day Adventists to Fulfil Their Duty to the South", "PH012", "An Appeal to Seventh-day Adventists to Fulfil Their Duty to the South"]
+  },
+  {
+    "publication_id": 239,
+    "type": "book",
+    "synonyms": ["PH022", "Choice Thoughts on Dress"]
+  },
+  {
+    "publication_id": 240,
+    "type": "book",
+    "synonyms": ["Spirit of Sacrifice", "SpTB19", "The Spirit of Sacrifice"]
+  },
+  {
+    "publication_id": 241,
+    "type": "book",
+    "synonyms": ["PH055", "Our Work in Washington D. C."]
+  },
+  {
+    "publication_id": 242,
+    "type": "book",
+    "synonyms": ["PH146", "Report of Special Meeting"]
+  },
+  {
+    "publication_id": 243,
+    "type": "book",
+    "synonyms": ["Exposure of Fanaticism and Wickedness", "PH030", "An Exposure of Fanaticism and Wickedness"]
+  },
+  {
+    "publication_id": 244,
+    "type": "book",
+    "synonyms": ["PH140", "Home and Church School Manual"]
+  },
+  {
+    "publication_id": 245,
+    "type": "book",
+    "synonyms": ["PH154", "Special Testimony to Battle Creek Church"]
+  },
+  {
+    "publication_id": 246,
+    "type": "book",
+    "synonyms": ["SpTB04", "Testimonies for the Church Regarding the Spirit of Unity"]
+  },
+  {
+    "publication_id": 247,
+    "type": "book",
+    "synonyms": ["PH045", "Knowing and Obeying the Lord"]
+  },
+  {
+    "publication_id": 248,
+    "type": "book",
+    "synonyms": ["PH026", "Do You Eat Flesh?"]
+  },
+  {
+    "publication_id": 249,
+    "type": "book",
+    "synonyms": ["SpTB07", "Testimonies for the Church Containing Messages of Warning and Instruction to Seventh-day Adventists"]
+  },
+  {
+    "publication_id": 250,
+    "type": "book",
+    "synonyms": ["PH131", "Church Schools"]
+  },
+  {
+    "publication_id": 251,
+    "type": "book",
+    "synonyms": ["PH031", "Extracts from Unpublished Testimonies in Regard to Flesh Foods"]
+  },
+  {
+    "publication_id": 252,
+    "type": "book",
+    "synonyms": ["Appeal in Behalf of Our New Medical College", "PH009", "An Appeal in Behalf of Our New Medical College"]
+  },
+  {
+    "publication_id": 253,
+    "type": "book",
+    "synonyms": ["PH013", "Appeal to the Young"]
+  },
+  {
+    "publication_id": 254,
+    "type": "book",
+    "synonyms": ["PH124", "What Shall We Teach?"]
+  },
+  {
+    "publication_id": 255,
+    "type": "book",
+    "synonyms": ["PH159", "Testimony to the Church"]
+  },
+  {
+    "publication_id": 256,
+    "type": "book",
+    "synonyms": ["PH166", "Special on Tithing"]
+  },
+  {
+    "publication_id": 257,
+    "type": "book",
+    "synonyms": ["PH082", "Special Testimonies Relating to Medical Missionary Work"]
+  },
+  {
+    "publication_id": 258,
+    "type": "book",
+    "synonyms": ["PH101", "Testimony Relative to Marriage Duties, and Extremes in The Health Reform"]
+  },
+  {
+    "publication_id": 259,
+    "type": "book",
+    "synonyms": ["PH094", "Testimonies and Experiences Connected with the Loma Linda Sanitarium and College of Medical Evangelists"]
+  },
+  {
+    "publication_id": 260,
+    "type": "book",
+    "synonyms": ["Temperance Work", "PH093", "The Temperance Work"]
+  },
+  {
+    "publication_id": 261,
+    "type": "book",
+    "synonyms": ["Writing and Sending Out of the Testimonies to the Church", "PH116", "The Writing and Sending Out of the Testimonies to the Church"]
+  },
+  {
+    "publication_id": 262,
+    "type": "book",
+    "synonyms": ["PH160", "To Conference Officers"]
+  },
+  {
+    "publication_id": 263,
+    "type": "book",
+    "synonyms": ["Second Tithe", "PH148", "The Second Tithe"]
+  },
+  {
+    "publication_id": 264,
+    "type": "book",
+    "synonyms": ["PH167", "Counsels to Physicians and Medical Students"]
+  },
+  {
+    "publication_id": 265,
+    "type": "book",
+    "synonyms": ["PH037", "Hillcrest School Farm"]
+  },
+  {
+    "publication_id": 266,
+    "type": "book",
+    "synonyms": ["Enlargement of Our Work", "PH029", "The Enlargement of Our Work"]
+  },
+  {
+    "publication_id": 267,
+    "type": "book",
+    "synonyms": ["Paradise Valley Sanitarium", "SpTB14", "The Paradise Valley Sanitarium"]
+  },
+  {
+    "publication_id": 268,
+    "type": "book",
+    "synonyms": ["SpTB15", "Letters from Ellen G. White to Sanitarium Workers"]
+  },
+  {
+    "publication_id": 269,
+    "type": "book",
+    "synonyms": ["PH097", "Testimony for the Church at Battle Creek"]
+  },
+  {
+    "publication_id": 270,
+    "type": "book",
+    "synonyms": ["Appeal for Self-supporting Laborers to Enter Unworked Fields", "PH005", "An Appeal for Self-supporting Laborers to Enter Unworked Fields"]
+  },
+  {
+    "publication_id": 271,
+    "type": "book",
+    "synonyms": ["PH050", "Messages to Young People"]
+  },
+  {
+    "publication_id": 272,
+    "type": "book",
+    "synonyms": ["PH081", "Special Testimonies on Church Schools"]
+  },
+  {
+    "publication_id": 273,
+    "type": "book",
+    "synonyms": ["Big Surprise Party", "PH129", "A Big Surprise Party"]
+  },
+  {
+    "publication_id": 274,
+    "type": "book",
+    "synonyms": ["PH058", "Perils Increase Till Jesus Comes"]
+  },
+  {
+    "publication_id": 275,
+    "type": "book",
+    "synonyms": ["PH079", "Special Instruction Regarding Royalties"]
+  },
+  {
+    "publication_id": 276,
+    "type": "book",
+    "synonyms": ["Call to the Watchmen", "PH020", "A Call to the Watchmen"]
+  },
+  {
+    "publication_id": 277,
+    "type": "book",
+    "synonyms": ["PH137", "Health and Healing"]
+  },
+  {
+    "publication_id": 278,
+    "type": "book",
+    "synonyms": ["8Red", "Redemption: or the Teachings of Paul, and his Mission to the Gentiles"]
+  },
+  {
+    "publication_id": 279,
+    "type": "book",
+    "synonyms": ["Relief of the Schools", "PH139", "The Relief of the Schools"]
+  },
+  {
+    "publication_id": 280,
+    "type": "book",
+    "synonyms": ["PH163", "To Those in Charge of the Colored Orphanage Enterprise"]
+  },
+  {
+    "publication_id": 281,
+    "type": "book",
+    "synonyms": ["Sanitarium Must Not be Cramped", "PH147", "The Sanitarium Must Not be Cramped"]
+  },
+  {
+    "publication_id": 282,
+    "type": "book",
+    "synonyms": ["PH117", "Testimony for the Battle Creek Church"]
+  },
+  {
+    "publication_id": 283,
+    "type": "book",
+    "synonyms": ["SpTB16", "Selections from the Testimonies for Students and Workers of our Sanitariums"]
+  },
+  {
+    "publication_id": 284,
+    "type": "book",
+    "synonyms": ["PH015", "Brother Aldrich"]
+  },
+  {
+    "publication_id": 285,
+    "type": "book",
+    "synonyms": ["PH040", "Instruction Concerning Education"]
+  },
+  {
+    "publication_id": 286,
+    "type": "book",
+    "synonyms": ["PH095", "Testimonies and Experiences Connected With The Loma Linda Sanitarium and College of Medical Evangelists"]
+  },
+  {
+    "publication_id": 287,
+    "type": "book",
+    "synonyms": ["Huntsville School", "SpTB12x", "The Huntsville School"]
+  },
+  {
+    "publication_id": 288,
+    "type": "book",
+    "synonyms": ["PH156", "Special Testimony to the Brethren in Battle Creek"]
+  },
+  {
+    "publication_id": 289,
+    "type": "book",
+    "synonyms": ["PH036", "Guiding Principles for the Young"]
+  },
+  {
+    "publication_id": 290,
+    "type": "book",
+    "synonyms": ["Removal to Washington", "PH067", "The Removal to Washington"]
+  },
+  {
+    "publication_id": 291,
+    "type": "book",
+    "synonyms": ["PH061", "Progress of Work at Loma Linda"]
+  },
+  {
+    "publication_id": 292,
+    "type": "book",
+    "synonyms": ["PH142", "Notes on Health and Temperance Topics"]
+  },
+  {
+    "publication_id": 293,
+    "type": "book",
+    "synonyms": ["PH087", "Special Testimony to Battle Creek Church"]
+  },
+  {
+    "publication_id": 294,
+    "type": "book",
+    "synonyms": ["PH092", "Suggestions to Those Holding Missionary Conventions"]
+  },
+  {
+    "publication_id": 295,
+    "type": "book",
+    "synonyms": ["PH126", "And Their Cry Came Up Unto God"]
+  },
+  {
+    "publication_id": 296,
+    "type": "book",
+    "synonyms": ["PH090", "Statement and Appeal"]
+  },
+  {
+    "publication_id": 297,
+    "type": "book",
+    "synonyms": ["PH165", "Extracts from Recent Letters from Sister White Relative to Medical Missionary Work"]
+  },
+  {
+    "publication_id": 298,
+    "type": "book",
+    "synonyms": ["PH086", "Special Testimony to Battle Creek Church"]
+  },
+  {
+    "publication_id": 299,
+    "type": "book",
+    "synonyms": ["Unwise Use of Money and the Spirit of Speculation", "SpTB17a", "The Unwise Use of Money and the Spirit of Speculation"]
+  },
+  {
+    "publication_id": 300,
+    "type": "book",
+    "synonyms": ["PH127", "Appeal To Our People in America in Behalf of the Nashville Publishing House"]
+  },
+  {
+    "publication_id": 301,
+    "type": "book",
+    "synonyms": ["PH104", "Testimony To the Brethren in Western New York"]
+  },
+  {
+    "publication_id": 302,
+    "type": "book",
+    "synonyms": ["Sanitarium Patients at Goguac Lake", "PH069", "The Sanitarium Patients at Goguac Lake"]
+  },
+  {
+    "publication_id": 303,
+    "type": "book",
+    "synonyms": ["PH096", "Testimonies on the Case of Elder E. P. Daniels"]
+  },
+  {
+    "publication_id": 304,
+    "type": "book",
+    "synonyms": ["PH145", "Recreation"]
+  },
+  {
+    "publication_id": 305,
+    "type": "book",
+    "synonyms": ["Important Testimony to our Brethren and Sisters in New York", "PH039", "An Important Testimony to our Brethren and Sisters in New York"]
+  },
+  {
+    "publication_id": 306,
+    "type": "book",
+    "synonyms": ["PH153", "Special Testimony on Canvassing for Christ’s Object Lessons"]
+  },
+  {
+    "publication_id": 307,
+    "type": "book",
+    "synonyms": ["SpTB10", "Jehovah Is Our King"]
+  },
+  {
+    "publication_id": 308,
+    "type": "book",
+    "synonyms": ["Appeal in Behalf of Our Work in Scandinavia", "PH008", "An Appeal in Behalf of Our Work in Scandinavia"]
+  },
+  {
+    "publication_id": 309,
+    "type": "book",
+    "synonyms": ["PH049", "Loma Linda’s Work"]
+  },
+  {
+    "publication_id": 310,
+    "type": "book",
+    "synonyms": ["View of the Conflict", "PH109", "A View of the Conflict"]
+  },
+  {
+    "publication_id": 311,
+    "type": "book",
+    "synonyms": ["PH113", "Words of Encouragement to Self-supporting Workers"]
+  },
+  {
+    "publication_id": 312,
+    "type": "book",
+    "synonyms": ["PH099", "Testimony for the Churches at Allegan & Monterey"]
+  },
+  {
+    "publication_id": 313,
+    "type": "book",
+    "synonyms": ["4Red", "Redemption: or the Teachings of Christ, the Anointed One"]
+  },
+  {
+    "publication_id": 314,
+    "type": "book",
+    "synonyms": ["Appeal for the Madison School", "PH119", "An Appeal for the Madison School"]
+  },
+  {
+    "publication_id": 315,
+    "type": "book",
+    "synonyms": ["Dress Reform", "PH134", "The Dress Reform"]
+  },
+  {
+    "publication_id": 316,
+    "type": "book",
+    "synonyms": ["PH098", "Testimony for the Church at Olcott, N. Y."]
+  },
+  {
+    "publication_id": 317,
+    "type": "book",
+    "synonyms": ["PH136", "Gospel Temperance Work"]
+  },
+  {
+    "publication_id": 318,
+    "type": "book",
+    "synonyms": ["PH102", "Testimonies on Fair Dealing and Book Royalties"]
+  },
+  {
+    "publication_id": 319,
+    "type": "book",
+    "synonyms": ["PH016", "To Brother J. N. Andrews And Sister H. N. Smith"]
+  },
+  {
+    "publication_id": 320,
+    "type": "book",
+    "synonyms": ["PH038", "Important Testimony"]
+  },
+  {
+    "publication_id": 321,
+    "type": "book",
+    "synonyms": ["PH128", "Backsliding in Health Reform"]
+  },
+  {
+    "publication_id": 322,
+    "type": "book",
+    "synonyms": ["Liquor Traffic Working Counter to Christ", "PH141", "The Liquor Traffic Working Counter to Christ"]
+  },
+  {
+    "publication_id": 323,
+    "type": "book",
+    "synonyms": ["PH100", "Testimony for the Physicians and Helpers of the Sanitarium"]
+  },
+  {
+    "publication_id": 324,
+    "type": "book",
+    "synonyms": ["PH105", "There Is Help in God"]
+  },
+  {
+    "publication_id": 325,
+    "type": "book",
+    "synonyms": ["Nashville Sanitarium", "SpTB18", "The Nashville Sanitarium"]
+  },
+  {
+    "publication_id": 326,
+    "type": "book",
+    "synonyms": ["1Red", "Redemption Or The First Advent Of Christ With His Life And Ministry"]
+  },
+  {
+    "publication_id": 327,
+    "type": "book",
+    "synonyms": ["PH080", "Special Instruction Relating to The Review and Herald Office, and The Work in Battle Creek"]
+  },
+  {
+    "publication_id": 328,
+    "type": "book",
+    "synonyms": ["PH066", "Health, Philanthropic, and Medical Missionary Work"]
+  },
+  {
+    "publication_id": 329,
+    "type": "book",
+    "synonyms": ["PH014", "Appeals for Unity"]
+  },
+  {
+    "publication_id": 330,
+    "type": "book",
+    "synonyms": ["PH157", "Special Testimony to the Oakland and Battle Creek Churches"]
+  },
+  {
+    "publication_id": 331,
+    "type": "book",
+    "synonyms": ["Sufferings of Christ", "PH169", "The Sufferings of Christ"]
+  },
+  {
+    "publication_id": 332,
+    "type": "book",
+    "synonyms": ["Time and The Work", "PH120", "The Time and The Work"]
+  },
+  {
+    "publication_id": 333,
+    "type": "book",
+    "synonyms": ["3Red", "Redemption: Or the Miracles of Christ, the Mighty One"]
+  },
+  {
+    "publication_id": 334,
+    "type": "book",
+    "synonyms": ["2Red", "Redemption; or the Temptation of Christ in The Wilderness"]
+  },
+  {
+    "publication_id": 335,
+    "type": "book",
+    "synonyms": ["Curse of the Liquor Traffic", "PH132", "The Curse of the Liquor Traffic"]
+  },
+  {
+    "publication_id": 336,
+    "type": "book",
+    "synonyms": ["Appeal for Missions", "PH004", "An Appeal for Missions"]
+  },
+  {
+    "publication_id": 337,
+    "type": "book",
+    "synonyms": ["PH123", "Testimony to the Church at Battle Creek"]
+  },
+  {
+    "publication_id": 338,
+    "type": "book",
+    "synonyms": ["PH083", "Special Testimony Relative to Tract and Missionary Societies and Our Preachers"]
+  },
+  {
+    "publication_id": 339,
+    "type": "book",
+    "synonyms": ["PH048", "Living by Principle"]
+  },
+  {
+    "publication_id": 340,
+    "type": "book",
+    "synonyms": ["PH122", "To Our Bookmen"]
+  },
+  {
+    "publication_id": 341,
+    "type": "book",
+    "synonyms": ["Purchase of Land at Loma Linda and Letters from Mrs. E. G. White", "SpTB17b", "The Purchase of Land at Loma Linda and Letters from Mrs. E. G. White"]
+  },
+  {
+    "publication_id": 342,
+    "type": "book",
+    "synonyms": ["$150,000 Fund", "PH143", "The $150,000 Fund"]
+  },
+  {
+    "publication_id": 343,
+    "type": "book",
+    "synonyms": ["Place of Herbs in Rational Therapy", "PH144", "The Place of Herbs in Rational Therapy"]
+  },
+  {
+    "publication_id": 344,
+    "type": "book",
+    "synonyms": ["PH011", "Appeal to the Battle Creek Church"]
+  },
+  {
+    "publication_id": 345,
+    "type": "book",
+    "synonyms": ["Madison School", "SpTB11", "The Madison School"]
+  },
+  {
+    "publication_id": 346,
+    "type": "book",
+    "synonyms": ["PH164", "Words of Encouragement to Workers in the Home Missionary Field"]
+  },
+  {
+    "publication_id": 348,
+    "type": "book",
+    "synonyms": ["PH107", "To Whom it May Concern"]
+  },
+  {
+    "publication_id": 350,
+    "type": "book",
+    "synonyms": ["7Red", "Redemption: or the Ministry of Peter and the Conversion of Saul"]
+  },
+  {
+    "publication_id": 351,
+    "type": "book",
+    "synonyms": ["Red5", "5Red", "Redemption Or The Sufferings Of Christ His Trial And Crucifixion"]
+  },
+  {
+    "publication_id": 352,
+    "type": "book",
+    "synonyms": ["SpTB06", "Testimonies to the Church Regarding our Youth Going to Battle Creek to Obtain An Education"]
+  },
+  {
+    "publication_id": 353,
+    "type": "book",
+    "synonyms": ["PH088", "Special Testimony to the Managers and Workers in our Institutions"]
+  },
+  {
+    "publication_id": 354,
+    "type": "book",
+    "synonyms": ["PH085", "Special Testimony for the Battle Creek Church"]
+  },
+  {
+    "publication_id": 355,
+    "type": "book",
+    "synonyms": ["Appeal", "PH001", "An Appeal"]
+  },
+  {
+    "publication_id": 356,
+    "type": "book",
+    "synonyms": ["PH152", "Special Testimonies Concerning the Work and Workers in the Pacific Press"]
+  },
+  {
+    "publication_id": 357,
+    "type": "book",
+    "synonyms": ["Appeal to Our Churches in Behalf of Home Missionary Work", "PH007", "An Appeal to Our Churches in Behalf of Home Missionary Work"]
+  },
+  {
+    "publication_id": 358,
+    "type": "book",
+    "synonyms": ["Health Reform and the Health Institute", "PH138", "The Health Reform and the Health Institute"]
+  },
+  {
+    "publication_id": 359,
+    "type": "book",
+    "synonyms": ["Selection of Articles for our Papers", "PH070", "The Selection of Articles for our Papers"]
+  },
+  {
+    "publication_id": 360,
+    "type": "book",
+    "synonyms": ["PH135", "God’s Plan for the Relief of Avondale School"]
+  },
+  {
+    "publication_id": 361,
+    "type": "book",
+    "synonyms": ["PH054", "I Will Guide Thee"]
+  },
+  {
+    "publication_id": 363,
+    "type": "book",
+    "synonyms": ["PH028", "Elder Daniels and the Fresno Church"]
+  },
+  {
+    "publication_id": 364,
+    "type": "book",
+    "synonyms": ["PH162", "To the Leading Men of Our Churches"]
+  },
+  {
+    "publication_id": 365,
+    "type": "book",
+    "synonyms": ["PH089", "Spiritual Advancement the Object of Camp-Meetings"]
+  },
+  {
+    "publication_id": 366,
+    "type": "book",
+    "synonyms": ["PH168", "In Memoriam: A Sketch of the Last Sickness and Death of Elder James White"]
+  },
+  {
+    "publication_id": 367,
+    "type": "book",
+    "synonyms": ["Judgment", "PH043", "The Judgment"]
+  },
+  {
+    "publication_id": 369,
+    "type": "book",
+    "synonyms": ["6Red", "Redemption: or the Resurrection of Christ; and His Ascension"]
+  },
+  {
+    "publication_id": 370,
+    "type": "book",
+    "synonyms": ["Appeal to Ministers and Church Officers", "PH010", "An Appeal to Ministers and Church Officers"]
+  },
+  {
+    "publication_id": 371,
+    "type": "book",
+    "synonyms": ["SpTB09", "Testimonies to the Church Regarding Individual Responsibility and Christian Unity"]
+  },
+  {
+    "publication_id": 372,
+    "type": "book",
+    "synonyms": ["PH161", "To Conference Officers and Managers of Our Schools"]
+  },
+  {
+    "publication_id": 373,
+    "type": "book",
+    "synonyms": ["New England Sanitarium", "SpTB13", "The New England Sanitarium"]
+  },
+  {
+    "publication_id": 374,
+    "type": "book",
+    "synonyms": ["SpTB05", "Record of Progress and An Appeal In Behalf of the Boulder-Colorado Sanitarium"]
+  },
+  {
+    "publication_id": 375,
+    "type": "book",
+    "synonyms": ["PH158", "Testimonies Relating to Emmanuel Missionary College and Its Work"]
+  },
+  {
+    "publication_id": 376,
+    "type": "book",
+    "synonyms": ["Work Among the Jews", "PH114", "The Work Among the Jews"]
+  },
+  {
+    "publication_id": 377,
+    "type": "book",
+    "synonyms": ["Oakwood Manual Training School", "SpTB12", "The Oakwood Manual Training School"]
+  },
+  {
+    "publication_id": 378,
+    "type": "book",
+    "synonyms": ["Call to Service in the Masters Harvest Field", "PH019", "A Call to Service in the Masters Harvest Field"]
+  },
+  {
+    "publication_id": 379,
+    "type": "book",
+    "synonyms": ["PH002", "Appeal and Suggestions to Conference Officers"]
+  },
+  {
+    "publication_id": 380,
+    "type": "book",
+    "synonyms": ["PH118", "Address To Ministers"]
+  },
+  {
+    "publication_id": 381,
+    "type": "book",
+    "synonyms": ["PH084", "Special Testimonies - Relating to Various Matters in Battle Creek"]
+  },
+  {
+    "publication_id": 382,
+    "type": "book",
+    "synonyms": ["PH130", "Camp-Meetings Their Object, and How to Conduct Them"]
+  },
+  {
+    "publication_id": 383,
+    "type": "book",
+    "synonyms": ["PH068", "Rolling Back the Reproach"]
+  },
+  {
+    "publication_id": 384,
+    "type": "book",
+    "synonyms": ["CD", "Counsels on Diet and Foods"]
+  },
+  {
+    "publication_id": 385,
+    "type": "book",
+    "synonyms": ["Spiritual Gifts Volume 4b", "4bSG", "Spiritual Gifts, vol. 4b"]
+  },
+  {
+    "publication_id": 386,
+    "type": "book",
+    "synonyms": ["New Life (Revival and Beyond)", "NL", "A New Life (Revival and Beyond)"]
+  },
+  {
+    "publication_id": 387,
+    "type": "book",
+    "synonyms": ["Health Food Ministry", "HFM", "The Health Food Ministry"]
+  },
+  {
+    "publication_id": 388,
+    "type": "book",
+    "synonyms": ["HL", "Healthful Living"]
+  },
+  {
+    "publication_id": 389,
+    "type": "book",
+    "synonyms": ["HS", "Historical Sketches of the Foreign Missions of the Seventh-day Adventists"]
+  },
+  {
+    "publication_id": 390,
+    "type": "book",
+    "synonyms": ["Publishing Ministry", "PM", "The Publishing Ministry"]
+  },
+  {
+    "publication_id": 398,
+    "type": "book",
+    "synonyms": ["Appeal to Our Ministers and Conference Committees", "SpTA01b", "An Appeal to Our Ministers and Conference Committees"]
+  },
+  {
+    "publication_id": 400,
+    "type": "book",
+    "synonyms": ["SpTA02a", "Special Testimony to Our Ministers—No. 2"]
+  },
+  {
+    "publication_id": 401,
+    "type": "book",
+    "synonyms": ["SpTA01a", "Special Testimony for Our Ministers"]
+  },
+  {
+    "publication_id": 403,
+    "type": "book",
+    "synonyms": ["SpTA02b", "Danger in Adopting Worldly Policy in the Work of God"]
+  },
+  {
+    "publication_id": 404,
+    "type": "book",
+    "synonyms": ["SpTA11", "Special Testimonies for Ministers and Workers—No. 11"]
+  },
+  {
+    "publication_id": 406,
+    "type": "book",
+    "synonyms": ["SpTA06", "Special Testimonies for Ministers and Workers—No. 6"]
+  },
+  {
+    "publication_id": 407,
+    "type": "book",
+    "synonyms": ["SpTA03", "Special Testimonies to Ministers and Workers—No. 3"]
+  },
+  {
+    "publication_id": 408,
+    "type": "book",
+    "synonyms": ["SpTA04", "Special Testimonies for Ministers and Workers—No. 4"]
+  },
+  {
+    "publication_id": 409,
+    "type": "book",
+    "synonyms": ["SpTA05", "Special Testimonies for Ministers and Workers—No. 5"]
+  },
+  {
+    "publication_id": 410,
+    "type": "book",
+    "synonyms": ["SpTA09", "Special Testimonies for Ministers and Workers—No. 9"]
+  },
+  {
+    "publication_id": 411,
+    "type": "book",
+    "synonyms": ["SpTA08", "Special Testimonies for Ministers and Workers—No. 8"]
+  },
+  {
+    "publication_id": 412,
+    "type": "book",
+    "synonyms": ["SpTA07", "Special Testimonies for Ministers and Workers—No. 7"]
+  },
+  {
+    "publication_id": 413,
+    "type": "book",
+    "synonyms": ["SpTA10", "Special Testimonies for Ministers and Workers—No. 10"]
+  },
+  {
+    "publication_id": 416,
+    "type": "book",
+    "synonyms": ["SpTB03a", "Letters to Sanitarium Workers in Southern California"]
+  },
+  {
+    "publication_id": 417,
+    "type": "book",
+    "synonyms": ["SpTB02", "Testimonies for the Church Containing Letters to Physicians and Ministers Instruction to Seventh-Day Adventists"]
+  },
+  {
+    "publication_id": 419,
+    "type": "book",
+    "synonyms": ["SpTB01", "Letters to Physicians and Ministers"]
+  },
+  {
+    "publication_id": 420,
+    "type": "book",
+    "synonyms": ["SpTB03c", "Letters From Ellen G. White To Sanitarium Workers in Southern California—c"]
+  },
+  {
+    "publication_id": 421,
+    "type": "book",
+    "synonyms": ["SpTB03b", "Letters from Ellen G. White to Sanitarium Workers in Southern California—b"]
+  },
+  {
+    "publication_id": 422,
+    "type": "book",
+    "synonyms": ["SpTB08", "Testimonies to the Church Regarding The Strengthening of Our Institutions and Training Centers"]
+  },
+  {
+    "publication_id": 424,
+    "type": "book",
+    "synonyms": ["PH149", "Selections from Testimonies to the Managers and Workers in our Institutions"]
+  },
+  {
+    "publication_id": 425,
+    "type": "book",
+    "synonyms": ["PH151", "Selections from the Testimonies for the Church For the Study of Those Attending the General Conference in Oakland, Ca., March 27, 1903"]
+  },
+  {
+    "publication_id": 426,
+    "type": "book",
+    "synonyms": ["PH078", "Sowing Beside All Waters"]
+  },
+  {
+    "publication_id": 427,
+    "type": "book",
+    "synonyms": ["1SAT", "Sermons and Talks, vol. 1"]
+  },
+  {
+    "publication_id": 428,
+    "type": "book",
+    "synonyms": ["Ellen G. White 1888 Materials", "1888", "The Ellen G. White 1888 Materials"]
+  },
+  {
+    "publication_id": 429,
+    "type": "book",
+    "synonyms": ["Kress Collection", "KC", "The Kress Collection"]
+  },
+  {
+    "publication_id": 430,
+    "type": "book",
+    "synonyms": ["1NL", "Notebook Leaflets from the Elmshaven Library, vol. 1"]
+  },
+  {
+    "publication_id": 432,
+    "type": "book",
+    "synonyms": ["2NL", "Notebook Leaflets from the Elmshaven Library, vol. 2"]
+  },
+  {
+    "publication_id": 433,
+    "type": "book",
+    "synonyms": ["LLM", "Loma Linda Messages"]
+  },
+  {
+    "publication_id": 434,
+    "type": "book",
+    "synonyms": ["2SAT", "Sermons and Talks, vol. 2"]
+  },
+  {
+    "publication_id": 435,
+    "type": "book",
+    "synonyms": ["Place Called Oakwood", "PCO", "A Place Called Oakwood"]
+  },
+  {
+    "publication_id": 436,
+    "type": "book",
+    "synonyms": ["Story of Our Health Message", "SHM-apx", "The Story of Our Health Message"]
+  },
+  {
+    "publication_id": 437,
+    "type": "book",
+    "synonyms": ["BCL", "Battle Creek Letters"]
+  },
+  {
+    "publication_id": 439,
+    "type": "periodical/no-page-break",
+    "synonyms": ["PHJ", "Pacific Health Journal"]
+  },
+  {
+    "publication_id": 440,
+    "type": "periodical/no-page-break",
+    "synonyms": ["HR", "Good Health"]
+  },
+  {
+    "publication_id": 441,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Medical Evangelist", "MedEv", "The Medical Evangelist"]
+  },
+  {
+    "publication_id": 442,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Southern Missionary", "GH", "The Southern Missionary"]
+  },
+  {
+    "publication_id": 443,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Nebraska Reporter", "NebRep", "The Nebraska Reporter"]
+  },
+  {
+    "publication_id": 444,
+    "type": "periodical/no-page-break",
+    "synonyms": ["True Missionary", "TrueMiss", "The True Missionary"]
+  },
+  {
+    "publication_id": 445,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Messenger", "The Messenger"]
+  },
+  {
+    "publication_id": 446,
+    "type": "periodical/no-page-break",
+    "synonyms": ["RP", "Southern Union Worker"]
+  },
+  {
+    "publication_id": 447,
+    "type": "periodical/no-page-break",
+    "synonyms": ["MMR", "Monthly Missionary Reading"]
+  },
+  {
+    "publication_id": 448,
+    "type": "periodical/no-page-break",
+    "synonyms": ["General Conference Bulletin", "GCB", "The General Conference Bulletin"]
+  },
+  {
+    "publication_id": 449,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Educational Messenger", "EducationalMessenger", "The Educational Messenger"]
+  },
+  {
+    "publication_id": 451,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Needs of the Cause in Australasia", "Needs", "The Needs of the Cause in Australasia"]
+  },
+  {
+    "publication_id": 452,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Present Truth (UK)", "Present Truth", "PrT", "The Present Truth (UK)"]
+  },
+  {
+    "publication_id": 453,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Vision", "Broadside3", "A Vision"]
+  },
+  {
+    "publication_id": 454,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Good Samaritan", "GS", "The Good Samaritan"]
+  },
+  {
+    "publication_id": 455,
+    "type": "periodical/no-page-break",
+    "synonyms": ["ChristianEducation", "Christian Education"]
+  },
+  {
+    "publication_id": 456,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Atlantic Canvasser", "Canvasser", "The Atlantic Canvasser"]
+  },
+  {
+    "publication_id": 457,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Hygienic Caterer", "Caterer", "The Hygienic Caterer"]
+  },
+  {
+    "publication_id": 458,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Missionary Magazine", "HM", "The Missionary Magazine"]
+  },
+  {
+    "publication_id": 459,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Bible Echo", "BEcho", "The Bible Echo"]
+  },
+  {
+    "publication_id": 460,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Minnesota Worker", "MinnWorker", "The Minnesota Worker"]
+  },
+  {
+    "publication_id": 461,
+    "type": "periodical/no-page-break",
+    "synonyms": ["FPR", "Forest Park Reporter"]
+  },
+  {
+    "publication_id": 462,
+    "type": "periodical/no-page-break",
+    "synonyms": ["BTS", "Bible Training School"]
+  },
+  {
+    "publication_id": 463,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Tidings", "Field Tidings"]
+  },
+  {
+    "publication_id": 464,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Christian Educator", "ChristianEducator", "The Christian Educator"]
+  },
+  {
+    "publication_id": 465,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Broadside1", "To the Little Remnant Scattered Abroad"]
+  },
+  {
+    "publication_id": 466,
+    "type": "periodical/no-page-break",
+    "synonyms": ["BEcho", "Australasian Signs of the Times"]
+  },
+  {
+    "publication_id": 467,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Northern Illinois Recorder", "NIRec", "The Northern Illinois Recorder"]
+  },
+  {
+    "publication_id": 468,
+    "type": "periodical/no-page-break",
+    "synonyms": ["WIMessenger", "West Indian Messenger"]
+  },
+  {
+    "publication_id": 469,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Youth&rsquo;s Instructor", "YI", "The Youth’s Instructor"]
+  },
+  {
+    "publication_id": 470,
+    "type": "periodical/no-page-break",
+    "synonyms": ["New York Indicator", "NYI", "The New York Indicator"]
+  },
+  {
+    "publication_id": 471,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Northern Union Reaper", "NUReaper", "The Northern Union Reaper"]
+  },
+  {
+    "publication_id": 472,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Bulletin", "Church and Sabbath School Bulletin"]
+  },
+  {
+    "publication_id": 473,
+    "type": "periodical/no-page-break",
+    "synonyms": ["CollegeRecord", "(Battle Creek) College Record"]
+  },
+  {
+    "publication_id": 474,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Banner", "East Michigan Banner"]
+  },
+  {
+    "publication_id": 475,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Gospel Herald", "GH", "The Gospel Herald"]
+  },
+  {
+    "publication_id": 476,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Gospel of Health", "GosHealth", "The Gospel of Health"]
+  },
+  {
+    "publication_id": 477,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Echoes", "Echoes From the Field"]
+  },
+  {
+    "publication_id": 478,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Central Advance", "CentralAdvance", "The Central Advance"]
+  },
+  {
+    "publication_id": 479,
+    "type": "periodical/no-page-break",
+    "synonyms": ["West Michigan Herald", "WMHerald", "The West Michigan Herald"]
+  },
+  {
+    "publication_id": 480,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Central Union Outlook", "Outlook", "The Central Union Outlook"]
+  },
+  {
+    "publication_id": 481,
+    "type": "periodical/no-page-break",
+    "synonyms": ["GCDB", "General Conference Daily Bulletin"]
+  },
+  {
+    "publication_id": 482,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Church Officers&rsquo; Gazette", "Gazette", "The Church Officers’ Gazette"]
+  },
+  {
+    "publication_id": 483,
+    "type": "periodical/no-page-break",
+    "synonyms": ["RP", "Report of Progress"]
+  },
+  {
+    "publication_id": 484,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Medical Missionary", "MMis", "The Medical Missionary"]
+  },
+  {
+    "publication_id": 485,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Workers&rsquo; Bulletin", "WB", "The Workers’ Bulletin"]
+  },
+  {
+    "publication_id": 486,
+    "type": "periodical/no-page-break",
+    "synonyms": ["GMM", "Gospel Medical Messenger"]
+  },
+  {
+    "publication_id": 487,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Oriental Watchman", "OW", "The Oriental Watchman"]
+  },
+  {
+    "publication_id": 489,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Southern Watchman", "SW", "The Southern Watchman"]
+  },
+  {
+    "publication_id": 490,
+    "type": "periodical/no-page-break",
+    "synonyms": ["SFEcho", "Southern Field Echo"]
+  },
+  {
+    "publication_id": 491,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Canadian Union Messenger", "CUM", "The Canadian Union Messenger"]
+  },
+  {
+    "publication_id": 492,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Southern Review", "SW", "The Southern Review"]
+  },
+  {
+    "publication_id": 493,
+    "type": "periodical/no-page-break",
+    "synonyms": ["BEcho", "Bible Echo and Signs of the Times"]
+  },
+  {
+    "publication_id": 494,
+    "type": "periodical/no-page-break",
+    "synonyms": ["AustYouth", "Our Australasian Youth and Sabbath School Guide"]
+  },
+  {
+    "publication_id": 495,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Indiana Reporter", "IR", "The Indiana Reporter"]
+  },
+  {
+    "publication_id": 496,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Watchman", "SW", "The Watchman"]
+  },
+  {
+    "publication_id": 497,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Missionary Worker", "MissWorker", "The Missionary Worker"]
+  },
+  {
+    "publication_id": 498,
+    "type": "periodical/no-page-break",
+    "synonyms": ["AUCR", "Australasian Union Conference Record"]
+  },
+  {
+    "publication_id": 499,
+    "type": "periodical/no-page-break",
+    "synonyms": ["PHJ", "Life and Health"]
+  },
+  {
+    "publication_id": 500,
+    "type": "periodical/no-page-break",
+    "synonyms": ["LUH", "Lake Union Herald"]
+  },
+  {
+    "publication_id": 501,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Day-Star", "DS", "The Day-Star"]
+  },
+  {
+    "publication_id": 502,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Wisconsin Reporter", "WR", "The Wisconsin Reporter"]
+  },
+  {
+    "publication_id": 503,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Gospel Herald", "GH", "The Gospel Herald"]
+  },
+  {
+    "publication_id": 504,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Health Reformer", "HR", "The Health Reformer"]
+  },
+  {
+    "publication_id": 505,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Advance", "The Advance"]
+  },
+  {
+    "publication_id": 506,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Advocate", "The Advocate"]
+  },
+  {
+    "publication_id": 508,
+    "type": "periodical/no-page-break",
+    "synonyms": ["San", "Sanitarium Announcement"]
+  },
+  {
+    "publication_id": 509,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Broadside2", "To Those who are receiving the seal of the living God"]
+  },
+  {
+    "publication_id": 510,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Columbia Union Visitor", "Visitor", "The Columbia Union Visitor"]
+  },
+  {
+    "publication_id": 511,
+    "type": "periodical/no-page-break",
+    "synonyms": ["NPUGleaner", "North Pacific Union Gleaner"]
+  },
+  {
+    "publication_id": 512,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Home Missionary", "HM", "The Home Missionary"]
+  },
+  {
+    "publication_id": 513,
+    "type": "periodical/no-page-break",
+    "synonyms": ["AUGleaner", "Atlantic Union Gleaner"]
+  },
+  {
+    "publication_id": 515,
+    "type": "book",
+    "synonyms": ["Paulson Collection of Ellen G. White Letters", "PC", "The Paulson Collection of Ellen G. White Letters"]
+  },
+  {
+    "publication_id": 516,
+    "type": "book",
+    "synonyms": ["SpM", "Spalding and Magan Collection"]
+  },
+  {
+    "publication_id": 517,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Present Truth", "PT", "The Present Truth"]
+  },
+  {
+    "publication_id": 636,
+    "type": "book",
+    "synonyms": ["Message to Our Physicians", "SpTA12", "A Message to Our Physicians"]
+  },
+  {
+    "publication_id": 637,
+    "type": "book",
+    "synonyms": ["PH150", "Selections from the Testimonies Setting forth Important Principles Relating to Our Work in General, the Publishing Work in Particular, and the Relatio"]
+  },
+  {
+    "publication_id": 666,
+    "type": "book",
+    "synonyms": ["LSMS", "Life Sketches Manuscript"]
+  },
+  {
+    "publication_id": 684,
+    "type": "book",
+    "synonyms": ["Integrity of the Sanctuary Truth", "IST", "The Integrity of the Sanctuary Truth"]
+  },
+  {
+    "publication_id": 704,
+    "type": "book",
+    "synonyms": ["MRQI", "Music—Its Role, Qualities, and Influence"]
+  },
+  {
+    "publication_id": 705,
+    "type": "book",
+    "synonyms": ["EGWSCC", "Ellen G. White Statements Concerning Cancer"]
+  },
+  {
+    "publication_id": 715,
+    "type": "book",
+    "synonyms": ["POSDAI", "Purpose and Objectives of Seventh-day Adventist Institutions"]
+  },
+  {
+    "publication_id": 721,
+    "type": "book",
+    "synonyms": ["SPCCSR", "Spirit of Prophecy Counsels Relating To Church-State Relationships"]
+  },
+  {
+    "publication_id": 737,
+    "type": "book",
+    "synonyms": ["Salamanca Vision and the 1890 Diary", "SVD", "The Salamanca Vision and the 1890 Diary"]
+  },
+  {
+    "publication_id": 745,
+    "type": "book",
+    "synonyms": ["CGLSJST", "Calamities and God’s Love; Sin, Judgment, and the Shortness of Time"]
+  },
+  {
+    "publication_id": 750,
+    "type": "book",
+    "synonyms": ["EGWATHW", "Ellen G. White’s Attitude Toward Her Work"]
+  },
+  {
+    "publication_id": 757,
+    "type": "book",
+    "synonyms": ["EGWSROCHG", "Ellen G. White statements related to the observance of Christmas and holiday gifts"]
+  },
+  {
+    "publication_id": 769,
+    "type": "book",
+    "synonyms": ["CABP", "Can All Be Prophets?"]
+  },
+  {
+    "publication_id": 771,
+    "type": "book",
+    "synonyms": ["SUFF", "Shall We Use Flesh Foods?"]
+  },
+  {
+    "publication_id": 775,
+    "type": "book",
+    "synonyms": ["CLD", "Conflicts in the Last Days"]
+  },
+  {
+    "publication_id": 777,
+    "type": "book",
+    "synonyms": ["KTEWCE", "Some Key Thoughts from Ellen White on City Evangelism"]
+  },
+  {
+    "publication_id": 806,
+    "type": "book",
+    "synonyms": ["Colporteur Evangelist", "CEv", "The Colporteur Evangelist"]
+  },
+  {
+    "publication_id": 820,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Signs of the Times", "ST", "The Signs of the Times"]
+  },
+  {
+    "publication_id": 821,
+    "type": "periodical/no-page-break",
+    "synonyms": ["Review and Herald", "RH", "The Review and Herald"]
+  },
+  {
+    "publication_id": 1445,
+    "type": "book",
+    "synonyms": ["A Word to the &ldquo;Little Flock&rdquo;", "Word to the Little Flock", "WLF", "A Word to the Little Flock"]
+  },
+  {
+    "publication_id": 1625,
+    "type": "periodical/no-page-break",
+    "synonyms": ["SSW", "Sabbath-School Worker"]
+  },
+  {
+    "publication_id": 1965,
+    "type": "bible",
+    "synonyms": ["2 Chronicles", "2 Co", "2 Corinthians", "2 Jn", "2 Jo", "2 John", "2 Kgs", "2 Ki", "2 Kin", "2 Kings", "2 Pe", "2 Pet", "2 Peter", "2 Pt", "2 Sa", "2 Sam", "2 Samuel", "2 Sm", "2 Th", "2 Thess", "2 Thessalonians", "2 Ti", "2 Tim", "2 Timothy", "2Chr", "2Chron", "2Co", "2Cor", "2Jn", "2Jo", "2Kgs", "2Ki", "2Kin", "2Pe", "2Pet", "2Pt", "2Sa", "2Sam", "2Th", "2Thess", "2Ti", "2Tim", "3 Jn", "3 Jo", "3 John", "3Jn", "3Jo", "Ac", "Act", "Acts", "Am", "Amo", "Amos", "Col", "Colossians", "Dan", "Daniel", "Deut", "Deuteronomy", "Dn", "Dt", "Eccl", "Eccles", "Ecclesiastes", "Eph", "Ephesians", "Est", "Esther", "Ex", "Exod", "Exodus", "Eze", "Ezek", "Ezekiel", "Ezr", "Ezra", "Gal", "Galatians", "Gen", "Genesis", "Gn", "Hab", "Habakkuk", "Hag", "Haggai", "Hb", "Heb", "Hebrews", "Hg", "Hos", "Hosea", "Is", "Isa", "Isaiah", "Jam", "James", "Jb", "Jer", "Jeremiah", "Jl", "Jn", "Job", "Joe", "Joel", "Joh", "John", "Jon", "Jonah", "Josh", "Joshua", "Ju", "Jude", "Judg", "Judges", "Lam", "Lamentations", "Lev", "Leviticus", "Lk", "Luk", "Luke", "Lv", "Mal", "Malachi", "Mar", "Mark", "Matt", "Matthew", "Mi", "Mic", "Micah", "Mk", "Mt", "Na", "Nah", "Nahum", "Ne", "Neh", "Nehemiah", "Nm", "Num", "Numbers", "Obad", "Obadiah", "Od", "Phil", "Phile", "Philem", "Philemon", "Phili", "Philippians", "Phlm", "Phm", "Prov", "Proverbs", "Prv", "Ps", "Psalm", "Psalms", "Rev", "Revelation", "Rom", "Romans", "Ru", "Rut", "Ruth", "Rv", "Sg", "Song", "Song of Sol", "Song of Solomon", "Ti", "Tit", "Titus", "Zec", "Zech", "Zechariah", "Zeph", "Zephaniah", "Zp", "2 Cor", "1 Chr", "1 Chron", "1 Chronicles", "1 Co", "1 Cor", "1 Corinthians", "1 Jn", "1 Jo", "1 John", "1 Kgs", "1 Ki", "1 Kin", "1 Kings", "1 Pe", "1 Pet", "1 Peter", "1 Pt", "1 Sa", "1 Sam", "1 Samuel", "1 Sm", "1 Th", "1 Thess", "1 Thessalonians", "1 Ti", "1 Tim", "1 Timothy", "1Chr", "1Chron", "1Co", "1Cor", "1Jn", "1Jo", "1Kgs", "1Ki", "1Kin", "1Pe", "1Pet", "1Pt", "1Sa", "1Sam", "1Th", "1Thess", "1Ti", "1Tim", "2 Chr", "2 Chron", "KJV", "King James Version"]
+  },
+  {
+    "publication_id": 1974,
+    "type": "book",
+    "synonyms": ["Beginning of the End", "BOE", "Beginning of the End"]
+  },
+  {
+    "publication_id": 1975,
+    "type": "book",
+    "synonyms": ["Me", "Messiah"]
+  },
+  {
+    "publication_id": 1976,
+    "type": "book",
+    "synonyms": ["TEd", "True Education"]
+  },
+  {
+    "publication_id": 1977,
+    "type": "book",
+    "synonyms": ["HH", "Humble Hero"]
+  },
+  {
+    "publication_id": 1978,
+    "type": "book",
+    "synonyms": ["RR", "Royalty and Ruin"]
+  },
+  {
+    "publication_id": 1980,
+    "type": "book",
+    "synonyms": ["ULe", "Unlikely Leaders"]
+  },
+  {
+    "publication_id": 2003,
+    "type": "book",
+    "synonyms": ["2TT", "Testimony Treasures, vol. 2"]
+  },
+  {
+    "publication_id": 2004,
+    "type": "book",
+    "synonyms": ["3TT", "Testimony Treasures, vol. 3"]
+  },
+  {
+    "publication_id": 2005,
+    "type": "book",
+    "synonyms": ["1TT", "Testimony Treasures, vol. 1"]
+  },
+  {
+    "publication_id": 2017,
+    "type": "book",
+    "synonyms": ["SJ", "STJ", "Steps to Jesus"]
+  },
+  {
+    "publication_id": 2697,
+    "type": "book",
+    "synonyms": ["PH133", "Danger in Adopting Worldly Policy in the Work of God"]
+  },
+  {
+    "publication_id": 2715,
+    "type": "book",
+    "synonyms": ["Ministry of Health and Healing", "MHH", "The Ministry of Health and Healing"]
+  },
+  {
+    "publication_id": 2723,
+    "type": "book",
+    "synonyms": ["Call to Stand Apart", "AC", "A Call to Stand Apart"]
+  },
+  {
+    "publication_id": 2769,
+    "type": "book",
+    "synonyms": ["TT", "From Trials to Triumph"]
+  },
+  {
+    "publication_id": 2771,
+    "type": "book",
+    "synonyms": ["HL", "HLv", "From Heaven With Love"]
+  },
+  {
+    "publication_id": 2772,
+    "type": "book",
+    "synonyms": ["EP", "From Eternity Past"]
+  },
+  {
+    "publication_id": 2774,
+    "type": "book",
+    "synonyms": ["HF", "From Here to Forever"]
+  },
+  {
+    "publication_id": 2775,
+    "type": "book",
+    "synonyms": ["SS", "From Splendor to Shadow"]
+  },
+  {
+    "publication_id": 11267,
+    "type": "book",
+    "synonyms": ["COS", "Christ Our Saviour"]
+  },
+  {
+    "publication_id": 11974,
+    "type": "book",
+    "synonyms": ["TR", "True Revival"]
+  },
+  {
+    "publication_id": 12119,
+    "type": "book",
+    "synonyms": ["CIHS", "Christ in His Sanctuary"]
+  },
+  {
+    "publication_id": 12210,
+    "type": "devotional",
+    "synonyms": ["FH", "From the Heart"]
+  },
+  {
+    "publication_id": 12269,
+    "type": "book",
+    "synonyms": ["LF", "Love Under Fire"]
+  },
+  {
+    "publication_id": 12280,
+    "type": "book",
+    "synonyms": ["Great Hope (Adapted)", "Great Hope (Abridged-Adapted)", "GrH_a", "The Great Hope (Adapted)"]
+  },
+  {
+    "publication_id": 12320,
+    "type": "book",
+    "synonyms": ["Great Hope (Condensed)", "GrH_c", "The Great Hope (Condensed)"]
+  },
+  {
+    "publication_id": 12399,
+    "type": "book",
+    "synonyms": ["MTC", "Ministry to the Cities"]
+  },
+  {
+    "publication_id": 12557,
+    "type": "book",
+    "synonyms": ["ExV53", "Notes of Explanation"]
+  },
+  {
+    "publication_id": 12670,
+    "type": "book",
+    "synonyms": ["EA", "Experiences in Australia"]
+  },
+  {
+    "publication_id": 12674,
+    "type": "book",
+    "synonyms": ["T01", "Testimony for the Church — No. 1"]
+  },
+  {
+    "publication_id": 12675,
+    "type": "book",
+    "synonyms": ["T02", "Testimony for the Church — No. 2"]
+  },
+  {
+    "publication_id": 12676,
+    "type": "book",
+    "synonyms": ["T03", "Testimony for the Church — No. 3"]
+  },
+  {
+    "publication_id": 12677,
+    "type": "book",
+    "synonyms": ["T04", "Testimony for the Church — No. 4"]
+  },
+  {
+    "publication_id": 12684,
+    "type": "book",
+    "synonyms": ["T05", "Testimony for the Church — No. 5"]
+  },
+  {
+    "publication_id": 12789,
+    "type": "book",
+    "synonyms": ["T19", "Testimony for the Church — No. 19"]
+  },
+  {
+    "publication_id": 12790,
+    "type": "book",
+    "synonyms": ["T07", "Testimony for the Church — No. 7"]
+  },
+  {
+    "publication_id": 12791,
+    "type": "book",
+    "synonyms": ["T20", "Testimony for the Church — No. 20"]
+  },
+  {
+    "publication_id": 12792,
+    "type": "book",
+    "synonyms": ["T06", "Testimony for the Church — No. 6"]
+  },
+  {
+    "publication_id": 12793,
+    "type": "book",
+    "synonyms": ["T21", "Testimony for the Church — No. 21"]
+  },
+  {
+    "publication_id": 12795,
+    "type": "book",
+    "synonyms": ["T25", "Testimony for the Church — No. 25"]
+  },
+  {
+    "publication_id": 12796,
+    "type": "book",
+    "synonyms": ["T25a", "Testimony for the Church — No. 25a"]
+  },
+  {
+    "publication_id": 12797,
+    "type": "book",
+    "synonyms": ["T24", "Testimony for the Church — No. 24"]
+  },
+  {
+    "publication_id": 12798,
+    "type": "book",
+    "synonyms": ["T21a", "Testimony to the Church — No. 21a"]
+  },
+  {
+    "publication_id": 12799,
+    "type": "book",
+    "synonyms": ["T22", "Testimony for the Church — No. 22"]
+  },
+  {
+    "publication_id": 12800,
+    "type": "book",
+    "synonyms": ["T23", "Testimony for the Church — No. 23"]
+  },
+  {
+    "publication_id": 12801,
+    "type": "book",
+    "synonyms": ["T26", "Testimony for the Church — No. 26"]
+  },
+  {
+    "publication_id": 12802,
+    "type": "book",
+    "synonyms": ["T08", "Testimony for the Church — No. 8"]
+  },
+  {
+    "publication_id": 12803,
+    "type": "book",
+    "synonyms": ["T09", "Testimony for the Church — No. 9"]
+  },
+  {
+    "publication_id": 12804,
+    "type": "book",
+    "synonyms": ["T10", "Testimony for the Church — No. 10"]
+  },
+  {
+    "publication_id": 12805,
+    "type": "book",
+    "synonyms": ["T11", "Testimony for the Church — No. 11"]
+  },
+  {
+    "publication_id": 12806,
+    "type": "book",
+    "synonyms": ["T12", "Testimony for the Church — No. 12"]
+  },
+  {
+    "publication_id": 12807,
+    "type": "book",
+    "synonyms": ["T13", "Testimony for the Church — No. 13"]
+  },
+  {
+    "publication_id": 12808,
+    "type": "book",
+    "synonyms": ["T14", "Testimony for the Church — No. 14"]
+  },
+  {
+    "publication_id": 12809,
+    "type": "book",
+    "synonyms": ["T15", "Testimony for the Church — No. 15"]
+  },
+  {
+    "publication_id": 12810,
+    "type": "book",
+    "synonyms": ["T16", "Testimony for the Church — No. 16"]
+  },
+  {
+    "publication_id": 12811,
+    "type": "book",
+    "synonyms": ["T27", "Testimony for the Church — No. 27"]
+  },
+  {
+    "publication_id": 12813,
+    "type": "book",
+    "synonyms": ["T28", "Testimony for the Church — No. 28"]
+  },
+  {
+    "publication_id": 12814,
+    "type": "book",
+    "synonyms": ["T29", "Testimony for the Church — No. 29"]
+  },
+  {
+    "publication_id": 12815,
+    "type": "book",
+    "synonyms": ["T30", "Testimony for the Church — No. 30"]
+  },
+  {
+    "publication_id": 12856,
+    "type": "book",
+    "synonyms": ["T32", "Testimony for the Church — No. 32"]
+  },
+  {
+    "publication_id": 12858,
+    "type": "book",
+    "synonyms": ["T31", "Testimony for the Church — No. 31"]
+  },
+  {
+    "publication_id": 12859,
+    "type": "book",
+    "synonyms": ["T33", "Testimony for the Church — No. 33"]
+  },
+  {
+    "publication_id": 12862,
+    "type": "devotional",
+    "synonyms": ["HB", "Homeward Bound"]
+  },
+  {
+    "publication_id": 12886,
+    "type": "book",
+    "synonyms": ["T17", "Testimony for the Church — No. 17"]
+  },
+  {
+    "publication_id": 13786,
+    "type": "book",
+    "synonyms": ["T18", "Testimony for the Church — No. 18"]
+  },
+  {
+    "publication_id": 13940,
+    "type": "devotional",
+    "synonyms": ["WGD", "With God at Dawn"]
+  },
+  {
+    "publication_id": 13961,
+    "type": "manuscript-volume",
+    "synonyms": ["1LtMs", "Letters and Manuscripts — Volume 1 (1844 - 1868)"]
+  },
+  {
+    "publication_id": 14039,
+    "type": "devotional",
+    "synonyms": ["RRe", "Radiant Religion"]
+  },
+  {
+    "publication_id": 14042,
+    "type": "book",
+    "synonyms": ["GRC", "God’s Remnant Church (The Remnant Church)"]
+  },
+  {
+    "publication_id": 14052,
+    "type": "manuscript-volume",
+    "synonyms": ["2LtMs", "Letters and Manuscripts — Volume 2 (1869 - 1875)"]
+  },
+  {
+    "publication_id": 14053,
+    "type": "manuscript-volume",
+    "synonyms": ["3LtMs", "Letters and Manuscripts — Volume 3 (1876 - 1882)"]
+  },
+  {
+    "publication_id": 14054,
+    "type": "manuscript-volume",
+    "synonyms": ["4LtMs", "Letters and Manuscripts — Volume 4 (1883 - 1886)"]
+  },
+  {
+    "publication_id": 14055,
+    "type": "manuscript-volume",
+    "synonyms": ["5LtMs", "Letters and Manuscripts — Volume 5 (1887-1888)"]
+  },
+  {
+    "publication_id": 14056,
+    "type": "manuscript-volume",
+    "synonyms": ["6LtMs", "Letters and Manuscripts — Volume 6 (1889-1890)"]
+  },
+  {
+    "publication_id": 14057,
+    "type": "manuscript-volume",
+    "synonyms": ["7LtMs", "Letters and Manuscripts — Volume 7 (1891-1892)"]
+  },
+  {
+    "publication_id": 14058,
+    "type": "manuscript-volume",
+    "synonyms": ["8LtMs", "Letters and Manuscripts — Volume 8 (1893)"]
+  },
+  {
+    "publication_id": 14059,
+    "type": "manuscript-volume",
+    "synonyms": ["9LtMs", "Letters and Manuscripts — Volume 9 (1894)"]
+  },
+  {
+    "publication_id": 14060,
+    "type": "manuscript-volume",
+    "synonyms": ["10LtMs", "Letters and Manuscripts — Volume 10 (1895)"]
+  },
+  {
+    "publication_id": 14061,
+    "type": "manuscript-volume",
+    "synonyms": ["11LtMs", "Letters and Manuscripts — Volume 11 (1896)"]
+  },
+  {
+    "publication_id": 14062,
+    "type": "manuscript-volume",
+    "synonyms": ["12LtMs", "Letters and Manuscripts — Volume 12 (1897)"]
+  },
+  {
+    "publication_id": 14063,
+    "type": "manuscript-volume",
+    "synonyms": ["13LtMs", "Letters and Manuscripts — Volume 13 (1898)"]
+  },
+  {
+    "publication_id": 14064,
+    "type": "manuscript-volume",
+    "synonyms": ["14LtMs", "Letters and Manuscripts — Volume 14 (1899)"]
+  },
+  {
+    "publication_id": 14065,
+    "type": "manuscript-volume",
+    "synonyms": ["15LtMs", "Letters and Manuscripts — Volume 15 (1900)"]
+  },
+  {
+    "publication_id": 14066,
+    "type": "manuscript-volume",
+    "synonyms": ["16LtMs", "Letters and Manuscripts — Volume 16 (1901)"]
+  },
+  {
+    "publication_id": 14067,
+    "type": "manuscript-volume",
+    "synonyms": ["17LtMs", "Letters and Manuscripts — Volume 17 (1902)"]
+  },
+  {
+    "publication_id": 14068,
+    "type": "manuscript-volume",
+    "synonyms": ["18LtMs", "Letters and Manuscripts — Volume 18 (1903)"]
+  },
+  {
+    "publication_id": 14069,
+    "type": "manuscript-volume",
+    "synonyms": ["19LtMs", "Letters and Manuscripts — Volume 19 (1904)"]
+  },
+  {
+    "publication_id": 14070,
+    "type": "manuscript-volume",
+    "synonyms": ["20LtMs", "Letters and Manuscripts — Volume 20 (1905)"]
+  },
+  {
+    "publication_id": 14071,
+    "type": "manuscript-volume",
+    "synonyms": ["21LtMs", "Letters and Manuscripts — Volume 21 (1906)"]
+  },
+  {
+    "publication_id": 14072,
+    "type": "manuscript-volume",
+    "synonyms": ["22LtMs", "Letters and Manuscripts — Volume 22 (1907)"]
+  },
+  {
+    "publication_id": 14073,
+    "type": "manuscript-volume",
+    "synonyms": ["23LtMs", "Letters and Manuscripts — Volume 23 (1908)"]
+  },
+  {
+    "publication_id": 14074,
+    "type": "manuscript-volume",
+    "synonyms": ["24LtMs", "Letters and Manuscripts — Volume 24 (1909)"]
+  },
+  {
+    "publication_id": 14075,
+    "type": "manuscript-volume",
+    "synonyms": ["25LtMs", "Letters and Manuscripts — Volume 25 (1910 - 1915)"]
+  },
+  {
+    "publication_id": 14086,
+    "type": "book",
+    "synonyms": ["Impending Conflict", "IC", "The Impending Conflict"]
+  },
+  {
+    "publication_id": 14150,
+    "type": "devotional",
+    "synonyms": ["JNN", "Jesus, Name Above All Names"]
+  },
+  {
+    "publication_id": 14211,
+    "type": "book",
+    "synonyms": ["SH", "Story of Hope"]
+  },
+  {
+    "publication_id": 14222,
+    "type": "book",
+    "synonyms": ["PCL", "Principles for Christian Leaders"]
+  },
+  {
+    "publication_id": 14266,
+    "type": "book",
+    "synonyms": ["Gift of Prophecy (The Role of Ellen White in God&rsquo;s Remnant Church)", "GP", "The Gift of Prophecy (The Role of Ellen White in God’s Remnant Church)"]
+  },
+  {
+    "publication_id": 14666,
+    "type": "periodical/page-break",
+    "synonyms": ["Life Boat", "LifeBoat", "The Life Boat"]
+  }
+]

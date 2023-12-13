@@ -7,6 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 from chategw.ai import AiClient, SearchResultDocument, SearchAnswerDocument, PreprocessQueryDocument
+from chategw.models.book_parsing import EgwBookMatcher
 
 load_dotenv()
 
@@ -40,7 +41,8 @@ class QuestionAnsweringPayload(BaseModel):
 @app.get('/api/preprocess-query')
 def embed(query: Annotated[str, Query(description="Search query")]) -> PreprocessQueryDocument:
     """Search endpoint"""
-    return _ai_client().preprocess_query(query)
+    response = _ai_client().preprocess_query(query)
+    return response
 
 
 @app.get('/api/embed')
@@ -52,5 +54,5 @@ def embed(query: Annotated[str, Query(description="Search query")]) -> List[floa
 @app.post('/api/answer')
 def answer(payload: QuestionAnsweringPayload) -> List[SearchAnswerDocument]:
     """Search endpoint"""
-    result = _ai_client().rerank_search_results(payload.query, payload.answers, 10, threshold=0)
+    result = _ai_client().rerank_search_results(payload.query, payload.answers, 100, threshold=0)
     return result

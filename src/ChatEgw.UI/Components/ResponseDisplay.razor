@@ -1,0 +1,24 @@
+@using ChatEgw.UI.Application.Models
+@using System.Text.RegularExpressions
+@using System.Net
+
+@{
+    var rawContent = WebUtility.HtmlEncode(string.Join("", Words));
+    var content = (MarkupString)ReReferences().Replace(rawContent, HandleReferences);
+}
+
+<MudText Typo="Typo.body2">
+    @content
+    @if (!Completed)
+    {
+        <span class="word">&hellip;</span>
+    }
+</MudText>
+
+@code {
+    [Parameter] [EditorRequired] public bool Completed { get; set; } = false;
+    [Parameter] [EditorRequired] public IReadOnlyCollection<string> Words { get; set; } = new List<string>();
+    [Parameter] [EditorRequired] public IReadOnlyList<AnswerResponse> Answers { get; set; } = new List<AnswerResponse>();
+
+
+}

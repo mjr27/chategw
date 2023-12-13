@@ -9,7 +9,7 @@
                     @bind-Expanded="@context.IsExpanded"
                     Visible="@context.HasChildren"/>
                 <MudCheckBox Dense="true" T="bool?" Checked="@(context.IsChecked)"
-                             CheckedChanged="@((e) => CheckedChanged(context))"
+                             CheckedChanged="@(() => CheckedChanged(context))"
                              Class="mr-2"/>
 
                 <MudText>@context.Title</MudText>

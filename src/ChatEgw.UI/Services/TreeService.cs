@@ -11,7 +11,7 @@ public class TreeModel(string id, string title)
     public HashSet<TreeModel> Children { get; set; } = new();
     public bool IsExpanded { get; set; }
     public bool? IsChecked { get; set; } = false;
-    public bool HasChildren => Children.Any();
+    public bool HasChildren => Children.Count != 0;
 
 
     public void AddChild(TreeModel child)
@@ -95,23 +95,25 @@ public class TreeService(IDbContextFactory<SearchDbContext> dbContextFactory)
         Tree = outputFolders;
     }
 
-    public HashSet<string> GetSelected()
+    public HashSet<string> Selected
     {
-        var selected = new HashSet<string>();
-        foreach (TreeModel item in Tree)
+        get
         {
-            UpdateSelected(item, selected);
-        }
+            var selected = new HashSet<string>();
+            foreach (TreeModel item in Tree)
+            {
+                UpdateSelected(item, selected);
+            }
 
-        return selected;
+            return selected;
+        }
     }
 
     /// <summary> Is EGW Writings Only </summary>
-    public bool EgwWritingsOnly { get; set; } = true;
+    public bool EgwWritingsOnly { get; set; }
 
     private static void UpdateSelected(TreeModel model, ISet<string> selected)
     {
-        
         switch (model.IsChecked)
         {
             case true:

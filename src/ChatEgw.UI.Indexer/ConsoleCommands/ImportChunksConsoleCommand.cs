@@ -35,6 +35,7 @@ public class ImportChunksConsoleCommand : ConsoleCommandBase
         db.ChangeTracker.AutoDetectChangesEnabled = true;
     }
 
+    // ReSharper disable once CognitiveComplexity
     private IEnumerable<SearchChunk> ReadFile(IReadOnlySet<long> paragraphs)
     {
         var totalCount = 0;
@@ -73,11 +74,15 @@ public class ImportChunksConsoleCommand : ConsoleCommandBase
             foreach (string s in a.Skip(3))
             {
                 string[] buf2 = s.Split('-', 2);
-                entities.Add(new SearchEntity
+                var type = GetEntityType(buf2[0]);
+                if (type is not null)
                 {
-                    Type = GetEntityType(buf2[0]),
-                    Content = EntityUtilities.NormalizeEntityValue(buf2[1])
-                });
+                    entities.Add(new SearchEntity
+                    {
+                        Type = type.Value,
+                        Content = EntityUtilities.NormalizeEntityValue(buf2[1])
+                    });
+                }
             }
 
             entities = entities.DistinctBy(r => (r.Type, r.Content)).ToList();
@@ -102,14 +107,14 @@ public class ImportChunksConsoleCommand : ConsoleCommandBase
         }
     }
 
-    private SearchEntityTypeEnum GetEntityType(string typeCode)
+    private SearchEntityTypeEnum? GetEntityType(string typeCode)
     {
         return typeCode switch
         {
             "PERSON" => SearchEntityTypeEnum.Person,
             "GPE" => SearchEntityTypeEnum.Place,
             "LOC" => SearchEntityTypeEnum.Place,
-            _ => throw new ArgumentOutOfRangeException(nameof(typeCode), typeCode, null)
+            _ => null
         };
     }
 }

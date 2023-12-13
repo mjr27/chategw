@@ -17,7 +17,7 @@ internal interface IRawSearchEngine
     /// <returns></returns>
     Task<List<SearchResultDto>> SearchEmbeddings(Vector query,
         int limit,
-        IReadOnlyCollection<string> references,
+        IReadOnlyCollection<PreprocessedPublicationReference> references,
         IReadOnlyCollection<PreprocessedEntity> entities,
         SearchFilterRequest filter,
         CancellationToken cancellationToken);

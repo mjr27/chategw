@@ -1,0 +1,20 @@
+<MudDialog>
+    <DialogContent>
+        <MudTextField T="string" Label="LLM Prompt" Variant="Variant.Text" Text="@Prompt" Lines="5" AutoGrow/>
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="@(HandleClose)">Close</MudButton>
+    </DialogActions>
+</MudDialog>
+
+@code {
+
+    [CascadingParameter]
+    MudDialogInstance MudDialog { get; set; } = null!;
+
+    [Parameter]
+    [EditorRequired]
+    public string Prompt { get; set; } = "";
+
+    void HandleClose() => MudDialog.Cancel();
+}

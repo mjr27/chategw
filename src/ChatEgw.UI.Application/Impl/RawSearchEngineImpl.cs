@@ -1,5 +1,4 @@
 using System.Diagnostics;
-using System.Text.Json;
 using ChatEgw.UI.Application.Models;
 using ChatEgw.UI.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -14,9 +13,10 @@ internal class RawSearchEngineImpl(
     IDbContextFactory<SearchDbContext> dbContextFactory,
     ILogger<RawSearchEngineImpl> logger) : IRawSearchEngine
 {
+    // ReSharper disable once CognitiveComplexity
     public async Task<List<SearchResultDto>> SearchEmbeddings(Vector query,
         int limit,
-        IReadOnlyCollection<string> references,
+        IReadOnlyCollection<PreprocessedPublicationReference> references,
         IReadOnlyCollection<PreprocessedEntity> entities,
         SearchFilterRequest filter,
         CancellationToken cancellationToken)
@@ -28,7 +28,6 @@ internal class RawSearchEngineImpl(
             filteredItems = filteredItems.Where(s =>
                 s.Paragraph.Node.Children.Intersect(filter.Folders).Any());
         }
-        Console.WriteLine(JsonSerializer.Serialize(filter.Folders));
 
         if (filter.MinDate is not null)
         {
@@ -82,6 +81,7 @@ internal class RawSearchEngineImpl(
             }
 
             data = await filteredItems
+                // ReSharper disable once EntityFramework.UnsupportedServerSideFunctionCall
                 .OrderBy(r => r.Embedding.MaxInnerProduct(query))
                 .Take(limit)
                 .Select(r => new SearchResultDto
@@ -100,29 +100,56 @@ internal class RawSearchEngineImpl(
         return data;
     }
 
+    private IEnumerable<string> GetReferences(PreprocessedPublicationReference reference)
+    {
+        if (reference.Page is null)
+        {
+            yield return reference.Publication;
+            yield break;
+        }
+
+        if (reference.EndPage is null)
+        {
+            yield return $"{reference.Publication} {reference.Page}";
+        }
+        else
+        {
+            for (int i = reference.Page.Value; i <= reference.EndPage.Value; i++)
+            {
+                yield return $"{reference.Publication} {i}";
+            }
+        }
+    }
+
     private async Task<IQueryable<SearchChunk>> FilterEntities(
         IQueryable<SearchChunk> query,
-        IReadOnlyCollection<string> references,
+        IReadOnlyCollection<PreprocessedPublicationReference> references,
         IEnumerable<PreprocessedEntity> entities,
         CancellationToken cancellationToken)
     {
         IDictionary<SearchEntityTypeEnum, HashSet<string>> data = await GetFilteredData(cancellationToken);
-        foreach (PreprocessedEntity entity in entities)
+        var referenceSet = new HashSet<string>();
+        foreach (PreprocessedPublicationReference reference in references)
         {
-            if (!data.TryGetValue(entity.Type, out HashSet<string>? values))
-            {
-                continue;
-            }
-
-            if (values.Contains(entity.Text))
-            {
-                query = query.Where(r => r.Entities.Any(p => p.Content == entity.Text));
-            }
+            referenceSet.UnionWith(GetReferences(reference));
         }
 
-        if (references.Any())
+        // foreach (PreprocessedEntity entity in entities)
+        // {
+        //     if (!data.TryGetValue(entity.Type, out HashSet<string>? values))
+        //     {
+        //         continue;
+        //     }
+        //
+        //     if (values.Contains(entity.Text))
+        //     {
+        //         query = query.Where(r => r.Entities.Any(p => p.Content == entity.Text));
+        //     }
+        // }
+
+        if (referenceSet.Any())
         {
-            query = query.Where(p => p.Paragraph.References.Any(r => references.Contains(r.ReferenceCode)));
+            query = query.Where(p => p.Paragraph.References.Any(r => referenceSet.Contains(r.ReferenceCode)));
         }
 
         return query;

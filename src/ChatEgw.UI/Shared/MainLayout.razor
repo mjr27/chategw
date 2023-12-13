@@ -20,11 +20,11 @@
     <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2" Variant="DrawerVariant.Responsive" Class="drawer-container">
         <MudDrawerContainer Class="pt-4">
             <TreeFilter/>
-            <MudDivider Class="mt-2" />
-            <div class="mx-2">
-            <MudSwitch @bind-Checked="@TreeService.EgwWritingsOnly">EGW Writings Only</MudSwitch>
-            </div>
+            <MudDivider Class="mt-2"/>
         </MudDrawerContainer>
+        <MudSpacer />
+        <MudSwitch Class="mx-2 mb-5" @bind-Checked="@TreeService.EgwWritingsOnly">EGW Writings Only</MudSwitch>
+
     </MudDrawer>
     <MudMainContent>
         <MudContainer MaxWidth="MaxWidth.Large">

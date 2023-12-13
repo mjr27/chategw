@@ -3,8 +3,8 @@
 @using ChatEgw.UI.Application
 @using ChatEgw.UI.Application.Models
 
-<MudElement Class="mb-2" HtmlTag="div">
-    <MudText>
+<MudElement Class="mb-2 egw-answer" HtmlTag="div"  id="@Id">
+    <MudText >
         @Answer.Id.
         @if (Answer.Answer is null)
         {
@@ -58,6 +58,7 @@
 
 @code {
 
+    [Parameter][EditorRequired] public required string Id { get; set; }
     [Parameter]
     [EditorRequired]
     public required AnswerResponse Answer { get; set; }

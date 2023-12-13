@@ -14,7 +14,13 @@ public class ExportTsvConsoleCommand : ConsoleCommandBase
     {
         using FileStream f = OutputFile.Open(FileMode.Create);
         using var writer = new StreamWriter(f);
-        foreach (SearchParagraph paragraph in db.Paragraphs.OrderBy(r => r.Id))
+        foreach (var paragraph in db.Paragraphs
+                     .Select(r => new
+                     {
+                         r.Id,
+                         r.Content,
+                     })
+                     .OrderBy(r => r.Id))
         {
             writer.Write(paragraph.Id);
             writer.Write('\t');
