@@ -110,7 +110,7 @@ public class TreeService(IDbContextFactory<SearchDbContext> dbContextFactory)
     }
 
     /// <summary> Is EGW Writings Only </summary>
-    public bool EgwWritingsOnly { get; set; }
+    public bool EgwWritingsOnly { get; set; } = true;
 
     private static void UpdateSelected(TreeModel model, ISet<string> selected)
     {

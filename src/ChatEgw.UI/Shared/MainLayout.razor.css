@@ -6,6 +6,7 @@
     letter-spacing: var(--mud-typography-h4-letterspacing);
     vertical-align: middle;
     display: inline-block;
+    margin-top: 5px;
 }
 
 .egw-logo img {

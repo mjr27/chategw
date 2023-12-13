@@ -3,7 +3,7 @@
 @inherits LayoutComponentBase
 @inject TreeService TreeService
 
-<PageTitle>ChatEgw</PageTitle>
+<PageTitle>EGWSearch</PageTitle>
 <MudThemeProvider Theme="CustomTheme"/>
 <MudDialogProvider/>
 <MudSnackbarProvider/>
@@ -11,8 +11,8 @@
 <MudLayout Class="d-flex">
     <MudAppBar Elevation="1">
         <span class="egw-logo">
-            <h1>Chat</h1>
             <img src="/logo.svg" alt="ChatEGW"/>
+            <h1>Search</h1>
         </span>
         <MudSpacer/>
         <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((_) => DrawerToggle())"/>

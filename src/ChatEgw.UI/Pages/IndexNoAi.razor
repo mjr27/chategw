@@ -1,12 +1,11 @@
-﻿@page "/full"
+﻿@page "/"
 @using ChatEgw.UI.Application.Models
 @using ChatEgw.UI.Services
+@using EnumsNET
 @inject TreeService TreeService
 
 @code {
     private AiAnswerModel Model { get; set; } = new();
-    private List<string>? AiResponseWords { get; set; }
-    private bool _aiResponseCompleted;
 
     private List<AnswerResponse>? Answers { get; set; } = new();
     private SearchTypeEnum _aiType = SearchTypeEnum.AiSearch;
@@ -19,7 +18,19 @@
     <DataAnnotationsValidator/>
     <input type="submit" class="d-none"/>
 
-    <AiTypeSwitch @bind-selectedIndex="_aiType"/>
+    <MudButtonGroup Class="mt-5 d-inline-block" Size="Size.Medium" Variant="@Variant.Filled" OverrideStyles="false">
+        <MudButton Variant="@Variant.Filled"
+                   Color="@(_aiType == SearchTypeEnum.AiSearch ? Color.Primary : Color.Default)"
+                   OnClick="@(() => _aiType = SearchTypeEnum.AiSearch)">
+            @SearchTypeEnum.AiSearch.AsString(EnumFormat.Description)
+        </MudButton>
+        <MudButton Variant="@Variant.Filled"
+                   Color="@(_aiType == SearchTypeEnum.KeywordSearch ? Color.Primary : Color.Default)"
+                   OnClick="@(() => _aiType = SearchTypeEnum.KeywordSearch)">
+            @SearchTypeEnum.KeywordSearch.AsString(EnumFormat.Description)
+        </MudButton>
+    </MudButtonGroup>
+
     @* <MudPaper Class="pa-4 my-5 "> *@
     <MudFocusTrap DefaultFocus="DefaultFocus.FirstChild">
         <MudTextField
@@ -70,16 +81,6 @@ else
                         </CardHeaderActions>
 
                     </MudCardHeader>
-                    <MudCardContent>
-                        @if (AiResponseWords == null)
-                        {
-                            <MudSkeleton SkeletonType="SkeletonType.Rectangle" Style="width: 100%; height:  200px"/>
-                        }
-                        else
-                        {
-                            <ResponseDisplay Words="@AiResponseWords" Answers="@Answers" Completed="@_aiResponseCompleted" />
-                        }
-                    </MudCardContent>
                 </MudCard>
             }
 
@@ -100,9 +101,10 @@ else
                     foreach (AnswerResponse answer in _expanded ? Answers : Answers.Take(10))
                     {
                         var index = i;
-                        <AiAnswer Id="@("answer-"+ index)"  Answer="answer"/>
+                        <AiAnswer Id="@("answer-" + index)" Answer="answer"/>
                         i++;
                     }
+
                     if (!_expanded && Answers.Count > 10)
                     {
                         <MudButton Variant="Variant.Text" Color="Color.Primary" OnClick="@(() => _expanded = true)">Show all</MudButton>
