@@ -16,7 +16,7 @@
 </MudText>
 
 @code {
-    [Parameter] [EditorRequired] public bool Completed { get; set; } = false;
+    [Parameter] [EditorRequired] public bool Completed { get; set; }
     [Parameter] [EditorRequired] public IReadOnlyCollection<string> Words { get; set; } = new List<string>();
     [Parameter] [EditorRequired] public IReadOnlyList<AnswerResponse> Answers { get; set; } = new List<AnswerResponse>();
 
