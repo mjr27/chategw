@@ -1,5 +1,6 @@
 @using ChatEgw.UI.Services
 @inject TreeService TreeService
+@inject IConfiguration Configuration
 
 <MudTreeView Items="@TreeService.Tree" Dense="true">
     <ItemTemplate>
@@ -29,6 +30,7 @@
 
     protected override async Task OnInitializedAsync()
     {
+        TreeService.EgwWritingsOnly = !Configuration.GetValue<bool>("OpenAi:Enabled");
         await TreeService.Initialize();
     }
 

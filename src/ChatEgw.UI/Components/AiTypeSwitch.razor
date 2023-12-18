@@ -4,6 +4,11 @@
     <MudButtonGroup Class="mt-5 d-inline-block" Size="Size.Medium" Variant="@Variant.Filled" OverrideStyles="false">
         @foreach (SearchTypeEnum item in Enums.GetValuesUnsafe<SearchTypeEnum>())
         {
+            if (item == SearchTypeEnum.Auto && !Auto)
+            {
+                continue;
+            }
+
             SearchTypeEnum itemClosure = item;
             string title = item.AsString(EnumFormat.Description)!;
             <MudButton Variant="@Variant.Filled"
@@ -16,10 +21,8 @@
 </div>
 
 @code {
-    [Parameter]
-    public SearchTypeEnum SelectedIndex { get; set; }
-
-    [Parameter]
-    public EventCallback<SearchTypeEnum> SelectedIndexChanged { get; set; }
+    [Parameter] public SearchTypeEnum SelectedIndex { get; set; }
+    [Parameter] public bool Auto { get; set; }
+    [Parameter] public EventCallback<SearchTypeEnum> SelectedIndexChanged { get; set; }
 
 }

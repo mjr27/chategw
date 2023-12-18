@@ -1,18 +1,16 @@
 using System.ComponentModel.DataAnnotations;
 using ChatEgw.UI.Application;
 using ChatEgw.UI.Application.Models;
-using ChatEgw.UI.Components;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using MudBlazor;
 
-namespace ChatEgw.UI.Pages;
+namespace ChatEgw.UI.Components;
 
-public partial class Index
+public partial class SearchPage
 {
     [Inject] public required ISearchService SearchService { get; set; }
-    [Inject] public required IInstructGenerationService InstructGenerationService { get; set; }
-    [Inject] public required ILogger<Index> Logger { get; set; }
+    [Inject] public required ILogger<SearchPage> Logger { get; set; }
     [Inject] public required IDialogService DialogService { get; set; }
 
     private enum LoadingState
@@ -65,9 +63,6 @@ public partial class Index
         _prompt = "";
         try
         {
-            _aiResponseCompleted = false;
-            _showAiResponse = false;
-            AiResponseWords = null;
             CancellationToken ct = _cancellationTokenSource.Token;
             HashSet<string> folders = TreeService.Selected;
             AnsweringResponse answer = await SearchService.Search(_aiType, Model.Query,
@@ -76,49 +71,13 @@ public partial class Index
                     Folders = folders.ToArray(),
                     IsEgw = TreeService.EgwWritingsOnly ? true : null
                 }, ct);
-            AiResponseWords = new List<string>();
             Answers = answer.Answers.ToList();
             _state = LoadingState.Completed;
             await InvokeAsync(StateHasChanged);
-            _prompt = InstructGenerationService.GetPrompt(answer.UpdatedQuery, Answers);
-            if (answer.IsAiResponse && answer.Answers.Count != 0)
-            {
-                _showAiResponse = true;
-                await InvokeAsync(StateHasChanged);
-                try
-                {
-                    await foreach (string word in InstructGenerationService
-                                       .AutoComplete(answer.UpdatedQuery, Answers, ct))
-                    {
-                        AiResponseWords.Add(word);
-                        await InvokeAsync(StateHasChanged);
-                    }
-
-                    _aiResponseCompleted = true;
-                    await InvokeAsync(StateHasChanged);
-                }
-                catch (OperationCanceledException)
-                {
-                    Logger.LogError("Operation cancelled");
-                }
-                catch (Exception e)
-                {
-                    AiResponseWords?.Add(e.Message);
-                    _aiResponseCompleted = true;
-                    Logger.LogError(e, "Error while invoking OpenAI API");
-                    await InvokeAsync(StateHasChanged);
-                }
-            }
-            else
-            {
-                _aiResponseCompleted = true;
-                await InvokeAsync(StateHasChanged);
-            }
         }
         catch (Exception e)
         {
             _error = e.Message;
-            _aiResponseCompleted = true;
             Logger.LogError(e, "Error while invoking");
             await InvokeAsync(StateHasChanged);
         }

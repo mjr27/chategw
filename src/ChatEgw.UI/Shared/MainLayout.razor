@@ -2,18 +2,31 @@
 @using ChatEgw.UI.Services
 @inherits LayoutComponentBase
 @inject TreeService TreeService
+@inject IConfiguration Configuration
 
 <PageTitle>ChatEgw</PageTitle>
 <MudThemeProvider Theme="CustomTheme"/>
 <MudDialogProvider/>
 <MudSnackbarProvider/>
-
+@{
+    bool openAiEnabled = Configuration.GetValue<bool>("OpenAi:Enabled"); 
+}
 <MudLayout Class="d-flex">
     <MudAppBar Elevation="1">
-        <span class="egw-logo">
-            <h1>Chat</h1>
-            <img src="/logo.svg" alt="ChatEGW"/>
-        </span>
+        @if (openAiEnabled)
+        {
+            <span class="egw-logo">
+                <h1>Chat</h1>
+                <img src="/logo.svg" alt="EGW"/>
+            </span>
+        }
+        else
+        {
+            <span class="egw-logo">
+                <img src="/logo.svg" alt="EGW"/>
+                <h1 style="margin-top: 5px">Search</h1>
+            </span>
+        }
         <MudSpacer/>
         <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((_) => DrawerToggle())"/>
     </MudAppBar>
