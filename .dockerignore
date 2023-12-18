@@ -1,0 +1,15 @@
+**/bin/
+**/obj/
+*.sqlite
+./reports
+./idea
+./.git
+**/.idea
+**/appsettings.Development.json
+**/*.sqlite
+**/*.csv
+**/*.tsv
+cuda-backend/data
+cuda-backend/models/ner_model
+cuda-backend/models/*.spacy
+
