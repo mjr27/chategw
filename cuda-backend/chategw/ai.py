@@ -9,7 +9,7 @@ from sentence_transformers import SentenceTransformer
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, pipeline
 
 from chategw.models import LanguageDetector, QuestionDetector, UniversalTranslator
-from chategw.models.book_parsing import BookReference, EgwBookMatcher
+from chategw.models.book_parsing import BookReference, EgwBookMatcher, ReferenceMatcher
 from chategw.models.entity_parser import EntityParser, RecognizedEntity
 
 DEDUPLICATION_MODEL = "all-MiniLM-L6-v2"
@@ -18,7 +18,8 @@ RANKER_MODEL = "cross-encoder/ms-marco-MiniLM-L-12-v2"
 ANSWERING_MODEL = "deepset/roberta-base-squad2"
 
 SPACY_NER_MODEL = "models/spacy-ner"
-SPACY_REFERENCE_MODEL = "models/spacy-ref"
+SPACY_MATCHER_MODEL = "models/spacy-ref"
+
 spacy.prefer_gpu()
 
 
@@ -76,23 +77,32 @@ class AiClient:
         self._translator = UniversalTranslator()
         self._question_detector = QuestionDetector()
         self._entity_parser = EntityParser(SPACY_NER_MODEL)
-        self._ref_parser = EgwBookMatcher(SPACY_REFERENCE_MODEL)
+        self._book_parser = EgwBookMatcher()
+        self._ref_matcher = ReferenceMatcher(SPACY_MATCHER_MODEL)
 
     def preprocess_query(self, query: str) -> PreprocessQueryDocument:
         language = self._detector.detect(query)
-        new_query = query
+        new_query = query.replace(':', ' ')
         if language != Language.ENGLISH:
             new_query = self._translator.translate(query, language)
         is_question = self._question_detector.is_question(new_query)
         if is_question:
             new_query = self._fix_query(new_query)
         entities = self._entity_parser.get_entities(new_query)
+        filtered_entities = [e for e in entities if e.type != 'REFERENCE']
+        references = [match for _, match in self._book_parser(new_query)] + [e.text for e in entities if
+                                                                             e.type == 'REFERENCE']
+        references.append(new_query)
+        references = sorted(set(references), key=lambda x: len(x))
+        references = [r for r in references if r is not None]
+        print(filtered_entities)
+        print(references)
         return PreprocessQueryDocument(
             is_question=is_question,
             language=language.name,
             normalized_query=new_query,
-            entities=entities,
-            references=[match for _, match in self._ref_parser(query)]
+            entities=filtered_entities,
+            references=[self._ref_matcher.make_reference(r) for r in references]
         )
 
     def encode_embedding(self, query: str) -> ndarray:

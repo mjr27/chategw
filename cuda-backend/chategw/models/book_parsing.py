@@ -76,24 +76,12 @@ pattern_data = {
 }
 
 
-class EgwBookMatcher(DependencyMatcher):
-    def __init__(self, ner_model: str, patterns: typing.Dict[str, typing.List[typing.Dict]] | None = None):
-        patterns = patterns or pattern_data
-        self.nlp = spacy.load('en_core_web_lg')
-        self.ner_nlp = spacy.load(ner_model)
-        super().__init__(vocab=self.nlp.vocab)
-        for pattern_code, pattern_value in patterns.items():
-            for i, pattern_item in enumerate(pattern_value):
-                self.add(f"{pattern_code}:{i}", [pattern_item])
+class ReferenceMatcher:
+    def __init__(self, ner_model: str):
+        self.ner = spacy.load(ner_model)
 
-    def _get_base_name(self, match_id) -> str:
-        s = self.nlp.vocab.strings[match_id]
-        if ':' not in s:
-            return s
-        return s.split(':')[0]
-
-    def _make_reference(self, text):
-        doc = self.ner_nlp(text)
+    def make_reference(self, text: str) -> BookReference:
+        doc = self.ner(text)
         book = chapter = endchapter = page = endpage = None
         for ent in doc.ents:
             if ent.label_ == 'BOOK':
@@ -121,6 +109,22 @@ class EgwBookMatcher(DependencyMatcher):
                     pass
         return BookReference(book=book, chapter=chapter, endchapter=endchapter, page=page, endpage=endpage, text=text)
 
+
+class EgwBookMatcher(DependencyMatcher):
+    def __init__(self, patterns: typing.Dict[str, typing.List[typing.Dict]] | None = None):
+        patterns = patterns or pattern_data
+        self.nlp = spacy.load('en_core_web_lg')
+        super().__init__(vocab=self.nlp.vocab)
+        for pattern_code, pattern_value in patterns.items():
+            for i, pattern_item in enumerate(pattern_value):
+                self.add(f"{pattern_code}:{i}", [pattern_item])
+
+    def _get_base_name(self, match_id) -> str:
+        s = self.nlp.vocab.strings[match_id]
+        if ':' not in s:
+            return s
+        return s.split(':')[0]
+
     def __call__(self, text) -> typing.Iterable[typing.Tuple[str, BookReference]]:
         doc = self.nlp(text)
         matches = super().__call__(doc)
@@ -129,9 +133,7 @@ class EgwBookMatcher(DependencyMatcher):
             _, patterns = self.get(match_id)
             for pattern_block, token_id in zip(patterns[0], token_ids):
                 if pattern_block.get('_KEY', False):
-                    # pattern_name = pattern_block['RIGHT_ID']
-                    # if pattern_name == 'book':
-                    yield match_name, self._make_reference(' '.join(s.text.strip() for s in doc[token_id].subtree if s.text.strip()))
+                    yield match_name, ' '.join(s.text.strip() for s in doc[token_id].subtree if s.text.strip())
         return matches
 
 

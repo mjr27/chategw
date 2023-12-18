@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Text.Json;
 using ChatEgw.UI.Application.Models;
 using ChatEgw.UI.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -131,21 +132,23 @@ internal class RawSearchEngineImpl(
         var referenceSet = new HashSet<string>();
         foreach (PreprocessedPublicationReference reference in references)
         {
+            Console.WriteLine(JsonSerializer.Serialize(reference));
             referenceSet.UnionWith(GetReferences(reference));
         }
 
-        // foreach (PreprocessedEntity entity in entities)
-        // {
-        //     if (!data.TryGetValue(entity.Type, out HashSet<string>? values))
-        //     {
-        //         continue;
-        //     }
-        //
-        //     if (values.Contains(entity.Text))
-        //     {
-        //         query = query.Where(r => r.Entities.Any(p => p.Content == entity.Text));
-        //     }
-        // }
+        
+        foreach (PreprocessedEntity entity in entities)
+        {
+            if (!data.TryGetValue(entity.Type, out HashSet<string>? values))
+            {
+                continue;
+            }
+        
+            if (values.Contains(entity.Text))
+            {
+                query = query.Where(r => r.Entities.Any(p => p.Content == entity.Text));
+            }
+        }
 
         if (referenceSet.Any())
         {

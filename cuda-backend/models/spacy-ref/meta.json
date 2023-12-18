@@ -25,7 +25,9 @@
       "CHAPTER",
       "ENDCHAPTER",
       "ENDPAGE",
-      "PAGE"
+      "ENDPARAGRAPH",
+      "PAGE",
+      "PARAGRAPH"
     ]
   },
   "pipeline":[
@@ -68,9 +70,19 @@
         "p":1.0,
         "r":1.0,
         "f":1.0
+      },
+      "PARAGRAPH":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "ENDPARAGRAPH":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
       }
     },
-    "tok2vec_loss":46.0322494107,
-    "ner_loss":8.493435009
+    "tok2vec_loss":50.3075177245,
+    "ner_loss":3.9916835178
   }
 }
